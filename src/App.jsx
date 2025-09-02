@@ -5,8 +5,10 @@ import Home from './pages/home/home';
 import Portfolio from './pages/portfolio/portfolio';
 // import ShopPage from './pages/shop';
 // import AboutPage from './pages/about';
-// import ContactPage from './pages/contact';
+import OnlineBooking from './pages/online/online';
+import ContactPage from './pages/contact/contact';
 import Footer from './components/footer';
+
 
 function App() {
   return (
@@ -17,7 +19,9 @@ function App() {
        <Route path="/portfolio" element={<Portfolio/>} /> 
        {/* <Route path="/shop" element={<ShopPage/>} />
          <Route path="/about" element={<AboutPage/>} />
-            <Route path="/contact" element={<ContactPage />} />  */}
+          */}
+          <Route path="/online" element={<OnlineBooking />} />
+             <Route path="/contact" element={<ContactPage />} /> 
     </Routes>
     <Footer />
   </Router>
