@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { ChevronDown, Menu, X } from "lucide-react";
+import { ChevronDown, ChevronUp, Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [active, setActive] = useState("home");
   const [openDropdown, setOpenDropdown] = useState(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileDropdown, setMobileDropdown] = useState(null);
 
   // --- Typewriter Animation State ---
   const services = [
@@ -25,14 +26,13 @@ const Navbar = () => {
       typingInterval = setInterval(() => {
         setDisplayText((prev) => prev + services[serviceIndex][charIndex]);
         setCharIndex((prev) => prev + 1);
-      }, 100); // typing speed
+      }, 100);
     } else {
-      // pause before moving to next word
       typingInterval = setTimeout(() => {
         setDisplayText("");
         setCharIndex(0);
         setServiceIndex((prev) => (prev + 1) % services.length);
-      }, 2000); // 2s pause after full word
+      }, 2000);
     }
 
     return () => clearInterval(typingInterval);
@@ -53,23 +53,23 @@ const Navbar = () => {
       name: "Rental",
       key: "rental",
       dropdown: [
-        { name: "Camera", href: "/rental/camera" },
-        { name: "Projector", href: "/rental/projector" },
-        { name: "Drone", href: "/rental/drone" },
-        { name: "Other", href: "/rental/other" },
+        { name: "Camera Rental", href: "/rental/camera" },
+        { name: "Projector Rental", href: "/rental/projector" },
+        { name: "Drone Rental", href: "/rental/drone" },
+        { name: "Other Rental", href: "/rental/other" },
+      ],
+    },
+    {
+      name: "Online Services",
+      key: "online",
+      dropdown: [
+        { name: "Hosting & Domain Register", href: "/online/domain" },
+        { name: "Web Development", href: "/online/web" },
+        { name: "Social Media Marketing", href: "/online/social" },
+        { name: "Graphic Design", href: "/online/graphic" },
       ],
     },
     { name: "Portfolio", key: "portfolio", href: "/portfolio" },
-
-    { 
-        name: "Online Services",
-         key: "online", 
-    dropdown: [
-        { name: "Hosting and Domain Regsiter", href: "/online Services/domain" },
-        { name: "Web development", href: "/online Services/web" },
-        { name: "Social Media Marking", href: "/online Services/socail" },
-        { name: "Graphic Design", href: "/rental/Graphic" },
-      ], },
     { name: "Contact Us", key: "contact", href: "/contact" },
   ];
 
@@ -80,8 +80,8 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
           {/* Left - Logo */}
           <div className="flex items-center space-x-2">
-            <img src="/logo.png" alt="Logo" className="h-12 w-auto" />
-            <span className="text-xl font-bold text-white">Studio</span>
+            <img src="/logo.png" alt="Logo" className="h-14 w-auto" />
+            <span className="text-2xl font-bold text-white">Studio</span>
           </div>
 
           {/* Middle - Menu (Desktop) */}
@@ -110,7 +110,7 @@ const Navbar = () => {
 
                 {/* Dropdown */}
                 {item.dropdown && openDropdown === item.key && (
-                  <div className="absolute top-full mt-2 left-0 bg-gray-800 rounded-lg shadow-lg py-2 w-48">
+                  <div className="absolute top-full mt-2 left-0 bg-gray-800 rounded-lg shadow-lg py-2 w-52">
                     {item.dropdown.map((drop, i) => (
                       <a
                         key={i}
@@ -127,7 +127,7 @@ const Navbar = () => {
           </ul>
 
           {/* Right - Book Now (Desktop) */}
-          <button className="hidden md:block bg-sky-500 hover:bg-sky-400 px-4 py-2 rounded-lg font-semibold transition">
+          <button className="hidden md:block bg-sky-500 hover:bg-sky-400 px-5 py-2 rounded-lg font-semibold transition">
             Book Now
           </button>
 
@@ -145,17 +145,28 @@ const Navbar = () => {
           <div className="md:hidden bg-gray-800 px-6 py-4 space-y-2">
             {menuItems.map((item) => (
               <div key={item.key}>
-                <a
-                  href={item.href || "#"}
-                  className="block py-2 text-white hover:text-sky-300"
-                  onClick={() => {
-                    setActive(item.key);
-                    setMobileMenuOpen(false);
-                  }}
+                <div
+                  className="flex items-center justify-between py-2 text-white hover:text-sky-300 cursor-pointer"
+                  onClick={() =>
+                    item.dropdown
+                      ? setMobileDropdown(
+                          mobileDropdown === item.key ? null : item.key
+                        )
+                      : setMobileMenuOpen(false)
+                  }
                 >
-                  {item.name}
-                </a>
-                {item.dropdown && (
+                  <a href={item.href || "#"} onClick={() => setActive(item.key)}>
+                    {item.name}
+                  </a>
+                  {item.dropdown &&
+                    (mobileDropdown === item.key ? (
+                      <ChevronUp size={18} />
+                    ) : (
+                      <ChevronDown size={18} />
+                    ))}
+                </div>
+
+                {item.dropdown && mobileDropdown === item.key && (
                   <div className="ml-4 space-y-1">
                     {item.dropdown.map((drop, i) => (
                       <a

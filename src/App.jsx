@@ -1,12 +1,12 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './components/navbar';
-import Home from './page/home';
+import Home from './pages/home/home';
 // import Portfolio from './pages/Portfolio';
 // import ShopPage from './pages/shop';
 // import AboutPage from './pages/about';
 // import ContactPage from './pages/contact';
-// import Footer from './components/footer';
+import Footer from './components/footer';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
          <Route path="/about" element={<AboutPage/>} />
             <Route path="/contact" element={<ContactPage />} /> */}
     </Routes>
-    {/* <Footer /> */}
+    <Footer />
   </Router>
   )
 }
