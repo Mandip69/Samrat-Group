@@ -159,17 +159,17 @@ const HomePage = () => {
           </p>
           <div className="grid md:grid-cols-3 gap-6">
             <img
-              src="/portfolio1.jpg"
+              src="/po1.jpg"
               alt="Portfolio 1"
               className="rounded-lg shadow-md hover:scale-105 transition transform"
             />
             <img
-              src="/portfolio2.jpg"
+              src="/po14.jpg"
               alt="Portfolio 2"
               className="rounded-lg shadow-md hover:scale-105 transition transform"
             />
             <img
-              src="/portfolio3.jpg"
+              src="/po9.jpg"
               alt="Portfolio 3"
               className="rounded-lg shadow-md hover:scale-105 transition transform"
             />
