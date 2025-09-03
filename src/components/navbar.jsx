@@ -46,7 +46,7 @@ const Navbar = () => {
       key: "services",
       dropdown: [
         { name: "Wedding", href: "/services/wedding" },
-        { name: "Class", href: "/services/class" },
+        { name: "tranning", href: "/services/tranning" },
         { name: "Movie Studio Services", href: "/services/studio" },
       ],
     },

@@ -7,6 +7,8 @@ import Portfolio from './pages/portfolio/portfolio';
 // import AboutPage from './pages/about';
 import OnlineBooking from './pages/online/online';
 import ContactPage from './pages/contact/contact';
+import Tranning from './pages/services/tranning';
+import Wedding from './pages/services/wedding';
 import Footer from './components/footer';
 
 
@@ -21,6 +23,8 @@ function App() {
          <Route path="/about" element={<AboutPage/>} />
           */}
           <Route path="/online" element={<OnlineBooking />} />
+          <Route path="/services/tranning" element={<Tranning />} />
+          <Route path='/services/wedding' element={<Wedding />} />
              <Route path="/contact" element={<ContactPage />} /> 
     </Routes>
     <Footer />
