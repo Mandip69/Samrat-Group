@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ChevronDown, ChevronUp, Menu, X } from "lucide-react";
-import { Link } from "react-router-dom"; // ✅ React Router navigation
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [active, setActive] = useState("home");
@@ -46,7 +46,7 @@ const Navbar = () => {
       key: "services",
       dropdown: [
         { name: "Wedding", href: "/services/wedding" },
-        { name: "tranning", href: "/services/tranning" },
+        { name: "Training", href: "/services/tranning" },
         { name: "Movie Studio Services", href: "/services/studio" },
       ],
     },
@@ -90,7 +90,7 @@ const Navbar = () => {
             {menuItems.map((item) => (
               <li
                 key={item.key}
-                className="relative group"
+                className="relative"
                 onMouseEnter={() =>
                   item.dropdown ? setOpenDropdown(item.key) : null
                 }
@@ -111,7 +111,7 @@ const Navbar = () => {
 
                 {/* Dropdown */}
                 {item.dropdown && openDropdown === item.key && (
-                  <div className="absolute top-full mt-2 left-0 bg-gray-800 rounded-lg shadow-lg py-2 w-52">
+                  <div className="absolute top-full mt-2 left-0 bg-gray-800 rounded-lg shadow-lg py-2 w-52 z-40">
                     {item.dropdown.map((drop, i) => (
                       <a
                         key={i}
@@ -200,18 +200,25 @@ const Navbar = () => {
       {/* SERVICES TICKER (Typewriter effect) */}
       <div className="bg-white shadow-md w-full py-3 mt-[72px]">
         <div className="max-w-7xl mx-auto flex items-center space-x-4 px-6">
-          {/* Left fixed text */}
           <span className="text-sky-500 font-semibold text-lg">
             Our Services →
           </span>
-
-          {/* Typewriter animation text */}
           <span className="text-gray-900 font-medium text-lg">
             {displayText}
             <span className="animate-pulse">|</span>
           </span>
         </div>
       </div>
+
+      {/* ✅ Floating WhatsApp Button */}
+      <a
+        href="https://wa.me/9779812345678" // replace with your WhatsApp number
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition z-50"
+      >
+        <img src="/whatapp.png" alt="WhatsApp" className="h-6 w-6" />
+      </a>
     </>
   );
 };

@@ -38,7 +38,7 @@ const trainings = [
   },
 ];
 
-const TrainingSection = () => {
+const Training = () => {
   const [openForm, setOpenForm] = useState(false);
   const [selectedCourse, setSelectedCourse] = useState(null);
 
@@ -188,4 +188,4 @@ const TrainingSection = () => {
   );
 };
 
-export default TrainingSection;
+export default Training;

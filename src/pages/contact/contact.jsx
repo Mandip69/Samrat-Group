@@ -60,16 +60,17 @@ const ContactUs = () => {
 
           {/* Map */}
           <div className="rounded-xl overflow-hidden shadow hover:shadow-2xl transition">
-            <iframe
-              title="Studio Location"
-              src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d464.4692443793645!2d85.31801909832896!3d27.735869862861694!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x39eb19004c18690f%3A0xc9de4742b24bbbdd!2sSamrat%20Photo%20Studio%2C%2010%20Tokha%20Rd%2C%20Kathmandu%2044600%2C%20Nepal!3m2!1d27.7361312!2d85.31866839999999!5e0!3m2!1sen!2sus!4v1756799025814!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-              width="100%"
-              height="100%"
-              style={{ minHeight: "400px", border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+          <iframe
+  title="Studio Location"
+  src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d464.4692443793645!2d85.31801909832896!3d27.73..."
+  width="100%"
+  height="100%"
+  style={{ minHeight: "400px", border: 0 }}
+  allowFullScreen=""
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+></iframe>
+
           </div>
         </div>
       </div>
