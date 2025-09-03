@@ -9,6 +9,7 @@ import OnlineBooking from './pages/online/online';
 import ContactPage from './pages/contact/contact';
 import Tranning from './pages/services/tranning';
 import Wedding from './pages/services/wedding';
+import Studio from './pages/services/studio';
 import Footer from './components/footer';
 
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/online" element={<OnlineBooking />} />
           <Route path="/services/tranning" element={<Tranning />} />
           <Route path='/services/wedding' element={<Wedding />} />
+          <Route path='/services/studio' element={<Studio />} />
              <Route path="/contact" element={<ContactPage />} /> 
     </Routes>
     <Footer />
