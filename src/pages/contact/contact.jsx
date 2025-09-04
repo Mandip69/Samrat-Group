@@ -60,16 +60,16 @@ const ContactUs = () => {
 
           {/* Map */}
           <div className="rounded-xl overflow-hidden shadow hover:shadow-2xl transition">
-          <iframe
-  title="Studio Location"
-  src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d464.4692443793645!2d85.31801909832896!3d27.73..."
+         <iframe
+  title="Samrat Frame House Location"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.172202813447!2d85.31304791505492!3d27.73611848278838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1900495b20d1%3A0x7f4427c7a159a2d9!2sSamakhusi%20Tokha%20Rd%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1696200000000!5m2!1sen!2snp"
   width="100%"
-  height="100%"
-  style={{ minHeight: "400px", border: 0 }}
-  allowFullScreen=""
+  height="400"
+  style={{ border: 0, borderRadius: "12px" }}
+  allowFullScreen
   loading="lazy"
   referrerPolicy="no-referrer-when-downgrade"
-></iframe>
+/>
 
           </div>
         </div>
