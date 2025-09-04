@@ -2,11 +2,11 @@ import React, { useState } from "react";
 
 // List of services with icons/images
 const bookingServices = [
-  { id: 1, name: "Wedding Photography", image: "/ser1.jpg" },
-  { id: 2, name: "Drone Videography", image: "/ser2.jpg" },
+  { id: 1, name: "Wedding Photography", image: "/ser5.jpg" },
+  { id: 2, name: "Drone Videography", image: "/po1.jpg" },
   { id: 3, name: "Studio Training", image: "/ser3.jpg" },
-  { id: 4, name: "Personal / Brand Shoot", image: "/ser4.jpg" },
-  { id: 5, name: "Event Coverage", image: "/ser5.jpg" },
+  { id: 4, name: "Personal / Brand Shoot", image: "/ser2.jpg" },
+  { id: 5, name: "Event Coverage", image: "/ser1.jpg" },
 ];
 
 const OnlineBooking = () => {
