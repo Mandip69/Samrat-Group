@@ -16,6 +16,7 @@ import Drone from './pages/rental/drone';
 import Website from './pages/service/web'
 import Websitedev from './pages/service/webdev'
 import Social from './pages/service/social'
+import GraphicDesign from './pages/service/graphic';
 // import StudioRental from './pages/rental/studio'
 import Footer from './components/footer';
 import StudioRental from './pages/rental/studio';
@@ -42,6 +43,7 @@ function App() {
           <Route path='/service/web' element={<Website />} />
           <Route path='/service/webdev' element={<Websitedev />} />
           <Route path="/service/social" element={<Social />} />
+          <Route path='/service/graphic' element={<GraphicDesign />} />
              <Route path="/contact" element={<ContactPage />} /> 
     </Routes>
     <Footer />

@@ -67,7 +67,7 @@ const Navbar = () => {
         { name: "Hosting & Domain Register", href: "/service/web" },
         { name: "Web Development", href: "/service/webdev" },
         { name: "Social Media Marketing", href: "/service/social" },
-        { name: "Graphic Design", href: "/online/graphic" },
+        { name: "Graphic Design", href: "/service/graphic" },
       ],
     },
     { name: "Portfolio", key: "portfolio", href: "/portfolio" },
