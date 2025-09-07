@@ -1,5 +1,6 @@
 import React from "react";
 import { Facebook, Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react";
+import { FaTiktok } from "react-icons/fa"; // ✅ TikTok icon
 
 const Footer = () => {
   return (
@@ -9,14 +10,21 @@ const Footer = () => {
         <div>
           <img src="/logo.png" alt="Studio Logo" className="h-16 w-auto mb-4" />
           <p className="text-gray-400 mb-4">
-           Samrat Movies Pvt. Ltd (Nepal Wedding Gallery) offers a high quality Photography & Videography Services. Our Wedding shoots are most important events of your life and our team puts in great effort at capturing all the emotions and relationships and narrating your story through portraits & Albums. <br /> <br />
-
-You can also make a style statement, our team is skilled at commercial, lifestyle and Fashion Photography as well as Documentary, Music Video Shoots, Concerts, Stage Programs, Sports, Events etc and Editing with better color corrections.
+            Samrat Movies Pvt. Ltd (Nepal Wedding Gallery) offers a high quality
+            Photography & Videography Services. Our Wedding shoots are most
+            important events of your life and our team puts in great effort at
+            capturing all the emotions and relationships and narrating your story
+            through portraits & Albums. <br /> <br />
+            You can also make a style statement, our team is skilled at commercial,
+            lifestyle and Fashion Photography as well as Documentary, Music Video
+            Shoots, Concerts, Stage Programs, Sports, Events etc and Editing with
+            better color corrections.
           </p>
           <div className="flex space-x-3 mt-2">
             <a href="#" className="hover:text-sky-400"><Facebook /></a>
             <a href="#" className="hover:text-pink-400"><Instagram /></a>
             <a href="#" className="hover:text-red-500"><Youtube /></a>
+            <a href="#" className="hover:text-gray-300"><FaTiktok size={20} /></a>
           </div>
         </div>
 
@@ -47,14 +55,16 @@ You can also make a style statement, our team is skilled at commercial, lifestyl
         <div>
           <h3 className="text-white font-semibold mb-4">Contact Us</h3>
           <div className="flex items-center mb-2 text-gray-400">
-            <MapPin className="mr-2" /> <span>Tokha road, Samakhusi, Kathmandu
-Nepa</span>
+            <MapPin className="mr-2" /> 
+            <span>Tokha road, Samakhusi, Kathmandu, Nepal</span>
           </div>
           <div className="flex items-center mb-2 text-gray-400">
-            <Phone className="mr-2" /> <span>01-4380056, +977- 9841419740, 9840797919, 9808598261</span>
+            <Phone className="mr-2" /> 
+            <span>01-4380056, +977-9841419740, 9840797919, 9808598261</span>
           </div>
           <div className="flex items-center text-gray-400">
-            <Mail className="mr-2" /> <span> samratmovies197@gmail.com</span>
+            <Mail className="mr-2" /> 
+            <span>samratmovies197@gmail.com</span>
           </div>
         </div>
       </div>
