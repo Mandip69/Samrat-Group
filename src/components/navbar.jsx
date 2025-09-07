@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { ChevronDown, ChevronUp, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
+import { FaWhatsapp, FaViber } from "react-icons/fa";
 
 const Navbar = () => {
   const [active, setActive] = useState("home");
@@ -127,13 +128,33 @@ const Navbar = () => {
             ))}
           </ul>
 
-          {/* Right - Book Now (Desktop) */}
-          <Link
-            to="/online"
-            className="hidden md:block bg-sky-500 hover:bg-sky-400 px-5 py-2 rounded-lg font-semibold transition"
-          >
-            Book Now
-          </Link>
+          {/* Right - Actions (Desktop) */}
+          <div className="hidden md:flex items-center space-x-4">
+            <Link
+              to="/online"
+              className="bg-sky-500 hover:bg-sky-400 px-5 py-2 rounded-lg font-semibold transition"
+            >
+              Book Now
+            </Link>
+            <a
+              href="https://wa.me/9779812345678"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-1 bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg font-semibold transition"
+            >
+              <FaWhatsapp className="w-5 h-5" />
+              <span>WhatsApp</span>
+            </a>
+            <a
+              href="viber://chat?number=%2B9779812345678"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-1 bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-lg font-semibold transition"
+            >
+              <FaViber className="w-5 h-5" />
+              <span>Viber</span>
+            </a>
+          </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -185,14 +206,32 @@ const Navbar = () => {
                 )}
               </div>
             ))}
-            {/* ✅ Fixed Book Now for mobile */}
-            <Link
-              to="/online"
-              className="w-full bg-sky-500 hover:bg-sky-400 px-4 py-2 rounded-lg font-semibold transition mt-2 block text-center"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Book Now
-            </Link>
+            {/* ✅ Mobile Buttons */}
+            <div className="space-y-2 mt-3">
+              <Link
+                to="/online"
+                className="w-full bg-sky-500 hover:bg-sky-400 px-4 py-2 rounded-lg font-semibold transition block text-center"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Book Now
+              </Link>
+              <a
+                href="https://wa.me/9779812345678"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg font-semibold transition block text-center"
+              >
+                WhatsApp
+              </a>
+              <a
+                href="viber://chat?number=%2B9779812345678"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-lg font-semibold transition block text-center"
+              >
+                Viber
+              </a>
+            </div>
           </div>
         )}
       </nav>
@@ -212,12 +251,12 @@ const Navbar = () => {
 
       {/* ✅ Floating WhatsApp Button */}
       <a
-        href="https://wa.me/9779812345678" // replace with your WhatsApp number
+        href="https://wa.me/9779812345678"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition z-50"
       >
-        <img src="/whatapp.png" alt="WhatsApp" className="h-6 w-6" />
+        <FaWhatsapp className="h-6 w-6" />
       </a>
     </>
   );
