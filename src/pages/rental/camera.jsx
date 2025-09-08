@@ -22,12 +22,18 @@ const CameraRental = () => {
               <p className="mb-3 text-gray-600">
                 For quick booking and pricing details, contact us directly.
               </p>
-              <button
-                onClick={() => setOpenForm(true)}
-                className="w-full bg-blue-600 text-white py-2 px-4 rounded-xl hover:bg-blue-700"
+
+              {/* Google Form Button */}
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeLg_UHpkeH9HRU2MunfflUiCSf77DhqcN4CEArGQpr9gPr7g/viewform?usp=dialog"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full bg-blue-600 text-white py-2 px-4 rounded-xl hover:bg-blue-700 text-center"
               >
                 Send Inquiry
-              </button>
+              </a>
+
+              {/* WhatsApp Button */}
               <a
                 href="https://wa.me/9779800000000"
                 target="_blank"
@@ -37,6 +43,8 @@ const CameraRental = () => {
                 <MessageCircle size={18} /> WhatsApp Us
               </a>
             </div>
+
+            {/* Location */}
             <div className="p-5 bg-white rounded-2xl shadow-md flex items-center gap-3">
               <MapPin className="text-red-500" />
               <span>Samakhusi, Kathmandu</span>
@@ -48,24 +56,34 @@ const CameraRental = () => {
         <div className="lg:col-span-3 space-y-10">
           {/* Description */}
           <section>
-            <h1 className="text-3xl font-bold mb-4">Camera Rental Services in Nepal</h1>
+            <h1 className="text-3xl font-bold mb-4">
+              Camera Rental Services in Nepal
+            </h1>
             <p className="mb-3 text-gray-700">
-              Looking to capture your travel memories, professional shoots, or events in Nepal?
-              Our camera rental service provides high-quality cameras and accessories at affordable rates.
-              Whether you are a traveler, filmmaker, or event organizer, we have the perfect gear for your needs.
+              Looking to capture your travel memories, professional shoots, or
+              events in Nepal? Our camera rental service provides high-quality
+              cameras and accessories at affordable rates. Whether you are a
+              traveler, filmmaker, or event organizer, we have the perfect gear
+              for your needs.
             </p>
             <p className="text-gray-700">
-              Save money by renting instead of buying expensive equipment.
-              We ensure every camera is well-maintained, tested, and ready to deliver excellent performance
-              for your photography and videography projects.
+              Save money by renting instead of buying expensive equipment. We
+              ensure every camera is well-maintained, tested, and ready to
+              deliver excellent performance for your photography and videography
+              projects.
             </p>
           </section>
 
           {/* Why Rent */}
           <section>
-            <h2 className="text-2xl font-semibold mb-4">Why Rent a Camera in Nepal?</h2>
+            <h2 className="text-2xl font-semibold mb-4">
+              Why Rent a Camera in Nepal?
+            </h2>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
-              <li>Capture stunning landscapes without carrying heavy gear from abroad.</li>
+              <li>
+                Capture stunning landscapes without carrying heavy gear from
+                abroad.
+              </li>
               <li>Affordable rental compared to purchasing new cameras.</li>
               <li>Access to the latest models and professional-grade equipment.</li>
               <li>Perfect for short-term projects, weddings, and travel shoots.</li>
@@ -76,7 +94,9 @@ const CameraRental = () => {
 
           {/* Why Us */}
           <section>
-            <h2 className="text-2xl font-semibold mb-4">Why Us for Camera Rental?</h2>
+            <h2 className="text-2xl font-semibold mb-4">
+              Why Us for Camera Rental?
+            </h2>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
               <li>Wide range of DSLR, Mirrorless, and Cinema cameras.</li>
               <li>Flexible rental duration (per day, week, or month).</li>
@@ -90,41 +110,61 @@ const CameraRental = () => {
 
           {/* Camera Types */}
           <section>
-            <h2 className="text-2xl font-semibold mb-4">Camera Types and Their Features</h2>
+            <h2 className="text-2xl font-semibold mb-4">
+              Camera Types and Their Features
+            </h2>
             <div className="overflow-x-auto">
               <table className="table-auto border-collapse border border-gray-300 w-full text-sm">
                 <thead className="bg-gray-200">
                   <tr>
-                    <th className="border border-gray-300 px-4 py-2">Camera Type</th>
-                    <th className="border border-gray-300 px-4 py-2">Model Example</th>
-                    <th className="border border-gray-300 px-4 py-2">Features</th>
+                    <th className="border border-gray-300 px-4 py-2">
+                      Camera Type
+                    </th>
+                    <th className="border border-gray-300 px-4 py-2">
+                      Model Example
+                    </th>
+                    <th className="border border-gray-300 px-4 py-2">
+                      Features
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td className="border px-4 py-2">DSLR</td>
                     <td className="border px-4 py-2">Canon 5D Mark IV</td>
-                    <td className="border px-4 py-2">Full-frame, 30MP, 4K Video, Low Light Performance</td>
+                    <td className="border px-4 py-2">
+                      Full-frame, 30MP, 4K Video, Low Light Performance
+                    </td>
                   </tr>
                   <tr>
                     <td className="border px-4 py-2">Mirrorless</td>
                     <td className="border px-4 py-2">Sony A7 III</td>
-                    <td className="border px-4 py-2">24MP, 4K Video, Compact, Fast Autofocus</td>
+                    <td className="border px-4 py-2">
+                      24MP, 4K Video, Compact, Fast Autofocus
+                    </td>
                   </tr>
                   <tr>
                     <td className="border px-4 py-2">Cinema Camera</td>
-                    <td className="border px-4 py-2">Blackmagic Pocket 6K</td>
-                    <td className="border px-4 py-2">6K Resolution, RAW Recording, Pro Filmmaking</td>
+                    <td className="border px-4 py-2">
+                      Blackmagic Pocket 6K
+                    </td>
+                    <td className="border px-4 py-2">
+                      6K Resolution, RAW Recording, Pro Filmmaking
+                    </td>
                   </tr>
                   <tr>
                     <td className="border px-4 py-2">Action Camera</td>
                     <td className="border px-4 py-2">GoPro Hero 11</td>
-                    <td className="border px-4 py-2">Waterproof, 5.3K Video, Stabilization, Wide Angle</td>
+                    <td className="border px-4 py-2">
+                      Waterproof, 5.3K Video, Stabilization, Wide Angle
+                    </td>
                   </tr>
                   <tr>
                     <td className="border px-4 py-2">Drone Camera</td>
                     <td className="border px-4 py-2">DJI Mavic Air 2</td>
-                    <td className="border px-4 py-2">4K Video, Aerial Shots, Smart Tracking, Compact</td>
+                    <td className="border px-4 py-2">
+                      4K Video, Aerial Shots, Smart Tracking, Compact
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -133,7 +173,9 @@ const CameraRental = () => {
 
           {/* Rental Packages */}
           <section>
-            <h2 className="text-2xl font-semibold mb-4">Camera Rental Packages</h2>
+            <h2 className="text-2xl font-semibold mb-4">
+              Camera Rental Packages
+            </h2>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
               <li>Per Day: NPR 1,500 – 5,000 (depending on model)</li>
               <li>Per Week: NPR 8,000 – 25,000</li>
@@ -144,23 +186,36 @@ const CameraRental = () => {
 
           {/* FAQ */}
           <section>
-            <h2 className="text-2xl font-semibold mb-4">Frequently Asked Questions</h2>
+            <h2 className="text-2xl font-semibold mb-4">
+              Frequently Asked Questions
+            </h2>
             <div className="space-y-4">
               <div>
                 <h3 className="font-semibold">How is the rental process?</h3>
-                <p className="text-gray-700">You can book online or visit our Samakhusi office. ID verification is required.</p>
+                <p className="text-gray-700">
+                  You can book online or visit our Samakhusi office. ID
+                  verification is required.
+                </p>
               </div>
               <div>
                 <h3 className="font-semibold">Do you provide delivery?</h3>
-                <p className="text-gray-700">Yes, delivery within Kathmandu valley is available, or you can self-pickup.</p>
+                <p className="text-gray-700">
+                  Yes, delivery within Kathmandu valley is available, or you can
+                  self-pickup.
+                </p>
               </div>
               <div>
                 <h3 className="font-semibold">What if the camera is damaged?</h3>
-                <p className="text-gray-700">Customers must cover repair or replacement costs as per our rental policy.</p>
+                <p className="text-gray-700">
+                  Customers must cover repair or replacement costs as per our
+                  rental policy.
+                </p>
               </div>
               <div>
                 <h3 className="font-semibold">Where is your location?</h3>
-                <p className="text-gray-700">We are located at Samakhusi, Kathmandu.</p>
+                <p className="text-gray-700">
+                  We are located at Samakhusi, Kathmandu.
+                </p>
               </div>
             </div>
           </section>
@@ -169,9 +224,10 @@ const CameraRental = () => {
           <section>
             <h2 className="text-2xl font-semibold mb-4">Conclusion</h2>
             <p className="text-gray-700">
-              Renting a camera in Nepal is the smartest choice for travelers, creators,
-              and professionals who want top-quality equipment without the high cost.
-              Visit us at Samakhusi, Kathmandu, or contact us on WhatsApp to book your gear today!
+              Renting a camera in Nepal is the smartest choice for travelers,
+              creators, and professionals who want top-quality equipment without
+              the high cost. Visit us at Samakhusi, Kathmandu, or contact us on
+              WhatsApp to book your gear today!
             </p>
           </section>
         </div>
@@ -226,7 +282,9 @@ const CameraRental = () => {
                 </select>
               </div>
               <div>
-                <label className="block text-sm font-medium">Rental Duration</label>
+                <label className="block text-sm font-medium">
+                  Rental Duration
+                </label>
                 <select className="w-full border rounded-lg px-3 py-2 mt-1">
                   <option>Per Day</option>
                   <option>Per Week</option>

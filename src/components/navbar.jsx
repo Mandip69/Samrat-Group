@@ -71,7 +71,7 @@ const Navbar = () => {
         { name: "Graphic Design", href: "/service/graphic" },
       ],
     },
-    { name: "Portfolio", key: "portfolio", href: "/portfolio" },
+    { name: "Gallary", key: "portfolio", href: "/portfolio" },
     { name: "Contact Us", key: "contact", href: "/contact" },
   ];
 
