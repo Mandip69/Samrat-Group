@@ -42,6 +42,26 @@ const CameraRental = () => {
               >
                 <MessageCircle size={18} /> WhatsApp Us
               </a>
+
+              {/* Viber Button */}
+              <a
+                href="viber://chat?number=+9779800000000"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center justify-center gap-2 mt-4 bg-purple-600 text-white py-2 px-4 rounded-xl hover:bg-purple-700"
+              >
+                {/* Viber Icon SVG */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M21.5 0h-19A2.5 2.5 0 0 0 0 2.5v19C0 22.43.57 23 1.5 23H6v1.49c0 .36.43.55.71.29L11 23h10.5a2.5 2.5 0 0 0 2.5-2.5v-19A2.5 2.5 0 0 0 21.5 0Zm.5 20.5a.5.5 0 0 1-.5.5H10.7l-2.2 2.09V21H1.5a.5.5 0 0 1-.5-.5v-19a.5.5 0 0 1 .5-.5h19a.5.5 0 0 1 .5.5ZM12 5a7 7 0 1 0 0 14 7 7 0 0 0 0-14Zm.01 12.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11Z" />
+                </svg>
+                Viber Us
+              </a>
             </div>
 
             {/* Location */}
@@ -145,9 +165,7 @@ const CameraRental = () => {
                   </tr>
                   <tr>
                     <td className="border px-4 py-2">Cinema Camera</td>
-                    <td className="border px-4 py-2">
-                      Blackmagic Pocket 6K
-                    </td>
+                    <td className="border px-4 py-2">Blackmagic Pocket 6K</td>
                     <td className="border px-4 py-2">
                       6K Resolution, RAW Recording, Pro Filmmaking
                     </td>
