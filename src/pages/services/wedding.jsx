@@ -1,6 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 
 const WeddingSection = () => {
+  const [openForm, setOpenForm] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form Data Submitted:", formData);
+    alert("Thank you for booking! We will contact you soon.");
+    setOpenForm(false);
+    setFormData({ name: "", email: "", phone: "", message: "" });
+  };
+
   return (
     <section id="wedding" className="bg-white">
       {/* Hero Video */}
@@ -15,10 +35,16 @@ const WeddingSection = () => {
           <source src="/wed.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-white text-center">
+        <div className="absolute inset-0 bg-black/40 flex items-center justify-center flex-col">
+          <h1 className="text-4xl md:text-6xl font-bold text-white text-center mb-6">
             Celebrate Love with <span className="text-sky-400">Our Studio</span>
           </h1>
+          <button
+            onClick={() => setOpenForm(true)}
+            className="px-6 py-3 bg-sky-500 hover:bg-sky-600 text-white rounded-xl shadow-lg transition"
+          >
+            Book Now
+          </button>
         </div>
       </div>
 
@@ -43,38 +69,78 @@ const WeddingSection = () => {
           Our Wedding Moments
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          <img
-            src="/wed1.jpg"
-            alt="Wedding event"
-            className="rounded-xl shadow-lg object-cover h-64 w-full hover:scale-105 transition"
-          />
-          <img
-            src="/wed2.jpg"
-            alt="Wedding event"
-            className="rounded-xl shadow-lg object-cover h-64 w-full hover:scale-105 transition"
-          />
-          <img
-            src="/wed3.jpg"
-            alt="Wedding event"
-            className="rounded-xl shadow-lg object-cover h-64 w-full hover:scale-105 transition"
-          />
-          <img
-            src="/wed4.jpg"
-            alt="Wedding event"
-            className="rounded-xl shadow-lg object-cover h-64 w-full hover:scale-105 transition"
-          />
-          <img
-            src="/wed5.jpg"
-            alt="Wedding event"
-            className="rounded-xl shadow-lg object-cover h-64 w-full hover:scale-105 transition"
-          />
-          <img
-            src="/wed6.jpg"
-            alt="Wedding event"
-            className="rounded-xl shadow-lg object-cover h-64 w-full hover:scale-105 transition"
-          />
+          {["wed1.jpg", "wed2.jpg", "wed3.jpg", "wed4.jpg", "wed5.jpg", "wed6.jpg"].map(
+            (img, idx) => (
+              <img
+                key={idx}
+                src={`/${img}`}
+                alt="Wedding event"
+                className="rounded-xl shadow-lg object-cover h-64 w-full hover:scale-105 transition"
+              />
+            )
+          )}
         </div>
       </div>
+
+      {/* Booking Form Modal */}
+      {openForm && (
+        <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50">
+          <div className="bg-white p-8 rounded-2xl shadow-lg w-full max-w-lg relative">
+            <button
+              onClick={() => setOpenForm(false)}
+              className="absolute top-3 right-3 text-gray-500 hover:text-gray-800"
+            >
+              ✕
+            </button>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4 text-center">
+              Book Your Wedding Shoot
+            </h2>
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <input
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                placeholder="Your Name"
+                required
+                className="w-full border rounded-lg p-3"
+              />
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="Your Email"
+                required
+                className="w-full border rounded-lg p-3"
+              />
+              <input
+                type="tel"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                placeholder="Your Phone"
+                required
+                className="w-full border rounded-lg p-3"
+              />
+              <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                placeholder="Tell us about your wedding..."
+                rows="4"
+                className="w-full border rounded-lg p-3"
+              ></textarea>
+              <button
+                type="submit"
+                className="w-full bg-sky-500 hover:bg-sky-600 text-white py-3 rounded-lg font-semibold"
+              >
+                Submit Booking
+              </button>
+            </form>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
