@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const trainings = [
   {
@@ -39,17 +39,12 @@ const trainings = [
 ];
 
 const Training = () => {
-  const [openForm, setOpenForm] = useState(false);
-  const [selectedCourse, setSelectedCourse] = useState(null);
+  const googleFormLink =
+    "https://docs.google.com/forms/d/e/1FAIpQLSf1iy9bvqNubA8aSEoRDEbzE_8I91KXlnqnZf_TodUhmfUUmg/viewform?usp=sharing&ouid=100782127818539968867";
 
   const handleEnrollClick = (course) => {
-    setSelectedCourse(course);
-    setOpenForm(true);
-  };
-
-  const handleClose = () => {
-    setOpenForm(false);
-    setSelectedCourse(null);
+    // Open Google Form in new tab
+    window.open(googleFormLink, "_blank");
   };
 
   return (
@@ -73,7 +68,7 @@ const Training = () => {
               key={index}
               className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition flex flex-col md:flex-row"
             >
-              {/* Media (image or video) */}
+              {/* Media */}
               <div className="md:w-1/2">
                 {item.type === "video" ? (
                   <video
@@ -109,81 +104,6 @@ const Training = () => {
           ))}
         </div>
       </div>
-
-      {/* Modal Form */}
-      {openForm && (
-        <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 px-4">
-          <div className="bg-white rounded-lg shadow-lg w-full max-w-lg p-6 relative">
-            {/* Close Button */}
-            <button
-              onClick={handleClose}
-              className="absolute top-3 right-3 text-gray-500 hover:text-red-500 text-xl"
-            >
-              ✕
-            </button>
-
-            <h2 className="text-2xl font-bold mb-4 text-gray-900">
-              Enroll in {selectedCourse}
-            </h2>
-
-            <form className="space-y-4">
-              <div>
-                <label className="block text-sm font-medium text-gray-700">
-                  Full Name
-                </label>
-                <input
-                  type="text"
-                  className="w-full border border-gray-300 rounded-lg p-2 mt-1 focus:ring-sky-400 focus:border-sky-400"
-                  placeholder="Enter your full name"
-                  required
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  className="w-full border border-gray-300 rounded-lg p-2 mt-1 focus:ring-sky-400 focus:border-sky-400"
-                  placeholder="Enter your email"
-                  required
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700">
-                  Phone Number
-                </label>
-                <input
-                  type="tel"
-                  className="w-full border border-gray-300 rounded-lg p-2 mt-1 focus:ring-sky-400 focus:border-sky-400"
-                  placeholder="Enter your phone number"
-                  required
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700">
-                  Message
-                </label>
-                <textarea
-                  className="w-full border border-gray-300 rounded-lg p-2 mt-1 focus:ring-sky-400 focus:border-sky-400"
-                  rows="3"
-                  placeholder="Any specific request?"
-                ></textarea>
-              </div>
-
-              <button
-                type="submit"
-                className="bg-sky-500 hover:bg-sky-400 text-white px-5 py-2 rounded-lg font-medium transition w-full"
-              >
-                Submit Enrollment
-              </button>
-            </form>
-          </div>
-        </div>
-      )}
     </section>
   );
 };
