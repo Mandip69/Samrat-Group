@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { ChevronDown, Menu, X } from "lucide-react";
+import { ChevronDown, ChevronUp, Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { FaWhatsapp, FaViber } from "react-icons/fa";
 
@@ -122,7 +122,7 @@ const Navbar = () => {
 
                 {/* Dropdown */}
                 {item.dropdown && openDropdown === item.key && (
-                  <div className="absolute top-full mt-2 left-0 bg-gray-800 rounded-lg shadow-lg py-2 w-52 z-40">
+                  <div className="absolute top-full mt-2 left-0 bg-gray-800 rounded-lg shadow-lg py-2 w-52 z-50">
                     {item.dropdown.map((drop, i) => (
                       <Link
                         key={i}
@@ -178,22 +178,24 @@ const Navbar = () => {
 
         {/* Mobile Dropdown */}
         {mobileMenuOpen && (
-          <div className="md:hidden bg-gray-800 px-6 py-4 space-y-2">
+          <div className="md:hidden fixed top-[72px] left-0 w-full bg-gray-800 px-6 py-4 space-y-2 z-50">
             {menuItems.map((item) => (
               <div key={item.key}>
                 <div
                   className="flex items-center justify-between py-2 text-white hover:text-sky-300 cursor-pointer"
-                  onClick={() =>
-                    item.dropdown
-                      ? setMobileDropdown(
-                          mobileDropdown === item.key ? null : item.key
-                        )
-                      : setMobileMenuOpen(false)
-                  }
+                  onClick={() => {
+                    if (item.dropdown) {
+                      setMobileDropdown(
+                        mobileDropdown === item.key ? null : item.key
+                      );
+                    } else {
+                      setActive(item.key);
+                      setMobileMenuOpen(false);
+                      window.location.href = item.href;
+                    }
+                  }}
                 >
-                  <Link to={item.href || "#"} onClick={() => setActive(item.key)}>
-                    {item.name}
-                  </Link>
+                  <span>{item.name}</span>
                   {item.dropdown &&
                     (mobileDropdown === item.key ? (
                       <ChevronUp size={18} />
@@ -205,28 +207,29 @@ const Navbar = () => {
                 {item.dropdown && mobileDropdown === item.key && (
                   <div className="ml-4 space-y-1">
                     {item.dropdown.map((drop, i) => (
-                      <Link
+                      <a
                         key={i}
-                        to={drop.href}
+                        href={drop.href}
+                        onClick={() => setMobileMenuOpen(false)}
                         className="block py-1 text-gray-300 hover:text-sky-300"
                       >
                         {drop.name}
-                      </Link>
+                      </a>
                     ))}
                   </div>
                 )}
               </div>
             ))}
 
-            {/* ✅ Mobile Buttons */}
+            {/* Mobile Buttons */}
             <div className="space-y-2 mt-3">
-              <Link
-                to="/online"
-                className="w-full bg-sky-500 hover:bg-sky-400 px-4 py-2 rounded-lg font-semibold transition block text-center"
+              <a
+                href="/online"
                 onClick={() => setMobileMenuOpen(false)}
+                className="w-full bg-sky-500 hover:bg-sky-400 px-4 py-2 rounded-lg font-semibold transition block text-center"
               >
                 Book Now
-              </Link>
+              </a>
               <a
                 href="https://wa.me/9779812345678"
                 target="_blank"
@@ -261,7 +264,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* ✅ Floating WhatsApp Button */}
+      {/* Floating WhatsApp Button */}
       <a
         href="https://wa.me/9779812345678"
         target="_blank"
