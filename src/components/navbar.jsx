@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { ChevronDown, ChevronUp, Menu, X } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { FaWhatsapp, FaViber } from "react-icons/fa";
 
@@ -101,43 +101,34 @@ const Navbar = () => {
           {/* Middle - Menu (Desktop) */}
           <ul className="hidden md:flex items-center space-x-6">
             {menuItems.map((item) => (
-              <li
-                key={item.key}
-                className="relative"
-                onMouseEnter={() =>
-                  item.dropdown ? setOpenDropdown(item.key) : null
-                }
-                onMouseLeave={() =>
-                  setTimeout(() => {
-                    if (openDropdown === item.key) setOpenDropdown(null);
-                  }, 200)
-                }
-              >
-                <Link
-                  to={item.href || "#"}
-                  onClick={() => setActive(item.key)}
-                  className={`flex items-center space-x-1 px-2 py-1 transition ${
+              <li key={item.key} className="relative">
+                <div
+                  className={`flex items-center space-x-1 px-2 py-1 cursor-pointer transition ${
                     active === item.key
                       ? "text-sky-400 border-b-2 border-sky-400"
                       : "hover:text-sky-300"
                   }`}
+                  onClick={() =>
+                    item.dropdown
+                      ? setOpenDropdown(
+                          openDropdown === item.key ? null : item.key
+                        )
+                      : setActive(item.key)
+                  }
                 >
                   <span>{item.name}</span>
                   {item.dropdown && <ChevronDown size={16} />}
-                </Link>
+                </div>
 
                 {/* Dropdown */}
                 {item.dropdown && openDropdown === item.key && (
-                  <div
-                    className="absolute top-full mt-2 left-0 bg-gray-800 rounded-lg shadow-lg py-2 w-52 z-40"
-                    onMouseEnter={() => setOpenDropdown(item.key)}
-                    onMouseLeave={() => setOpenDropdown(null)}
-                  >
+                  <div className="absolute top-full mt-2 left-0 bg-gray-800 rounded-lg shadow-lg py-2 w-52 z-40">
                     {item.dropdown.map((drop, i) => (
                       <Link
                         key={i}
                         to={drop.href}
                         className="block px-4 py-2 hover:bg-gray-700 hover:text-sky-300 transition"
+                        onClick={() => setOpenDropdown(null)}
                       >
                         {drop.name}
                       </Link>
