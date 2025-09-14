@@ -1,13 +1,25 @@
 import React, { useState, useEffect } from "react";
 import { ChevronDown, ChevronUp, Menu, X } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FaWhatsapp, FaViber } from "react-icons/fa";
 
 const Navbar = () => {
+  const location = useLocation();
   const [active, setActive] = useState("home");
   const [openDropdown, setOpenDropdown] = useState(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileDropdown, setMobileDropdown] = useState(null);
+
+  // --- Update active menu based on current URL ---
+  useEffect(() => {
+    const path = location.pathname;
+    if (path === "/") setActive("home");
+    else if (path.startsWith("/services")) setActive("services");
+    else if (path.startsWith("/rental")) setActive("rental");
+    else if (path.startsWith("/service")) setActive("online");
+    else if (path.startsWith("/portfolio")) setActive("portfolio");
+    else if (path.startsWith("/contact")) setActive("contact");
+  }, [location.pathname]);
 
   // --- Typewriter Animation State ---
   const services = [
@@ -95,10 +107,14 @@ const Navbar = () => {
                 onMouseEnter={() =>
                   item.dropdown ? setOpenDropdown(item.key) : null
                 }
-                onMouseLeave={() => setOpenDropdown(null)}
+                onMouseLeave={() =>
+                  setTimeout(() => {
+                    if (openDropdown === item.key) setOpenDropdown(null);
+                  }, 200)
+                }
               >
-                <a
-                  href={item.href || "#"}
+                <Link
+                  to={item.href || "#"}
                   onClick={() => setActive(item.key)}
                   className={`flex items-center space-x-1 px-2 py-1 transition ${
                     active === item.key
@@ -108,19 +124,23 @@ const Navbar = () => {
                 >
                   <span>{item.name}</span>
                   {item.dropdown && <ChevronDown size={16} />}
-                </a>
+                </Link>
 
                 {/* Dropdown */}
                 {item.dropdown && openDropdown === item.key && (
-                  <div className="absolute top-full mt-2 left-0 bg-gray-800 rounded-lg shadow-lg py-2 w-52 z-40">
+                  <div
+                    className="absolute top-full mt-2 left-0 bg-gray-800 rounded-lg shadow-lg py-2 w-52 z-40"
+                    onMouseEnter={() => setOpenDropdown(item.key)}
+                    onMouseLeave={() => setOpenDropdown(null)}
+                  >
                     {item.dropdown.map((drop, i) => (
-                      <a
+                      <Link
                         key={i}
-                        href={drop.href}
+                        to={drop.href}
                         className="block px-4 py-2 hover:bg-gray-700 hover:text-sky-300 transition"
                       >
                         {drop.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 )}
@@ -180,9 +200,9 @@ const Navbar = () => {
                       : setMobileMenuOpen(false)
                   }
                 >
-                  <a href={item.href || "#"} onClick={() => setActive(item.key)}>
+                  <Link to={item.href || "#"} onClick={() => setActive(item.key)}>
                     {item.name}
-                  </a>
+                  </Link>
                   {item.dropdown &&
                     (mobileDropdown === item.key ? (
                       <ChevronUp size={18} />
@@ -194,18 +214,19 @@ const Navbar = () => {
                 {item.dropdown && mobileDropdown === item.key && (
                   <div className="ml-4 space-y-1">
                     {item.dropdown.map((drop, i) => (
-                      <a
+                      <Link
                         key={i}
-                        href={drop.href}
+                        to={drop.href}
                         className="block py-1 text-gray-300 hover:text-sky-300"
                       >
                         {drop.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 )}
               </div>
             ))}
+
             {/* ✅ Mobile Buttons */}
             <div className="space-y-2 mt-3">
               <Link
