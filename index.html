@@ -1,62 +1,93 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Basic Meta Tags -->
+    <!-- ✅ Basic Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Title & Description -->
-    <title>Samrat Movie Pvt. Ltd </title>
+    <!-- ✅ Title (under 60 chars, keyword-rich) -->
+    <title>Samrat Movie Pvt. Ltd | Nepali Movie Production & Entertainment</title>
+
+    <!-- ✅ Meta Description (under 160 chars, compelling) -->
     <meta
       name="description"
-      content="Samrat Movie Pvt. Ltd is a leading movie production and entertainment company in Nepal. Explore our latest films, projects, and creative work."
+      content="Samrat Movie Pvt. Ltd is Nepal’s trusted movie production & entertainment company. Explore Nepali films, latest projects & creative works."
     />
 
-    <!-- Favicon -->
+    <!-- ✅ Favicon -->
     <link rel="icon" type="image/png" href="/logo.png" />
 
-    <!-- Open Graph (Facebook, LinkedIn) -->
-    <meta property="og:title" content="Samrat Movie Pvt. Ltd" />
+    <!-- ✅ Open Graph (Facebook, LinkedIn, WhatsApp) -->
+    <meta property="og:title" content="Samrat Movie Pvt. Ltd | Nepali Films & Entertainment" />
     <meta
       property="og:description"
-      content="Discover films and entertainment by Samrat Movie Pvt. Ltd, a trusted name in Nepal’s movie industry."
+      content="Official website of Samrat Movie Pvt. Ltd. Discover Nepali films, projects & creative entertainment work."
     />
-    <meta property="og:image" content="/logo.png" />
+    <meta property="og:image" content="https://samrat-movies.vercel.app/logo.png" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://samrat-movies.vercel.app/" />
 
-    <!-- Twitter Card -->
+    <!-- ✅ Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Samrat Movie Pvt. Ltd" />
+    <meta name="twitter:title" content="Samrat Movie Pvt. Ltd | Nepali Films & Entertainment" />
     <meta
       name="twitter:description"
-      content="Official website of Samrat Movie Pvt. Ltd. Movie production and entertainment in Nepal."
+      content="Samrat Movie Pvt. Ltd – Leading movie production & entertainment company in Nepal."
     />
-    <meta name="twitter:image" content="/logo.png" />
+    <meta name="twitter:image" content="https://samrat-movies.vercel.app/logo.png" />
 
-    <!-- Keywords (optional but helpful) -->
+    <!-- ✅ Keywords (avoid stuffing, 8-10 max) -->
     <meta
       name="keywords"
-      content="Samrat Movie, Movie Production Nepal, Nepali Films, Entertainment Company, Film Studio"
+      content="Samrat Movie, Nepali Films, Movie Production Nepal, Nepali Entertainment, Nepali Cinema, Film Studio Nepal, Movie Makers Nepal"
     />
 
-    <!-- Canonical URL -->
+    <!-- ✅ Canonical URL -->
     <link rel="canonical" href="https://samrat-movies.vercel.app/" />
 
-    <!-- Structured Data (Schema.org JSON-LD for Movie Production Company) -->
+    <!-- ✅ Language & Geo -->
+    <meta name="language" content="English" />
+    <meta name="geo.region" content="NP" />
+    <meta name="geo.placename" content="Kathmandu, Nepal" />
+
+    <!-- ✅ Robots -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+    <!-- ✅ Schema.org JSON-LD -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "Samrat Movie Pvt. Ltd",
         "url": "https://samrat-movies.vercel.app/",
-        "logo": "https://samrat-movies.vercel.app//logo.png",
+        "logo": "https://samrat-movies.vercel.app/logo.png",
         "sameAs": [
           "https://facebook.com/yourpage",
           "https://instagram.com/yourpage",
           "https://youtube.com/yourpage"
         ],
         "description": "Samrat Movie Pvt. Ltd is a movie production and entertainment company in Nepal."
+      }
+    </script>
+
+    <!-- ✅ Schema for Local Business (if physical office exists) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MovieProductionCompany",
+        "name": "Samrat Movie Pvt. Ltd",
+        "url": "https://samrat-movies.vercel.app/",
+        "logo": "https://samrat-movies.vercel.app/logo.png",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Put actual street here",
+          "addressLocality": "Kathmandu",
+          "addressRegion": "Bagmati",
+          "postalCode": "44600",
+          "addressCountry": "NP"
+        },
+        "telephone": "+977-XXXXXXXXXX",
+        "description": "Nepali film production & entertainment company creating movies, documentaries & media projects."
       }
     </script>
   </head>
