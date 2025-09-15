@@ -74,12 +74,13 @@ const StudioBooking = () => {
           environment for creative production. Whether you're an individual,
           brand, or production house, our studio adapts to your needs.
         </p>
-        <button
-          onClick={() => setOpenForm(true)}
-          className="mt-6 bg-sky-500 hover:bg-sky-400 text-white px-6 py-3 rounded-lg font-medium transition"
-        >
-          Book Studio Now
-        </button>
+       <button
+  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSeg2-YYAwJ7oUqUOiiPEudZIsk9_CRZlLqP2A-saTeK7vjlKw/viewform?usp=dialog", "_blank")}
+  className="mt-6 bg-sky-500 hover:bg-sky-400 text-white px-6 py-3 rounded-lg font-medium transition"
+>
+  Book Studio Now
+</button>
+
       </div>
 
       {/* Studio Gallery */}

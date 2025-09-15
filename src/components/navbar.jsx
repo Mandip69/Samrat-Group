@@ -83,7 +83,7 @@ const Navbar = () => {
         { name: "Graphic Design", href: "/service/graphic" },
       ],
     },
-    { name: "Gallary", key: "portfolio", href: "/portfolio" },
+    { name: "Gallery", key: "portfolio", href: "/portfolio" },
     { name: "Contact Us", key: "contact", href: "/contact" },
   ];
 
@@ -116,8 +116,14 @@ const Navbar = () => {
                       : setActive(item.key)
                   }
                 >
-                  <span>{item.name}</span>
-                  {item.dropdown && <ChevronDown size={16} />}
+                  {item.dropdown ? (
+                    <>
+                      <span>{item.name}</span>
+                      <ChevronDown size={16} />
+                    </>
+                  ) : (
+                    <Link to={item.href}>{item.name}</Link>
+                  )}
                 </div>
 
                 {/* Dropdown */}
@@ -191,30 +197,34 @@ const Navbar = () => {
                     } else {
                       setActive(item.key);
                       setMobileMenuOpen(false);
-                      window.location.href = item.href;
                     }
                   }}
                 >
-                  <span>{item.name}</span>
-                  {item.dropdown &&
-                    (mobileDropdown === item.key ? (
-                      <ChevronUp size={18} />
-                    ) : (
-                      <ChevronDown size={18} />
-                    ))}
+                  {item.dropdown ? (
+                    <>
+                      <span>{item.name}</span>
+                      {mobileDropdown === item.key ? (
+                        <ChevronUp size={18} />
+                      ) : (
+                        <ChevronDown size={18} />
+                      )}
+                    </>
+                  ) : (
+                    <Link to={item.href}>{item.name}</Link>
+                  )}
                 </div>
 
                 {item.dropdown && mobileDropdown === item.key && (
                   <div className="ml-4 space-y-1">
                     {item.dropdown.map((drop, i) => (
-                      <a
+                      <Link
                         key={i}
-                        href={drop.href}
+                        to={drop.href}
                         onClick={() => setMobileMenuOpen(false)}
                         className="block py-1 text-gray-300 hover:text-sky-300"
                       >
                         {drop.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 )}
@@ -223,13 +233,13 @@ const Navbar = () => {
 
             {/* Mobile Buttons */}
             <div className="space-y-2 mt-3">
-              <a
-                href="/online"
+              <Link
+                to="/online"
                 onClick={() => setMobileMenuOpen(false)}
                 className="w-full bg-sky-500 hover:bg-sky-400 px-4 py-2 rounded-lg font-semibold transition block text-center"
               >
                 Book Now
-              </a>
+              </Link>
               <a
                 href="https://wa.me/9779812345678"
                 target="_blank"
