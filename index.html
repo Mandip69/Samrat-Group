@@ -14,8 +14,9 @@
       content="Samrat Movie Pvt. Ltd is Nepal’s trusted movie production & entertainment company. Explore Nepali films, latest projects & creative works."
     />
 
-    <!-- ✅ Favicon -->
-    <link rel="icon" type="image/png" href="/logo.png" />
+    <!-- ✅ Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo.png" />
 
     <!-- ✅ Open Graph (Facebook, LinkedIn, WhatsApp) -->
     <meta property="og:title" content="Samrat Movie Pvt. Ltd | Nepali Films & Entertainment" />
@@ -23,9 +24,9 @@
       property="og:description"
       content="Official website of Samrat Movie Pvt. Ltd. Discover Nepali films, projects & creative entertainment work."
     />
-    <meta property="og:image" content="https://samrat-movies.vercel.app/logo.png" />
+    <meta property="og:image" content="https://samrat-movie.vercel.app/logo.png" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://samrat-movies.vercel.app/" />
+    <meta property="og:url" content="https://samrat-movie.vercel.app/" />
 
     <!-- ✅ Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -34,7 +35,7 @@
       name="twitter:description"
       content="Samrat Movie Pvt. Ltd – Leading movie production & entertainment company in Nepal."
     />
-    <meta name="twitter:image" content="https://samrat-movies.vercel.app/logo.png" />
+    <meta name="twitter:image" content="https://samrat-movie.vercel.app/logo.png" />
 
     <!-- ✅ Keywords (avoid stuffing, 8-10 max) -->
     <meta
@@ -43,7 +44,7 @@
     />
 
     <!-- ✅ Canonical URL -->
-    <link rel="canonical" href="https://samrat-movies.vercel.app/" />
+    <link rel="canonical" href="https://samrat-movie.vercel.app/" />
 
     <!-- ✅ Language & Geo -->
     <meta name="language" content="English" />
@@ -53,14 +54,14 @@
     <!-- ✅ Robots -->
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
-    <!-- ✅ Schema.org JSON-LD -->
+    <!-- ✅ Schema.org JSON-LD (Organization) -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "Samrat Movie Pvt. Ltd",
-        "url": "https://samrat-movies.vercel.app/",
-        "logo": "https://samrat-movies.vercel.app/logo.png",
+        "url": "https://samrat-movie.vercel.app/",
+        "logo": "https://samrat-movie.vercel.app/logo.png",
         "sameAs": [
           "https://facebook.com/yourpage",
           "https://instagram.com/yourpage",
@@ -70,14 +71,17 @@
       }
     </script>
 
-    <!-- ✅ Schema for Local Business (if physical office exists) -->
+    <!-- ✅ Schema.org JSON-LD (MovieProductionCompany) -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "MovieProductionCompany",
         "name": "Samrat Movie Pvt. Ltd",
-        "url": "https://samrat-movies.vercel.app/",
-        "logo": "https://samrat-movies.vercel.app/logo.png",
+        "url": "https://samrat-movie.vercel.app/",
+        "logo": "https://samrat-movie.vercel.app/logo.png",
+        "founder": "Your Name",
+        "foundingDate": "2023",
+        "telephone": "+977-XXXXXXXXXX",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Put actual street here",
@@ -86,7 +90,11 @@
           "postalCode": "44600",
           "addressCountry": "NP"
         },
-        "telephone": "+977-XXXXXXXXXX",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+977-XXXXXXXXXX",
+          "contactType": "customer service"
+        },
         "description": "Nepali film production & entertainment company creating movies, documentaries & media projects."
       }
     </script>
