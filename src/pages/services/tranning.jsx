@@ -43,25 +43,33 @@ const Training = () => {
     "https://docs.google.com/forms/d/e/1FAIpQLSf1iy9bvqNubA8aSEoRDEbzE_8I91KXlnqnZf_TodUhmfUUmg/viewform?usp=sharing&ouid=100782127818539968867";
 
   const handleEnrollClick = (course) => {
-    // Open Google Form in new tab
     window.open(googleFormLink, "_blank");
   };
 
   return (
-    <section className="bg-gray-50 py-16" id="training">
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Section Title */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            Our <span className="text-sky-500">Training Programs</span>
-          </h2>
-          <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
-            Hands-on training from experts in media production. Learn the
-            practical skills needed to excel in today’s creative industry.
-          </p>
-        </div>
+    <section className="bg-gray-50" id="training">
+      {/* 🔹 Banner at top */}
+      <div className="w-full">
+        <img
+          src="/0.jpg"
+          alt="Training Banner"
+          className="w-full max-h-[600px] object-contain mx-auto"
+        />
+      </div>
 
-        {/* Training Grid */}
+      {/* 🔹 Section Title BELOW banner */}
+      <div className="text-center mt-10 px-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+          Our <span className="text-sky-500">Training Programs</span>
+        </h2>
+        <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
+          Hands-on training from experts in media production. Learn the
+          practical skills needed to excel in today’s creative industry.
+        </p>
+      </div>
+
+      {/* 🔹 Content */}
+      <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid lg:grid-cols-2 gap-10">
           {trainings.map((item, index) => (
             <div
