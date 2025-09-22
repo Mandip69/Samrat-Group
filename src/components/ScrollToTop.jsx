@@ -5,7 +5,19 @@ export default function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // Disable browser's built-in scroll restoration
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+
+    // Reset scroll after small delay so mobile renders fully
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "instant", // change to "smooth" if you want animation
+      });
+    }, 50);
   }, [pathname]);
 
   return null;

@@ -157,23 +157,24 @@ const HomePage = () => {
           <p className="text-gray-600 mb-12">
             A glimpse of our previous work in photography and videography.
           </p>
-          <div className="grid md:grid-cols-3 gap-6">
-            <img
-              src="/po1.jpg"
-              alt="Portfolio 1"
-              className="rounded-lg shadow-md hover:scale-105 transition transform"
-            />
-            <img
-              src="/po14.jpg"
-              alt="Portfolio 2"
-              className="rounded-lg shadow-md hover:scale-105 transition transform"
-            />
-            <img
-              src="/po9.jpg"
-              alt="Portfolio 3"
-              className="rounded-lg shadow-md hover:scale-105 transition transform"
-            />
-          </div>
+         <div className="grid md:grid-cols-3 gap-6 justify-center place-items-center">
+  <img
+    src="/po1.jpg"
+    alt="Portfolio 1"
+    className="rounded-lg shadow-md hover:scale-105 transition transform"
+  />
+  <img
+    src="/po14.jpg"
+    alt="Portfolio 2"
+    className="rounded-lg shadow-md hover:scale-105 transition transform"
+  />
+  <img
+    src="/po9.jpg"
+    alt="Portfolio 3"
+    className="rounded-lg shadow-md hover:scale-105 transition transform"
+  />
+</div>
+            
         </div>
       </section>
 
