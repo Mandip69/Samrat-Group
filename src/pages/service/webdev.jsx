@@ -163,7 +163,7 @@ const WebDevelopment = () => {
             Inquiry Now
           </button>
           <a
-            href="https://wa.me/9779800000000"
+            href="https://wa.me/9779841419740"
             target="_blank"
             rel="noreferrer"
             className="bg-green-600 hover:bg-green-700 text-white py-2 px-6 rounded-full flex items-center gap-2 transition"
@@ -171,7 +171,7 @@ const WebDevelopment = () => {
             <MessageCircle size={18} /> WhatsApp
           </a>
           <a
-            href="viber://chat?number=%2B9779800000000"
+            href="viber://chat?number=%2B9779841419740"
             target="_blank"
             rel="noreferrer"
             className="bg-purple-600 hover:bg-purple-700 text-white py-2 px-6 rounded-full flex items-center gap-2 transition"

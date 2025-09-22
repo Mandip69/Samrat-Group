@@ -154,7 +154,7 @@ const Navbar = () => {
               Book Now
             </Link>
             <a
-              href="https://wa.me/9779812345678"
+              href="https://wa.me/9779841419740 "
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-1 bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg font-semibold transition"
@@ -241,7 +241,7 @@ const Navbar = () => {
                 Book Now
               </Link>
               <a
-                href="https://wa.me/9779812345678"
+                href="https://wa.me/9779841419740 "
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg font-semibold transition block text-center"
@@ -249,7 +249,7 @@ const Navbar = () => {
                 WhatsApp
               </a>
               <a
-                href="viber://chat?number=%2B9779812345678"
+                href="viber://chat?number=%2B9779841419740 "
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-lg font-semibold transition block text-center"
@@ -276,7 +276,7 @@ const Navbar = () => {
 
       {/* Floating WhatsApp Button */}
       <a
-        href="https://wa.me/9779812345678"
+        href="https://wa.me/9841419740 "
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition z-50"

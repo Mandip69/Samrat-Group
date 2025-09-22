@@ -35,7 +35,7 @@ const CameraRental = () => {
 
               {/* WhatsApp Button */}
               <a
-                href="https://wa.me/9779800000000"
+                href="https://wa.me/9779841419740"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center justify-center gap-2 mt-4 bg-green-600 text-white py-2 px-4 rounded-xl hover:bg-green-700"
@@ -45,7 +45,7 @@ const CameraRental = () => {
 
               {/* Viber Button */}
               <a
-                href="viber://chat?number=+9779800000000"
+                href="viber://chat?number=+9779841419740"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center justify-center gap-2 mt-4 bg-purple-600 text-white py-2 px-4 rounded-xl hover:bg-purple-700"
@@ -278,7 +278,7 @@ const CameraRental = () => {
                 <input
                   type="tel"
                   className="w-full border rounded-lg px-3 py-2 mt-1"
-                  placeholder="98XXXXXXXX"
+                  placeholder="9841419740"
                 />
               </div>
               <div>

@@ -103,7 +103,7 @@ const WebHosting = () => {
           <button onClick={() => setOpenForm(true)} className="bg-cyan-500 hover:bg-cyan-600 text-white py-2 px-6 rounded-full transition">
             Inquiry Now
           </button>
-          <a href="https://wa.me/9779800000000" target="_blank" rel="noreferrer" className="bg-green-600 hover:bg-green-700 text-white py-2 px-6 rounded-full flex items-center gap-2 transition">
+          <a href="https://wa.me/9779841419740" target="_blank" rel="noreferrer" className="bg-green-600 hover:bg-green-700 text-white py-2 px-6 rounded-full flex items-center gap-2 transition">
             <MessageCircle size={18} /> WhatsApp
           </a>
         </div>
