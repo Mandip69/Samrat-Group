@@ -161,10 +161,11 @@ const ProjectorRental = () => {
           <section>
             <h2 className="text-2xl font-semibold mb-4">Projector Rental Packages</h2>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
-              <li>Per Day: NPR 2,000 – 5,000 (depending on model)</li>
+              {/* <li>Per Day: NPR 2,000 – 5,000 (depending on model)</li>
               <li>Per Week: NPR 10,000 – 25,000</li>
               <li>Per Month: NPR 30,000 – 70,000</li>
-              <li>Custom packages for long-term rentals available</li>
+              <li>Custom packages for long-term rentals available</li> */}
+              <p>Please contact us for Prices . Thank you.</p>
             </ul>
           </section>
 

@@ -188,10 +188,11 @@ const DroneRental = () => {
               Drone Rental Packages
             </h2>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
-              <li>Per Day: NPR 3,000 – 10,000 (depending on model)</li>
+              {/* <li>Per Day: NPR 3,000 – 10,000 (depending on model)</li>
               <li>Per Week: NPR 15,000 – 50,000</li>
               <li>Per Month: NPR 40,000 – 120,000</li>
-              <li>Custom packages available for film projects</li>
+              <li>Custom packages available for film projects</li> */}
+              <p>Please contact us for Prices. Thank you.</p>
             </ul>
           </section>
 

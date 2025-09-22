@@ -148,9 +148,10 @@ const StudioRental = () => {
           <section>
             <h2 className="text-2xl font-semibold mb-4">Studio Rental Packages</h2>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
-              <li>Per Hour: NPR 2,500 (includes studio + basic equipment)</li>
+              {/* <li>Per Hour: NPR 2,500 (includes studio + basic equipment)</li>
               <li>Additional equipment can be rented if required.</li>
-              <li>Custom packages available for longer shoots.</li>
+              <li>Custom packages available for longer shoots.</li> */}
+              <p>Please contact us for Prices . Thank you.</p>
             </ul>
           </section>
 

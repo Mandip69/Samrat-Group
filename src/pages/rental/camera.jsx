@@ -195,10 +195,11 @@ const CameraRental = () => {
               Camera Rental Packages
             </h2>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
-              <li>Per Day: NPR 1,500 – 5,000 (depending on model)</li>
+              {/* <li>Per Day: NPR 1,500 – 5,000 (depending on model)</li>
               <li>Per Week: NPR 8,000 – 25,000</li>
               <li>Per Month: NPR 25,000 – 70,000</li>
-              <li>Custom packages available for long-term projects</li>
+              <li>Custom packages available for long-term projects</li> */}
+              <p>Please contact us for Prices . Thank you.</p>
             </ul>
           </section>
 
