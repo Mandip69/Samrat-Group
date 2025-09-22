@@ -159,7 +159,7 @@ const HomePage = () => {
           </p>
          <div className="grid md:grid-cols-3 gap-6 justify-center place-items-center">
   <img
-    src="/po1.jpg"
+    src="/po18.jpg"
     alt="Portfolio 1"
     className="rounded-lg shadow-md hover:scale-105 transition transform"
   />
