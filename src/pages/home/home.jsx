@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 // Carousel Items
 const carouselItems = [
-  { image: "/hero3.jpg", text: "Marriage Photography & Videography" },
+  { image: "/hero3.jpg", text: "Wedding Photography & Videography" },
   { image: "/hero7.jpg", text: "Professional Photography Training" },
   { image: "/hero9.png", text: "Event Photography & Videography" },
   { image: "/hero5.jpg", text: "Interview & Event Coverage" },
