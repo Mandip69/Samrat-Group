@@ -96,12 +96,14 @@ const WeddingSection = () => {
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {[
-            "wed1.jpg",
+              "bannerofmarriage.jpg",
+            // "wed1.jpg",
             "wed2.jpg",
             "wed3.jpg",
             "wed4.jpg",
             "wed5.jpg",
             "wed6.jpg",
+          
           ].map((img, idx) => (
             <img
               key={idx}
