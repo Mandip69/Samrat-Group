@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaWhatsapp, FaViber } from "react-icons/fa"; // ✅ icons
 
 const StudioBooking = () => {
   const [openForm, setOpenForm] = useState(false);
@@ -67,20 +68,45 @@ const StudioBooking = () => {
       {/* Description */}
       <div className="max-w-5xl mx-auto px-6 py-16 text-center">
         <h2 className="text-3xl font-bold text-gray-900 mb-4">Book Our Studio</h2>
-        <p className="text-lg text-gray-600 leading-relaxed">
+        <p className="text-lg text-gray-600 leading-relaxed mb-8">
           Our fully equipped studio is available for professional shoots,
           content creation, training sessions, and events. With top-class
           lighting, cameras, drones, and projectors, we provide the perfect
           environment for creative production. Whether you're an individual,
           brand, or production house, our studio adapts to your needs.
         </p>
-       <button
-  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSeg2-YYAwJ7oUqUOiiPEudZIsk9_CRZlLqP2A-saTeK7vjlKw/viewform?usp=dialog", "_blank")}
-  className="mt-6 bg-sky-500 hover:bg-sky-400 text-white px-6 py-3 rounded-lg font-medium transition"
->
-  Book Studio Now
-</button>
 
+        {/* ✅ WhatsApp & Viber Buttons */}
+        <div className="flex justify-center gap-6 mt-6">
+          <a
+            href="https://wa.me/9779841419740 " // 🔄 replace with your WhatsApp number
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-medium shadow-md transition"
+          >
+            <FaWhatsapp size={20} /> WhatsApp
+          </a>
+          <a
+            href="viber://chat?number=+9779841419740" // 🔄 replace with your Viber number
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 bg-purple-500 hover:bg-purple-600 text-white px-6 py-3 rounded-lg font-medium shadow-md transition"
+          >
+            <FaViber size={20} /> Viber
+          </a>
+        </div>
+
+        <button
+          onClick={() =>
+            window.open(
+              "https://docs.google.com/forms/d/e/1FAIpQLSeg2-YYAwJ7oUqUOiiPEudZIsk9_CRZlLqP2A-saTeK7vjlKw/viewform?usp=dialog",
+              "_blank"
+            )
+          }
+          className="mt-6 bg-sky-500 hover:bg-sky-400 text-white px-6 py-3 rounded-lg font-medium transition"
+        >
+          Book Studio Now
+        </button>
       </div>
 
       {/* Studio Gallery */}
@@ -89,16 +115,21 @@ const StudioBooking = () => {
           Our Studio Space
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {["sto1.jpg", "sto2.jpg", "sto3.jpg", "sto4.jpg", "sto8.jpg", "sto6.jpg"].map(
-            (img, idx) => (
-              <img
-                key={idx}
-                src={`/${img}`}
-                alt="Studio setup"
-                className="rounded-xl shadow-lg object-cover h-64 w-full hover:scale-105 transition"
-              />
-            )
-          )}
+          {[
+            "sto1.jpg",
+            "sto2.jpg",
+            "sto3.jpg",
+            "sto4.jpg",
+            "sto8.jpg",
+            "sto6.jpg",
+          ].map((img, idx) => (
+            <img
+              key={idx}
+              src={`/${img}`}
+              alt="Studio setup"
+              className="rounded-xl shadow-lg object-cover h-64 w-full hover:scale-105 transition"
+            />
+          ))}
         </div>
       </div>
 

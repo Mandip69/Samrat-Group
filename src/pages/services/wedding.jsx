@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaWhatsapp, FaViber } from "react-icons/fa"; // ✅ icons
 
 const WeddingSection = () => {
   const [openForm, setOpenForm] = useState(false);
@@ -40,8 +41,13 @@ const WeddingSection = () => {
             Celebrate Love with <span className="text-sky-400">Our Studio</span>
           </h1>
           <button
-            onClick={() => setOpenForm(true)}
-            className="px-6 py-3 bg-sky-500 hover:bg-sky-600 text-white rounded-xl shadow-lg transition"
+            onClick={() =>
+              window.open(
+                "https://docs.google.com/forms/d/e/1FAIpQLSeg2-YYAwJ7oUqUOiiPEudZIsk9_CRZlLqP2A-saTeK7vjlKw/viewform?usp=dialog",
+                "_blank"
+              )
+            }
+            className="mt-6 bg-sky-500 hover:bg-sky-400 text-white px-6 py-3 rounded-lg font-medium transition"
           >
             Book Now
           </button>
@@ -53,7 +59,7 @@ const WeddingSection = () => {
         <h2 className="text-3xl font-bold text-gray-900 mb-4">
           Wedding Services
         </h2>
-        <p className="text-lg text-gray-600 leading-relaxed">
+        <p className="text-lg text-gray-600 leading-relaxed mb-8">
           We specialize in capturing life’s most cherished moments with a
           cinematic touch. From pre-wedding shoots to the big day, our team
           provides professional photography and videography tailored to your
@@ -61,6 +67,26 @@ const WeddingSection = () => {
           storytelling, we turn your wedding into timeless memories you’ll
           treasure forever.
         </p>
+
+        {/* ✅ WhatsApp & Viber Buttons */}
+        <div className="flex justify-center gap-6 mt-6">
+          <a
+            href="https://wa.me/9779841419740" // 🔄 replace with your WhatsApp number
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-medium shadow-md transition"
+          >
+            <FaWhatsapp size={20} /> WhatsApp
+          </a>
+          <a
+            href="viber://chat?number=+9779841419740" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 bg-purple-500 hover:bg-purple-600 text-white px-6 py-3 rounded-lg font-medium shadow-md transition"
+          >
+            <FaViber size={20} /> Viber
+          </a>
+        </div>
       </div>
 
       {/* Wedding Gallery */}
@@ -69,16 +95,21 @@ const WeddingSection = () => {
           Our Wedding Moments
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {["wed1.jpg", "wed2.jpg", "wed3.jpg", "wed4.jpg", "wed5.jpg", "wed6.jpg"].map(
-            (img, idx) => (
-              <img
-                key={idx}
-                src={`/${img}`}
-                alt="Wedding event"
-                className="rounded-xl shadow-lg object-cover h-64 w-full hover:scale-105 transition"
-              />
-            )
-          )}
+          {[
+            "wed1.jpg",
+            "wed2.jpg",
+            "wed3.jpg",
+            "wed4.jpg",
+            "wed5.jpg",
+            "wed6.jpg",
+          ].map((img, idx) => (
+            <img
+              key={idx}
+              src={`/${img}`}
+              alt="Wedding event"
+              className="rounded-xl shadow-lg object-cover h-64 w-full hover:scale-105 transition"
+            />
+          ))}
         </div>
       </div>
 
