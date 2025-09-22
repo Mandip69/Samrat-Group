@@ -37,6 +37,18 @@ const Footer = () => {
             <li><a href="/rental" className="hover:text-sky-400">Rental</a></li>
             <li><a href="/portfolio" className="hover:text-sky-400">Portfolio</a></li>
             <li><a href="/contact" className="hover:text-sky-400">Contact</a></li>
+         <li>
+            <a 
+              href="https://samrat-frame.vercel.app/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-sky-400"
+            >
+              Frame House
+            </a>
+          </li>
+
+
           </ul>
         </div>
 
