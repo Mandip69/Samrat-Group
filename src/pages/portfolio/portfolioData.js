@@ -1,18 +1,24 @@
-// src/portfolioData.js
-
-// Define categories and how many photos each has
+// Define categories with folder, prefix, and count
 export const categories = {
-  // Example other categories you might add later
-  // wedding: { prefix: "we", count: 30 },
-  // bartabanda: { prefix: "bar", count: 10 },
-  awrad: { prefix: "d", count: 20 },
+  award: { folder: "awarded", prefix: "d", count: 15 }, // your awarded images
+  wedding: { folder: "images", prefix: "we", count: 30 },
+  food: { folder: "images", prefix: "fod", count: 6 },
+   Pasni: { folder: "images", prefix: "pas", count: 8 },
+ Bartabanda: { folder: "images", prefix: "bar", count: 10 },
+ Program: { folder: "images", prefix: "tej", count: 5 },
+ Shoot: { folder: "images", prefix: "per", count: 3 },
 };
 
-// Auto-generate image objects for each category
+
+// Generate image objects with both .jpg and .JPG
 export const portfolioImages = Object.entries(categories).flatMap(
-  ([category, { prefix, count }]) =>
-    Array.from({ length: count }, (_, i) => ({
-      src: `/awarded/${prefix}${i + 1}.JPG`, // ⚠ Make sure folder & filenames match exactly
-      category,
-    }))
+  ([category, { folder, prefix, count }]) =>
+    Array.from({ length: count }, (_, i) => {
+      const num = i + 1;
+      return {
+        src: `/${folder}/${prefix}${num}.jpg`, // lowercase default
+        srcAlt: `/${folder}/${prefix}${num}.jpg`, // uppercase fallback
+        category,
+      };
+    })
 );
