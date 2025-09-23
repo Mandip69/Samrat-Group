@@ -10,7 +10,7 @@ const PortfolioSection = () => {
     const fetchImages = async () => {
       try {
         const res = await axios.get(
-          "https://your-admin-backend.onrender.com/api/images"
+          "https://portfolio-backends-o0mc.onrender.com/api/images"
         );
         setImages(res.data);
 
