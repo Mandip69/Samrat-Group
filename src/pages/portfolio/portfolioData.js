@@ -17,7 +17,7 @@ export const portfolioImages = Object.entries(categories).flatMap(
       const num = i + 1;
       return {
         src: `/${folder}/${prefix}${num}.jpg`, // lowercase default
-        srcAlt: `/${folder}/${prefix}${num}.jpg`, // uppercase fallback
+         // uppercase fallback
         category,
       };
     })
