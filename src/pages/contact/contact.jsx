@@ -47,7 +47,7 @@ const ContactUs = () => {
           <div className="bg-white p-6 rounded-xl shadow hover:shadow-2xl transition text-center">
             <h3 className="text-xl font-semibold mb-2">Phone</h3>
             <p className="text-gray-600">
-              01-4980056, +977-9841419740, 9815010507, 9841469235
+              01-4980056, +977-9841419740, 9815010507
             </p>
           </div>
           <div className="bg-white p-6 rounded-xl shadow hover:shadow-2xl transition text-center">
