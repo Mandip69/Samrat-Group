@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
     vitePluginSitemap({
-      hostname: 'https://samrat-movies.vercel.app', // your deployed domain
+      hostname: 'https://samrat-movies.com.np', // your deployed domain
       dynamicRoutes: [
         '/',             
         '/portfolio',
