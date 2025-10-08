@@ -21,10 +21,10 @@ const Footer = () => {
             better color corrections.
           </p>
           <div className="flex space-x-3 mt-2">
-            <a href="#" className="hover:text-sky-400"><Facebook /></a>
-            <a href="#" className="hover:text-pink-400"><Instagram /></a>
-            <a href="#" className="hover:text-red-500"><Youtube /></a>
-            <a href="#" className="hover:text-gray-300"><FaTiktok size={20} /></a>
+            <a href="https://www.facebook.com/samratmovies/" className="hover:text-sky-400"><Facebook /></a>
+            <a href="https://www.instagram.com/samratmovi/" className="hover:text-pink-400"><Instagram /></a>
+            <a href="https://www.youtube.com/@samratmovies1389" className="hover:text-red-500"><Youtube /></a>
+            <a href="https://www.tiktok.com/@samratmoviespvtltd" className="hover:text-gray-300"><FaTiktok size={20} /></a>
           </div>
         </div>
 
