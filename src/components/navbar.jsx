@@ -163,7 +163,7 @@ const Navbar = () => {
               <span>WhatsApp</span>
             </a>
             <a
-              href="viber://chat?number=%2B9779812345678"
+              href="viber://chat?number=%2B9779841419740 "
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-1 bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-lg font-semibold transition"
