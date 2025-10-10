@@ -20,11 +20,35 @@ const Footer = () => {
             Shoots, Concerts, Stage Programs, Sports, Events etc and Editing with
             better color corrections.
           </p>
-          <div className="flex space-x-3 mt-2">
-            <a href="https://www.facebook.com/samratmovies/" className="hover:text-sky-400"><Facebook /></a>
-            <a href="https://www.instagram.com/samratmovi/" className="hover:text-pink-400"><Instagram /></a>
-            <a href="https://www.youtube.com/@samratmovies1389" className="hover:text-red-500"><Youtube /></a>
-            <a href="https://www.tiktok.com/@samratmoviespvtltd" className="hover:text-gray-300"><FaTiktok size={20} /></a>
+                <div className="flex space-x-3 mt-2">
+                  <a
+                   href="https://www.facebook.com/samratmovies/"  
+                   target="_blank"
+                   rel="noopener noreferrer" 
+                   className="hover:text-sky-400 ">
+                    <Facebook />
+                    </a>
+                  <a 
+                  href="https://www.instagram.com/samratmovi/" 
+                   target="_blank"
+                  rel="noopener noreferrer" 
+                  className="hover:text-pink-400">
+                    <Instagram />
+                    </a>
+                  <a 
+                  href="https://www.youtube.com/@samratmovies1389" 
+                   target="_blank"
+                  rel="noopener noreferrer" 
+                  className="hover:text-red-500">
+                    <Youtube />
+                    </a>
+                  <a 
+                  href="https://www.tiktok.com/@samratmoviespvtltd" 
+                    target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-gray-300">
+                        <FaTiktok size={20} />
+                        </a>
           </div>
         </div>
 
