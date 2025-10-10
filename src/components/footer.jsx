@@ -68,7 +68,7 @@ const Footer = () => {
               rel="noopener noreferrer" 
               className="hover:text-sky-400"
             >
-              Frame House
+             Samrat Frame House 
             </a>
           </li>
 
