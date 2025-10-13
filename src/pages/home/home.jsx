@@ -150,33 +150,34 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Portfolio Section */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold mb-4">Our Portfolio</h2>
-          <p className="text-gray-600 mb-12">
-            A glimpse of our previous work in photography and videography.
-          </p>
-         <div className="grid md:grid-cols-3 gap-6 justify-center place-items-center">
-  <img
-    src="/po18.jpg"
-    alt="Portfolio 1"
-    className="rounded-lg shadow-md hover:scale-105 transition transform"
-  />
-  <img
-    src="/po14.jpg"
-    alt="Portfolio 2"
-    className="rounded-lg shadow-md hover:scale-105 transition transform"
-  />
-  <img
-    src="/po9.jpg"
-    alt="Portfolio 3"
-    className="rounded-lg shadow-md hover:scale-105 transition transform"
-  />
-</div>
-            
-        </div>
-      </section>
+     {/* Portfolio Section */}
+<section className="py-16">
+  <div className="max-w-7xl mx-auto px-6 text-center">
+    <h2 className="text-4xl font-bold mb-4">Our Portfolio</h2>
+    <p className="text-gray-600 mb-12">
+      A glimpse of our previous work in photography and videography.
+    </p>
+
+    <div className="grid md:grid-cols-3 gap-6 justify-center place-items-center">
+      <img
+        src="/po18.jpg"
+        alt="Portfolio 1"
+        className="w-full h-84 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
+      />
+      <img
+        src="/hero10.png"
+        alt="Portfolio 2"
+        className="w-full h-84 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
+      />
+      <img
+        src="/po9.jpg"
+        alt="Portfolio 3"
+        className="w-full h-84 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
+      />
+    </div>
+  </div>
+</section>
+
 
       {/* Call To Action Section */}
       <section className="py-16 text-center bg-sky-50">

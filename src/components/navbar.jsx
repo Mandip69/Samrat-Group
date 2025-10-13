@@ -91,15 +91,17 @@ const Navbar = () => {
     <>
       {/* NAVBAR */}
       <nav className="bg-gray-900 text-white shadow-md fixed w-full top-0 z-50">
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
+        <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
           {/* Left - Logo */}
-          <div className="flex items-center space-x-2">
-            <img src="/logo.png" alt="Logo" className="h-14 w-auto" />
-            <span className="text-2xl font-bold text-white">Studio</span>
+          <div className="flex items-center space-x-1.5">
+            <img src="/logo.png" alt="Logo" className="h-12 w-auto" />
+            <span className="text-xl font-semibold text-white whitespace-nowrap">
+              Samrat Movies Pvt. Ltd.
+            </span>
           </div>
 
           {/* Middle - Menu (Desktop) */}
-          <ul className="hidden md:flex items-center space-x-6">
+          <ul className="hidden md:flex items-center space-x-4">
             {menuItems.map((item) => (
               <li key={item.key} className="relative">
                 <div
@@ -118,22 +120,24 @@ const Navbar = () => {
                 >
                   {item.dropdown ? (
                     <>
-                      <span>{item.name}</span>
-                      <ChevronDown size={16} />
+                      <span className="text-sm">{item.name}</span>
+                      <ChevronDown size={14} />
                     </>
                   ) : (
-                    <Link to={item.href}>{item.name}</Link>
+                    <Link to={item.href} className="text-sm">
+                      {item.name}
+                    </Link>
                   )}
                 </div>
 
                 {/* Dropdown */}
                 {item.dropdown && openDropdown === item.key && (
-                  <div className="absolute top-full mt-2 left-0 bg-gray-800 rounded-lg shadow-lg py-2 w-52 z-50">
+                  <div className="absolute top-full mt-2 left-0 bg-gray-800 rounded-lg shadow-lg py-2 w-48 z-50">
                     {item.dropdown.map((drop, i) => (
                       <Link
                         key={i}
                         to={drop.href}
-                        className="block px-4 py-2 hover:bg-gray-700 hover:text-sky-300 transition"
+                        className="block px-4 py-1.5 hover:bg-gray-700 hover:text-sky-300 transition text-sm"
                         onClick={() => setOpenDropdown(null)}
                       >
                         {drop.name}
@@ -146,29 +150,29 @@ const Navbar = () => {
           </ul>
 
           {/* Right - Actions (Desktop) */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-2">
             <Link
               to="/online"
-              className="bg-sky-500 hover:bg-sky-400 px-5 py-2 rounded-lg font-semibold transition"
+              className="bg-sky-500 hover:bg-sky-400 px-4 py-1.5 rounded-lg font-semibold text-sm transition"
             >
               Book Now
             </Link>
             <a
-              href="https://wa.me/9779841419740 "
+              href="https://wa.me/9779841419740"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center space-x-1 bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg font-semibold transition"
+              className="flex items-center space-x-1 bg-green-500 hover:bg-green-600 px-3 py-1.5 rounded-lg font-semibold text-sm transition"
             >
-              <FaWhatsapp className="w-5 h-5" />
+              <FaWhatsapp className="w-4 h-4" />
               <span>WhatsApp</span>
             </a>
             <a
-              href="viber://chat?number=%2B9779841419740 "
+              href="viber://chat?number=%2B9779841419740"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center space-x-1 bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-lg font-semibold transition"
+              className="flex items-center space-x-1 bg-purple-600 hover:bg-purple-700 px-3 py-1.5 rounded-lg font-semibold text-sm transition"
             >
-              <FaViber className="w-5 h-5" />
+              <FaViber className="w-4 h-4" />
               <span>Viber</span>
             </a>
           </div>
@@ -241,7 +245,7 @@ const Navbar = () => {
                 Book Now
               </Link>
               <a
-                href="https://wa.me/9779841419740 "
+                href="https://wa.me/9779841419740"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg font-semibold transition block text-center"
@@ -249,7 +253,7 @@ const Navbar = () => {
                 WhatsApp
               </a>
               <a
-                href="viber://chat?number=%2B9779841419740 "
+                href="viber://chat?number=%2B9779841419740"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-lg font-semibold transition block text-center"
@@ -276,7 +280,7 @@ const Navbar = () => {
 
       {/* Floating WhatsApp Button */}
       <a
-        href="https://wa.me/9841419740 "
+        href="https://wa.me/9841419740"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition z-50"
