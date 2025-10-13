@@ -153,14 +153,14 @@ const HomePage = () => {
      {/* Portfolio Section */}
 <section className="py-16">
   <div className="max-w-7xl mx-auto px-6 text-center">
-    <h2 className="text-4xl font-bold mb-4">Our Portfolio</h2>
+    <h2 className="text-4xl font-bold mb-4">Our Gallery</h2>
     <p className="text-gray-600 mb-12">
-      A glimpse of our previous work in photography and videography.
+      A glimpse of our work in photography and videography.
     </p>
 
     <div className="grid md:grid-cols-3 gap-6 justify-center place-items-center">
       <img
-        src="/po18.jpg"
+        src="/hero11.png"
         alt="Portfolio 1"
         className="w-full h-84 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
       />
@@ -170,7 +170,7 @@ const HomePage = () => {
         className="w-full h-84 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
       />
       <img
-        src="/hero11.png"
+        src="/hero12.png"
         alt="Portfolio 3"
         className="w-full h-84 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
       />
