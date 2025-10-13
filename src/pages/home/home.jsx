@@ -139,7 +139,7 @@ const HomePage = () => {
             />
           </div>
           <div className="md:w-1/2">
-            <h2 className="text-4xl font-bold mb-4">About Our Studio</h2>
+            <h2 className="text-4xl font-bold mb-4">About Us</h2>
             <p className="text-gray-600 mb-4">
               We are a professional movie and photography studio with years of experience. Our team is passionate about capturing moments that last forever.
             </p>
@@ -170,7 +170,7 @@ const HomePage = () => {
         className="w-full h-84 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
       />
       <img
-        src="/po9.jpg"
+        src="/hero11.png"
         alt="Portfolio 3"
         className="w-full h-84 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
       />

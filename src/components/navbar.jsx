@@ -96,7 +96,8 @@ const Navbar = () => {
           <div className="flex items-center space-x-1.5">
             <img src="/logo.png" alt="Logo" className="h-12 w-auto" />
             <span className="text-xl font-semibold text-white whitespace-nowrap">
-              Samrat Movies Pvt. Ltd.
+              SAMRAT MOVIES PVT. LTD. <br />
+              {/* Tokha Road, Samakhusi, Kathmandu */}
             </span>
           </div>
 
