@@ -105,7 +105,7 @@ const HomePage = () => {
       {/* Services Section */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold mb-4">Our Services</h2>
+          <h2 className="text-4xl font-bold mb-4">OUR SERVICES</h2>
           <p className="text-gray-600 mb-12">
             We provide professional photography and videography services for all occasions.
           </p>
@@ -139,7 +139,7 @@ const HomePage = () => {
             />
           </div>
          <div className="md:w-1/2">
-  <h2 className="text-4xl font-bold mb-4">About Us</h2>
+  <h2 className="text-4xl font-bold mb-4">ABOUT US</h2>
   <p className="text-gray-600 mb-4">
     We are a creative photography and videography studio dedicated to capturing stories that inspire. With years of experience and a passion for visual storytelling, our team delivers high-quality results for every occasion — from weddings and events to brand shoots, interviews, and promotional content.
   </p>
@@ -156,7 +156,7 @@ const HomePage = () => {
      {/* Portfolio Section */}
 <section className="py-16">
   <div className="max-w-7xl mx-auto px-6 text-center">
-    <h2 className="text-4xl font-bold mb-4">Our Gallery</h2>
+    <h2 className="text-4xl font-bold mb-4">OUR GALLERY</h2>
     <p className="text-gray-600 mb-12">
       A glimpse of our work in photography and videography.
     </p>
@@ -184,7 +184,7 @@ const HomePage = () => {
 
       {/* Call To Action Section */}
       <section className="py-16 text-center bg-sky-50">
-        <h2 className="text-4xl font-bold mb-4">Book Your Session Today!</h2>
+        <h2 className="text-4xl font-bold mb-4">BOOK YOUR SESSION TODAY WITH US!</h2>
         <p className="mb-6 text-gray-700 max-w-2xl mx-auto">
           Whether it's a wedding, brand shoot, or personal project, we are ready to capture your moments professionally.
         </p>

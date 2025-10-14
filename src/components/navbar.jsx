@@ -23,11 +23,11 @@ const Navbar = () => {
 
   // --- Typewriter Animation State ---
   const services = [
-    "Wedding Equipment",
-    "Camera Rental",
-    "Drone Rental",
-    "Studio Training",
-    "Other Services",
+    "WEDDING PACKAGES",
+    "CAMERA RENTAL",
+    "DRONE RENTAL",
+    "STUDIO RENTAL",
+    "OTHER SERVICES",
   ];
   const [displayText, setDisplayText] = useState("");
   const [serviceIndex, setServiceIndex] = useState(0);
