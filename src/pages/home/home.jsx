@@ -12,27 +12,27 @@ const carouselItems = [
 // Services
 const services = [
   {
-    title: "Wedding Photography",
+    title: "WEDDING PHOTOGRAPHY",
     description: "Capture your special day with our professional team.",
     image: "/ser5.jpg",
   },
   {
-    title: "Drone & Aerial Videography",
+title: "DRONE AND AERIAL VIDEOGRAPHY",
     description: "High-quality aerial shots for weddings and events.",
     image: "/ser6.png",
   },
   {
-    title: "Studio Training",
+    title: "STUDIO TRANNING",
     description: "Learn photography and videography from experts.",
     image: "/ser3.jpg",
   },
   {
-    title: "Personal & Brand Shoot",
+title: "PERSONAL / BRAND SHOOT",
     description: "Professional photoshoots for individuals and brands.",
     image: "/ser2.jpg",
   },
   {
-    title: "Event Coverage",
+    title: "EVENT COVERAGE",
     description: "Capture interviews, parties, and other events professionally.",
     image: "/ser4.jpg",
   },
