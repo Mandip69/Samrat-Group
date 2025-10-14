@@ -53,38 +53,38 @@ const Navbar = () => {
   }, [charIndex, serviceIndex, services]);
 
   const menuItems = [
-    { name: "Home", key: "home", href: "/" },
+    { name: "HOME", key: "home", href: "/" },
     {
-      name: "Services",
+      name: "SERVICES",
       key: "services",
       dropdown: [
-        { name: "Wedding shoot", href: "/services/wedding" },
-        { name: "Training", href: "/services/tranning" },
-        { name: "Studio Services", href: "/services/studio" },
+        { name: "WEDDING PACKAGES", href: "/services/wedding" },
+    { name: "TRANNING PACKAGES", href: "/services/tranning" },
+      { name: "STUDIO RENTAL PACKAGES", href: "/services/studio" },
       ],
     },
     {
-      name: "Rental",
+      name: "RENTAL",
       key: "rental",
       dropdown: [
-        { name: "Camera Rental", href: "/rental/camera" },
-        { name: "Projector Rental", href: "/rental/projector" },
-        { name: "Drone Rental", href: "/rental/drone" },
-        { name: "Studio Rental", href: "/rental/studio" },
+        { name: "CAMERA RENTAL", href: "/rental/camera" },
+        { name: "PROJECTOR RENTAL", href: "/rental/projector" },
+        { name: "DRONE RENTAL", href: "/rental/drone" },
+        { name: "STUDIO RENTAL", href: "/rental/studio" },
       ],
     },
     {
-      name: "Online Services",
+      name: "ONLINE SERVICES",
       key: "online",
       dropdown: [
-        { name: "Hosting & Domain Register", href: "/service/web" },
-        { name: "Web Development", href: "/service/webdev" },
-        { name: "Social Media Marketing", href: "/service/social" },
-        { name: "Graphic Design", href: "/service/graphic" },
+        { name: "HOSTING & DOMAINS REGISTER", href: "/service/web" },
+        { name: "WEB DEVELOPMENT", href: "/service/webdev" },
+        { name: "SOCIAL MEDIA MARKETING", href: "/service/social" },
+        { name: "GRAPHIC DESIGN", href: "/service/graphic" },
       ],
     },
-    { name: "Gallery", key: "portfolio", href: "/portfolio" },
-    { name: "Contact Us", key: "contact", href: "/contact" },
+    { name: "GALLERY", key: "portfolio", href: "/portfolio" },
+    { name: "CONTACT US", key: "contact", href: "/contact" },
   ];
 
   return (
