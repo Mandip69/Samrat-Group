@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 
 // Carousel Items
 const carouselItems = [
-  { image: "/bannerofmarriage.jpg", text: "Wedding Photography & Videography" },
-  { image: "/hero7.jpg", text: "Professional Photography Training" },
-  { image: "/hero9.png", text: "Event Photography & Videography" },
-  { image: "/hero5.jpg", text: "Interview & Event Coverage" },
-  { image: "/hero8.jpg", text: "Camera Drone Rental Services" },
+{ image: "/bannerofmarriage.jpg", text: "WEDDING PHOTOGRAPHY AND VIDEOGRAPHY" },
+  { image: "/hero7.jpg", text: "PROFESSIONAL PHOTOGRAPHY TRAINING" },
+  { image: "/hero9.png", text: "EVENT PHOTOGRAPHY & VIDEOGRAPHY" },
+  { image: "/hero5.jpg", text: "STUDIO RENTAL SERVICES" },
+  { image: "/hero8.jpg", text: "CAMERA DRONE RENTAL SERVICES" },
 ];
 
 // Services
@@ -152,8 +152,7 @@ const HomePage = () => {
 </div>
         </div>        
       </section>
-
-     {/* Portfolio Section */}
+{/* Portfolio Section */}
 <section className="py-16">
   <div className="max-w-7xl mx-auto px-6 text-center">
     <h2 className="text-4xl font-bold mb-4">OUR GALLERY</h2>
@@ -177,6 +176,49 @@ const HomePage = () => {
         alt="Portfolio 3"
         className="w-full h-84 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
       />
+    </div>
+
+    {/* View More Button */}
+    <div className="mt-10">
+      <a
+        href="/portfolio"
+        className="inline-block bg-sky-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-sky-700 hover:scale-105 transition-all duration-300"
+      >
+        View More →
+      </a>
+    </div>
+  </div>
+</section>
+
+{/* Studio Renting Section */}
+<section className="py-20 bg-gray-50">
+  <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    {/* Left Side - Image */}
+    <div className="flex justify-center">
+      <img
+        src="/sto3.jpg"
+        alt="Studio Renting"
+        className="rounded-2xl shadow-lg w-full max-w-md object-cover"
+      />
+    </div>
+
+    {/* Right Side - Text and Button */}
+    <div>
+      <h2 className="text-4xl font-bold mb-4 text-gray-800">
+        Rent Our Professional Studio
+      </h2>
+      <p className="text-gray-600 mb-6 leading-relaxed">
+        Looking for the perfect space for your next photoshoot or video
+        production? Our fully equipped studio offers professional lighting,
+        backdrops, and equipment — ideal for both personal and commercial
+        projects.
+      </p>
+      <a
+        href="/rental/studio"
+        className="inline-block bg-sky-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-sky-700 hover:scale-105 transition-all duration-300"
+      >
+        Book the Studio →
+      </a>
     </div>
   </div>
 </section>
