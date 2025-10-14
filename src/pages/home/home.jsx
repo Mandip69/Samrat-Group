@@ -138,16 +138,19 @@ const HomePage = () => {
               className="rounded-xl shadow-lg"
             />
           </div>
-          <div className="md:w-1/2">
-            <h2 className="text-4xl font-bold mb-4">About Us</h2>
-            <p className="text-gray-600 mb-4">
-              We are a professional movie and photography studio with years of experience. Our team is passionate about capturing moments that last forever.
-            </p>
-            <p className="text-gray-600">
-              From weddings to brand shoots, interviews, and creative projects, we provide high-quality services tailored to your needs.
-            </p>
-          </div>
-        </div>
+         <div className="md:w-1/2">
+  <h2 className="text-4xl font-bold mb-4">About Us</h2>
+  <p className="text-gray-600 mb-4">
+    We are a creative photography and videography studio dedicated to capturing stories that inspire. With years of experience and a passion for visual storytelling, our team delivers high-quality results for every occasion — from weddings and events to brand shoots, interviews, and promotional content.
+  </p>
+  <p className="text-gray-600 mb-4">
+    Beyond capturing moments, we offer a complete range of production services including <span className="font-semibold">studio rental, camera and drone hire, lighting equipment setup,</span> and <span className="font-semibold">professional training classes</span> for aspiring photographers and videographers.
+  </p>
+  <p className="text-gray-600">
+    We also provide <span className="font-semibold">photo printing, framing, and lamination services</span> to help you preserve your favorite memories in the best possible way. Whether you need a creative space, quality equipment, or expert editing — we’ve got everything you need under one roof.
+  </p>
+</div>
+        </div>        
       </section>
 
      {/* Portfolio Section */}
