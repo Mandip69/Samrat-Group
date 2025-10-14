@@ -270,7 +270,7 @@ const Navbar = () => {
       <div className="bg-white shadow-md w-full py-3 mt-[72px]">
         <div className="max-w-7xl mx-auto flex items-center space-x-4 px-6">
           <span className="text-sky-500 font-semibold text-lg">
-            Our Services →
+            OUR SERVICES →
           </span>
           <span className="text-gray-900 font-medium text-lg">
             {displayText}

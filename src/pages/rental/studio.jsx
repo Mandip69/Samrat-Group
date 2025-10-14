@@ -151,7 +151,7 @@ const StudioRental = () => {
               {/* <li>Per Hour: NPR 2,500 (includes studio + basic equipment)</li>
               <li>Additional equipment can be rented if required.</li>
               <li>Custom packages available for longer shoots.</li> */}
-              <p>Please contact us for Prices . Thank you.</p>
+              <p>Please contact us for Affordable rices . Thank you.</p>
             </ul>
           </section>
 
