@@ -8,18 +8,23 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
         {/* About Section */}
         <div>
-          <img src="/logo.png" alt="Studio Logo" className="h-16 w-auto mb-4" />
-          <p className="text-gray-400 mb-4">
-            Samrat Movies Pvt. Ltd (Nepal Wedding Gallery) offers a high quality
-            Photography & Videography Services. Our Wedding shoots are most
-            important events of your life and our team puts in great effort at
-            capturing all the emotions and relationships and narrating your story
-            through portraits & Albums. <br /> <br />
-            You can also make a style statement, our team is skilled at commercial,
-            lifestyle and Fashion Photography as well as Documentary, Music Video
-            Shoots, Concerts, Stage Programs, Sports, Events etc and Editing with
-            better color corrections.
-          </p>
+         <div className="flex items-center mb-4">
+  <img src="/logo.png" alt="Studio Logo" className="h-16 w-auto mr-4" />
+  <h1 className="text-2xl font-semibold text-white">SAMRAT MOVIES PVT. LTD.</h1>
+</div>
+
+<p className="text-gray-400 mb-4">
+  Samrat Movies Pvt. Ltd (Nepal Wedding Gallery) offers a high quality
+  Photography & Videography Services. Our Wedding shoots are most
+  important events of your life and our team puts in great effort at
+  capturing all the emotions and relationships and narrating your story
+  through portraits & Albums. <br /> <br />
+  You can also make a style statement, our team is skilled at commercial,
+  lifestyle and Fashion Photography as well as Documentary, Music Video
+  Shoots, Concerts, Stage Programs, Sports, Events etc and Editing with
+  better color corrections.
+</p>
+
                 <div className="flex space-x-3 mt-2">
                   <a
                    href="https://www.facebook.com/samratmovies/"  
