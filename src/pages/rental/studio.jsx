@@ -100,7 +100,7 @@ const StudioRental = () => {
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
               <li>Fully equipped studio with professional gear.</li>
               <li>Flexible booking per hour.</li>
-              <li>Affordable rates at NPR 2,500 per hour.</li>
+              <li>Affordable rates for your shoots.</li>
               <li>Experienced staff available for assistance.</li>
               <li>Easy access in Samakhusi, Kathmandu, Tokha Road.</li>
               <li>Safe and clean environment for your shoots.</li>
