@@ -14,11 +14,11 @@ const DroneTraining = () => {
 
   // High-quality portfolio images
   const portfolio = [
-    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760514562/jvxxswwmokkhmqyc73mn.jpg",
-    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760514497/mzfcfzesyox61nbbpkgr.jpg",
-    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760514611/vabcfo60efitybpstosu.jpg",
-    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760514503/ibu3m0hoexo5xdyntekw.jpg",
-    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760514604/xsaa28n57xon28skekqg.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760528258/codl0tt4kneu9jmpu5kn.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760528365/wtx2efc5irck5uzt8elu.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760528397/hkaldgk0q8heysk3dpwj.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760528495/lnatbgillpmkl8kk5vcw.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760528529/qrnp4kc82dtaefemgsfp.jpg",
   ];
 
   const heroImage =
