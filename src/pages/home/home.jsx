@@ -3,10 +3,10 @@ import React, { useState, useEffect } from "react";
 // Carousel Items
 const carouselItems = [
 { image: "/bannerofmarriage.jpg", text: "WEDDING PHOTOGRAPHY AND VIDEOGRAPHY" },
-  { image: "/hero7.jpg", text: "PROFESSIONAL PHOTOGRAPHY TRAINING" },
-  { image: "/hero9.png", text: "EVENT PHOTOGRAPHY & VIDEOGRAPHY" },
-  { image: "/hero5.jpg", text: "STUDIO RENTAL SERVICES" },
-  { image: "/hero8.jpg", text: "CAMERA DRONE RENTAL SERVICES" },
+  { image: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760515972/nyqfoa53w7zrgosojgo4.jpg", text: "PROFESSIONAL PHOTOGRAPHY TRAINING" },
+  { image: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760515774/ajo6osaxsqaxssy7tpc3.jpg", text: "EVENT PHOTOGRAPHY & VIDEOGRAPHY" },
+  { image: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760516008/hwekchsmwvznwfrmnou5.jpg", text: "STUDIO RENTAL SERVICES" },
+  { image: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760515866/siemmlibbzp9vpuwqpki.jpg", text: "CAMERA DRONE RENTAL SERVICES" },
 ];
 
 // Services
@@ -29,12 +29,12 @@ title: "DRONE AND AERIAL VIDEOGRAPHY",
   {
 title: "PERSONAL / BRAND SHOOT",
     description: "Professional photoshoots for individuals and brands.",
-    image: "/ser2.jpg",
+    image: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760516079/kmxz9r0gadmlbvm2pbkm.jpg",
   },
   {
     title: "EVENT COVERAGE",
     description: "Capture interviews, parties, and other events professionally.",
-    image: "/ser4.jpg",
+    image: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760516160/hutp0lblsptjg1psista.jpg",
   },
 ];
 
