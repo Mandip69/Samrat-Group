@@ -10,18 +10,19 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileDropdown, setMobileDropdown] = useState(null);
 
-  // --- Update active menu based on current URL ---
+  // --- Update active menu based on URL ---
   useEffect(() => {
     const path = location.pathname;
     if (path === "/") setActive("home");
     else if (path.startsWith("/services")) setActive("services");
     else if (path.startsWith("/rental")) setActive("rental");
+    else if (path.startsWith("/training")) setActive("training");
     else if (path.startsWith("/service")) setActive("online");
     else if (path.startsWith("/portfolio")) setActive("portfolio");
     else if (path.startsWith("/contact")) setActive("contact");
   }, [location.pathname]);
 
-  // --- Typewriter Animation State ---
+  // --- Typewriter animation ---
   const services = [
     "WEDDING PACKAGES",
     "CAMERA RENTAL",
@@ -35,7 +36,6 @@ const Navbar = () => {
 
   useEffect(() => {
     let typingInterval;
-
     if (charIndex < services[serviceIndex].length) {
       typingInterval = setInterval(() => {
         setDisplayText((prev) => prev + services[serviceIndex][charIndex]);
@@ -48,7 +48,6 @@ const Navbar = () => {
         setServiceIndex((prev) => (prev + 1) % services.length);
       }, 2000);
     }
-
     return () => clearInterval(typingInterval);
   }, [charIndex, serviceIndex, services]);
 
@@ -59,8 +58,11 @@ const Navbar = () => {
       key: "services",
       dropdown: [
         { name: "WEDDING PACKAGES", href: "/services/wedding" },
-    { name: "TRANNING PACKAGES", href: "/services/tranning" },
-      { name: "STUDIO RENTAL PACKAGES", href: "/services/studio" },
+        
+        { name: "EVENT COVERAGE ", href: "/services/event" },
+        { name: "BARTABANDA SHOOT ", href: "/services/barta" },
+        { name: "PASNI SHOOT ", href: "/services/pasni" },
+        { name: "INDOOR AND OUTDOOR SHOOT ", href: "/services/indoor" },
       ],
     },
     {
@@ -74,10 +76,21 @@ const Navbar = () => {
       ],
     },
     {
+      name: "TRAINING",
+      key: "training",
+      dropdown: [
+        { name: "GRAPHIC DESIGN", href: "/training/graphic-design" },
+        { name: "VIDEO EDITING", href: "/training/video-editing" },
+        { name: "PHOTOGRAPHY", href: "/training/photography" },
+        { name: "DRONE OPERATION", href: "/training/drone-operation" },
+        { name: "STUDIO LIGHTING", href: "/training/studio-lighting" },
+      ],
+    },
+    {
       name: "ONLINE SERVICES",
       key: "online",
       dropdown: [
-        { name: "HOSTING & DOMAINS REGISTER", href: "/service/web" },
+        { name: "HOSTING & DOMAINS", href: "/service/web" },
         { name: "WEB DEVELOPMENT", href: "/service/webdev" },
         { name: "SOCIAL MEDIA MARKETING", href: "/service/social" },
         { name: "GRAPHIC DESIGN", href: "/service/graphic" },
@@ -90,23 +103,26 @@ const Navbar = () => {
   return (
     <>
       {/* NAVBAR */}
-      <nav className="bg-gray-900 text-white shadow-md fixed w-full top-0 z-50">
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
-          {/* Left - Logo */}
-          <div className="flex items-center space-x-1.5">
-            <img src="/logo.png" alt="Logo" className="h-12 w-auto" />
-            <span className="text-xl font-semibold text-white whitespace-nowrap">
-              SAMRAT MOVIES PVT. LTD. <br />
-              {/* Tokha Road, Samakhusi, Kathmandu */}
-            </span>
-          </div>
+      <nav className="bg-black/95 backdrop-blur-md text-white shadow-lg fixed w-full top-0 z-50 border-b border-gray-800">
+        <div className="w-full flex items-center justify-between py-4 px-4 md:px-8">
+          {/* Logo + Name (fully left) */}
+          <Link
+            to="/"
+            className="flex items-center space-x-3 no-underline"
+            style={{ marginLeft: 0, paddingLeft: 0 }}
+          >
+            <img src="/logo.png" alt="Logo" className="h-14 w-auto" />
+            <h1 className="text-lg md:text-xl font-semibold tracking-wide whitespace-nowrap">
+              Samrat Movies Pvt. Ltd.
+            </h1>
+          </Link>
 
-          {/* Middle - Menu (Desktop) */}
-          <ul className="hidden md:flex items-center space-x-4">
+          {/* Desktop Menu */}
+          <ul className="hidden md:flex items-center space-x-8">
             {menuItems.map((item) => (
               <li key={item.key} className="relative">
                 <div
-                  className={`flex items-center space-x-1 px-2 py-1 cursor-pointer transition ${
+                  className={`flex items-center space-x-1 px-2 py-1 cursor-pointer transition duration-200 ${
                     active === item.key
                       ? "text-sky-400 border-b-2 border-sky-400"
                       : "hover:text-sky-300"
@@ -121,11 +137,11 @@ const Navbar = () => {
                 >
                   {item.dropdown ? (
                     <>
-                      <span className="text-sm">{item.name}</span>
+                      <span className="text-sm font-medium">{item.name}</span>
                       <ChevronDown size={14} />
                     </>
                   ) : (
-                    <Link to={item.href} className="text-sm">
+                    <Link to={item.href} className="text-sm font-medium">
                       {item.name}
                     </Link>
                   )}
@@ -133,12 +149,12 @@ const Navbar = () => {
 
                 {/* Dropdown */}
                 {item.dropdown && openDropdown === item.key && (
-                  <div className="absolute top-full mt-2 left-0 bg-gray-800 rounded-lg shadow-lg py-2 w-48 z-50">
+                  <div className="absolute top-full left-0 mt-2 bg-gray-900 border border-gray-700 rounded-lg shadow-xl py-2 w-56 z-50">
                     {item.dropdown.map((drop, i) => (
                       <Link
                         key={i}
                         to={drop.href}
-                        className="block px-4 py-1.5 hover:bg-gray-700 hover:text-sky-300 transition text-sm"
+                        className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-sky-400 transition"
                         onClick={() => setOpenDropdown(null)}
                       >
                         {drop.name}
@@ -150,11 +166,11 @@ const Navbar = () => {
             ))}
           </ul>
 
-          {/* Right - Actions (Desktop) */}
-          <div className="hidden md:flex items-center space-x-2">
+          {/* Desktop Actions */}
+          <div className="hidden md:flex items-center space-x-4">
             <Link
               to="/online"
-              className="bg-sky-500 hover:bg-sky-400 px-4 py-1.5 rounded-lg font-semibold text-sm transition"
+              className="bg-sky-500 hover:bg-sky-400 px-5 py-2 rounded-lg font-semibold text-sm transition"
             >
               Book Now
             </Link>
@@ -162,7 +178,7 @@ const Navbar = () => {
               href="https://wa.me/9779841419740"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center space-x-1 bg-green-500 hover:bg-green-600 px-3 py-1.5 rounded-lg font-semibold text-sm transition"
+              className="flex items-center space-x-1 bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg font-semibold text-sm transition"
             >
               <FaWhatsapp className="w-4 h-4" />
               <span>WhatsApp</span>
@@ -171,25 +187,25 @@ const Navbar = () => {
               href="viber://chat?number=%2B9779841419740"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center space-x-1 bg-purple-600 hover:bg-purple-700 px-3 py-1.5 rounded-lg font-semibold text-sm transition"
+              className="flex items-center space-x-1 bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-lg font-semibold text-sm transition"
             >
               <FaViber className="w-4 h-4" />
               <span>Viber</span>
             </a>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Toggle */}
           <button
-            className="md:hidden p-2"
+            className="md:hidden p-2 text-white"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
 
-        {/* Mobile Dropdown */}
+        {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden fixed top-[72px] left-0 w-full bg-gray-800 px-6 py-4 space-y-2 z-50">
+          <div className="md:hidden bg-gray-900 px-6 py-4 space-y-2 border-t border-gray-800">
             {menuItems.map((item) => (
               <div key={item.key}>
                 <div
@@ -207,7 +223,7 @@ const Navbar = () => {
                 >
                   {item.dropdown ? (
                     <>
-                      <span>{item.name}</span>
+                      <span className="font-medium">{item.name}</span>
                       {mobileDropdown === item.key ? (
                         <ChevronUp size={18} />
                       ) : (
@@ -226,7 +242,7 @@ const Navbar = () => {
                         key={i}
                         to={drop.href}
                         onClick={() => setMobileMenuOpen(false)}
-                        className="block py-1 text-gray-300 hover:text-sky-300"
+                        className="block py-1 text-gray-300 hover:text-sky-400 text-sm"
                       >
                         {drop.name}
                       </Link>
@@ -237,11 +253,11 @@ const Navbar = () => {
             ))}
 
             {/* Mobile Buttons */}
-            <div className="space-y-2 mt-3">
+            <div className="space-y-3 mt-4">
               <Link
                 to="/online"
                 onClick={() => setMobileMenuOpen(false)}
-                className="w-full bg-sky-500 hover:bg-sky-400 px-4 py-2 rounded-lg font-semibold transition block text-center"
+                className="block w-full bg-sky-500 hover:bg-sky-400 px-4 py-2 rounded-lg font-semibold text-center transition"
               >
                 Book Now
               </Link>
@@ -249,7 +265,7 @@ const Navbar = () => {
                 href="https://wa.me/9779841419740"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg font-semibold transition block text-center"
+                className="block w-full bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg font-semibold text-center transition"
               >
                 WhatsApp
               </a>
@@ -257,7 +273,7 @@ const Navbar = () => {
                 href="viber://chat?number=%2B9779841419740"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-lg font-semibold transition block text-center"
+                className="block w-full bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-lg font-semibold text-center transition"
               >
                 Viber
               </a>
@@ -266,8 +282,8 @@ const Navbar = () => {
         )}
       </nav>
 
-      {/* SERVICES TICKER (Typewriter effect) */}
-      <div className="bg-white shadow-md w-full py-3 mt-[72px]">
+      {/* SERVICES TICKER */}
+      <div className="bg-white shadow-md w-full py-3 mt-[90px]">
         <div className="max-w-7xl mx-auto flex items-center space-x-4 px-6">
           <span className="text-sky-500 font-semibold text-lg">
             OUR SERVICES →

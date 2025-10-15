@@ -7,7 +7,12 @@ import OnlineBooking from './pages/online/online';
 import ContactPage from './pages/contact/contact';
 import Tranning from './pages/services/tranning';
 import Wedding from './pages/services/wedding';
-import Studio from './pages/services/studio';
+import Barta from './pages/services/barta';
+import Event from './pages/services/event';
+import Indoor from './pages/services/indoor';
+import Pasni from './pages/services/pasni';
+
+// import Studio from './pages/services/studio';
 import Camera from './pages/rental/camera';
 import Projector from './pages/rental/projector';
 import Drone from './pages/rental/drone';
@@ -30,7 +35,11 @@ function App() {
         <Route path="/online" element={<OnlineBooking />} />
         <Route path="services/tranning" element={<Tranning />} />
         <Route path='/services/wedding' element={<Wedding />} />
-        <Route path='/services/studio' element={<Studio />} />
+        <Route path='/services/barta' element={<Barta />}/>
+        <Route path='/services/event' element={<Event />}/>
+        <Route path='/services/indoor' element={<Indoor />}/>
+        <Route path='/services/pasni' element={ <Pasni/>}/>
+        {/* <Route path='/services/studio' element={<Studio />} /> */}
         <Route path="/rental/camera" element={<Camera />} />
         <Route path='/rental/projector' element={<Projector />} />
         <Route path="/rental/drone" element={<Drone />} />
