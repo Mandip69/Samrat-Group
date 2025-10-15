@@ -13,7 +13,11 @@ import Indoor from './pages/services/indoor';
 import Pasni from './pages/services/pasni';
 
 import Brand from './pages/services/brand';
-
+import Drones from './pages/training/drone';
+import Gimble from './pages/training/gimble';
+import Graphic from './pages/training/graphic';
+import Photography from './pages/training/photography';
+import Video from './pages/training/video';
 // import Studio from './pages/services/studio';
 import Camera from './pages/rental/camera';
 import Projector from './pages/rental/projector';
@@ -42,6 +46,12 @@ function App() {
         <Route path='/services/indoor' element={<Indoor />}/>
         <Route path='/services/pasni' element={ <Pasni/>}/>
         <Route path='/services/brand' element={ <Brand/>}/>
+          <Route path='/training/drone' element={ <Drones/>}/>
+          <Route path='/training/gimble' element={ <Gimble/>}/>
+          <Route path='/training/graphic' element={ <Graphic/>}/>
+          <Route path='/training/photography' element={ <Photography/>}/>
+           <Route path='/training/video' element={ <Video/>}/>
+
         {/* <Route path='/services/studio' element={<Studio />} /> */}
         <Route path="/rental/camera" element={<Camera />} />
         <Route path='/rental/projector' element={<Projector />} />

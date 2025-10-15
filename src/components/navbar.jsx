@@ -81,10 +81,10 @@ const Navbar = () => {
       key: "training",
       dropdown: [
         { name: "GRAPHIC DESIGN", href: "/training/graphic" },
-        { name: "VIDEO EDITING", href: "/training/video-editing" },
+        { name: "VIDEO EDITING", href: "/training/video" },
         { name: "PHOTOGRAPHY", href: "/training/photography" },
-        { name: "DRONE OPERATION", href: "/training/drone-operation" },
-        { name: "STUDIO LIGHTING", href: "/training/studio-lighting" },
+        { name: "DRONE OPERATION", href: "/training/drone" },
+        { name: "GIMBLE TRAINING", href: "/training/gimble" },
       ],
     },
     {
