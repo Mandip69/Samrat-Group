@@ -22,12 +22,12 @@ const PhotoVideoClass = () => {
 
   // Shared portfolio for both classes
   const sharedGallery = [
-    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760513996/iwq1y7u0g3hfzf4usxjm.jpg",
-    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760514028/cyofjhaezldop1ohlb8g.jpg",
-    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760514086/iymprzriwb3mdermhw0x.jpg",
-    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760514178/y6quyeoxrccgzl4mhztb.jpg",
-    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760514110/pqx7tbrommx4cmf2i0ot.jpg",
-    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760514116/o3fp7m65uz1rpszobeaa.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760527940/yoo1krrdshierldw5ykt.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760527896/u3s31vv6vdl69agiyoap.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760527992/vo8nsa2gcxhpnippkyew.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760528053/ht0i9bo4t81tpqbza9eh.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760528134/pibekxldrmfykfvkluro.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760528146/hqdlxmfhmpnmgqfjzr52.jpg",
   ];
 
   return (
