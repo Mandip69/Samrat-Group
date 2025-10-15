@@ -70,7 +70,7 @@ const Navbar = () => {
         { name: "CAMERA RENTAL", href: "/rental/camera" },
         { name: "PROJECTOR RENTAL", href: "/rental/projector" },
         { name: "DRONE RENTAL", href: "/rental/drone" },
-        { name: "STUDIO RENTAL", href: "/rental/studio" },
+        { name: "STUDIO SET RENTAL", href: "/rental/studio" },
       ],
     },
     {

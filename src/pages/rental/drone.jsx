@@ -9,7 +9,7 @@ const DroneRental = () => {
       {/* Hero Image */}
       <div
         className="w-full h-96 bg-cover bg-center rounded-b-2xl shadow-lg"
-        style={{ backgroundImage: "url('/dro.png')" }}
+        style={{ backgroundImage: "url('/dron.png')" }}
       ></div>
 
       {/* Main Layout */}
@@ -144,12 +144,12 @@ const DroneRental = () => {
                 <tbody>
                   <tr>
                     <td className="border px-4 py-2">Beginner Drone</td>
-                    <td className="border px-4 py-2">DJI Mini 2</td>
+                    <td className="border px-4 py-2">DJI Mini Drone</td>
                     <td className="border px-4 py-2">
                       4K Camera, Lightweight, 31-min Flight
                     </td>
                   </tr>
-                  <tr>
+                  {/* <tr>
                     <td className="border px-4 py-2">Professional Drone</td>
                     <td className="border px-4 py-2">DJI Mavic 3</td>
                     <td className="border px-4 py-2">
@@ -176,7 +176,7 @@ const DroneRental = () => {
                     <td className="border px-4 py-2">
                       1-in Sensor, 5.4K Video, 31-min Flight
                     </td>
-                  </tr>
+                  </tr> */}
                 </tbody>
               </table>
             </div>

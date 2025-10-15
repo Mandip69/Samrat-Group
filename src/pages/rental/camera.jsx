@@ -9,7 +9,7 @@ const CameraRental = () => {
       {/* Hero Image */}
       <div
         className="w-full h-96 bg-cover bg-center rounded-b-2xl shadow-lg"
-        style={{ backgroundImage: "url('/cam.png')" }}
+        style={{ backgroundImage: "url('/can.png')" }}
       ></div>
 
       {/* Main Layout */}
@@ -151,37 +151,37 @@ const CameraRental = () => {
                 <tbody>
                   <tr>
                     <td className="border px-4 py-2">DSLR</td>
-                    <td className="border px-4 py-2">Canon 5D Mark IV</td>
+                    <td className="border px-4 py-2">Nikkon 7500 </td>
                     <td className="border px-4 py-2">
                       Full-frame, 30MP, 4K Video, Low Light Performance
                     </td>
                   </tr>
                   <tr>
-                    <td className="border px-4 py-2">Mirrorless</td>
-                    <td className="border px-4 py-2">Sony A7 III</td>
+                    <td className="border px-4 py-2">DSLR</td>
+                    <td className="border px-4 py-2">Nikkon 7000</td>
                     <td className="border px-4 py-2">
-                      24MP, 4K Video, Compact, Fast Autofocus
+                       Full-frame, 30MP, 4K Video, Low Light Performance
                     </td>
                   </tr>
                   <tr>
-                    <td className="border px-4 py-2">Cinema Camera</td>
-                    <td className="border px-4 py-2">Blackmagic Pocket 6K</td>
+                    <td className="border px-4 py-2">DSLR</td>
+                    <td className="border px-4 py-2">Canon 80D - </td>
                     <td className="border px-4 py-2">
-                      6K Resolution, RAW Recording, Pro Filmmaking
+                      Full-frame, 30MP, 4K Video, Low Light Performance
                     </td>
                   </tr>
                   <tr>
-                    <td className="border px-4 py-2">Action Camera</td>
-                    <td className="border px-4 py-2">GoPro Hero 11</td>
+                    <td className="border px-4 py-2">DSLR</td>
+                    <td className="border px-4 py-2">NX 100</td>
                     <td className="border px-4 py-2">
-                      Waterproof, 5.3K Video, Stabilization, Wide Angle
+                       Full-frame, 30MP, 4K Video, Low Light Performance
                     </td>
                   </tr>
                   <tr>
-                    <td className="border px-4 py-2">Drone Camera</td>
-                    <td className="border px-4 py-2">DJI Mavic Air 2</td>
+                    <td className="border px-4 py-2">DSLR</td>
+                    <td className="border px-4 py-2">Sony 2500</td>
                     <td className="border px-4 py-2">
-                      4K Video, Aerial Shots, Smart Tracking, Compact
+                       Full-frame, 30MP, 4K Video, Low Light Performance
                     </td>
                   </tr>
                 </tbody>

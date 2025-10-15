@@ -9,7 +9,7 @@ const ProjectorRental = () => {
       {/* Hero Image */}
       <div
         className="w-full h-96 bg-cover bg-center rounded-b-2xl shadow-lg"
-        style={{ backgroundImage: "url('/pro.png')" }}
+        style={{ backgroundImage: "url('/projecotr.png')" }}
       ></div>
 
       {/* Main Layout */}
@@ -129,10 +129,10 @@ const ProjectorRental = () => {
                 <tbody>
                   <tr>
                     <td className="border px-4 py-2">Standard Projector</td>
-                    <td className="border px-4 py-2">Epson EB-S41</td>
+                    <td className="border px-4 py-2">BenQ Projector White</td>
                     <td className="border px-4 py-2">3300 Lumens, SVGA, HDMI Support</td>
                   </tr>
-                  <tr>
+                  {/* <tr>
                     <td className="border px-4 py-2">HD Projector</td>
                     <td className="border px-4 py-2">BenQ MH733</td>
                     <td className="border px-4 py-2">4000 Lumens, Full HD 1080p, Wireless Option</td>
@@ -151,7 +151,7 @@ const ProjectorRental = () => {
                     <td className="border px-4 py-2">Portable Mini Projector</td>
                     <td className="border px-4 py-2">Anker Nebula Capsule</td>
                     <td className="border px-4 py-2">Compact, Battery Powered, HDMI/USB/Android</td>
-                  </tr>
+                  </tr> */}
                 </tbody>
               </table>
             </div>
