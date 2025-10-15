@@ -12,6 +12,8 @@ import Event from './pages/services/event';
 import Indoor from './pages/services/indoor';
 import Pasni from './pages/services/pasni';
 
+import Brand from './pages/services/brand';
+
 // import Studio from './pages/services/studio';
 import Camera from './pages/rental/camera';
 import Projector from './pages/rental/projector';
@@ -39,6 +41,7 @@ function App() {
         <Route path='/services/event' element={<Event />}/>
         <Route path='/services/indoor' element={<Indoor />}/>
         <Route path='/services/pasni' element={ <Pasni/>}/>
+        <Route path='/services/brand' element={ <Brand/>}/>
         {/* <Route path='/services/studio' element={<Studio />} /> */}
         <Route path="/rental/camera" element={<Camera />} />
         <Route path='/rental/projector' element={<Projector />} />

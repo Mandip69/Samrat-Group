@@ -63,6 +63,7 @@ const Navbar = () => {
         { name: "BARTABANDA SHOOT ", href: "/services/barta" },
         { name: "PASNI SHOOT ", href: "/services/pasni" },
         { name: "INDOOR AND OUTDOOR SHOOT ", href: "/services/indoor" },
+         { name: "BRAND SHOOT ", href: "/services/Brand" },
       ],
     },
     {
@@ -79,7 +80,7 @@ const Navbar = () => {
       name: "TRAINING",
       key: "training",
       dropdown: [
-        { name: "GRAPHIC DESIGN", href: "/training/graphic-design" },
+        { name: "GRAPHIC DESIGN", href: "/training/graphic" },
         { name: "VIDEO EDITING", href: "/training/video-editing" },
         { name: "PHOTOGRAPHY", href: "/training/photography" },
         { name: "DRONE OPERATION", href: "/training/drone-operation" },

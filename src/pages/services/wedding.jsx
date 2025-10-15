@@ -22,6 +22,15 @@ const WeddingSection = () => {
     setFormData({ name: "", email: "", phone: "", message: "" });
   };
 
+  const galleryImages = [
+    "bannerofmarriage.jpg",
+    "wed2.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1758612975/portfolio/nafymntzyzjtugdfyrli.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1758612978/portfolio/l9eurcuccypijkthweo4.jpg",
+    "wed5.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760511621/fhpcana2rwbrmcawg1of.jpg",
+  ];
+
   return (
     <section id="wedding" className="bg-white">
       {/* Hero Video */}
@@ -68,10 +77,10 @@ const WeddingSection = () => {
           treasure forever.
         </p>
 
-        {/* ✅ WhatsApp & Viber Buttons */}
+        {/* WhatsApp & Viber Buttons */}
         <div className="flex justify-center gap-6 mt-6">
           <a
-            href="https://wa.me/9779841419740" // 🔄 replace with your WhatsApp number
+            href="https://wa.me/9779841419740"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-medium shadow-md transition"
@@ -79,7 +88,7 @@ const WeddingSection = () => {
             <FaWhatsapp size={20} /> WhatsApp
           </a>
           <a
-            href="viber://chat?number=+9779841419740" 
+            href="viber://chat?number=+9779841419740"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 bg-purple-500 hover:bg-purple-600 text-white px-6 py-3 rounded-lg font-medium shadow-md transition"
@@ -95,19 +104,10 @@ const WeddingSection = () => {
           Our Wedding Moments
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {[
-              "bannerofmarriage.jpg",
-            // "wed1.jpg",
-            "wed2.jpg",
-            "wed3.jpg",
-            "wed4.jpg",
-            "wed5.jpg",
-            "wed6.jpg",
-          
-          ].map((img, idx) => (
+          {galleryImages.map((img, idx) => (
             <img
               key={idx}
-              src={`/${img}`}
+              src={img.startsWith("http") ? img : `/${img}`}
               alt="Wedding event"
               className="rounded-xl shadow-lg object-cover h-64 w-full hover:scale-105 transition"
             />

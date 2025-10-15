@@ -89,6 +89,9 @@ export default function IndoorOutdoor() {
                "/images/per2.jpg",
                 "/images/fod1.jpg", 
                 "/images/fod2.jpg",
+                 "/images/out.png",
+                  "/images/out1.png",
+                   "/images/out2.png",
 
           ].map((img, i) => (
             <div
