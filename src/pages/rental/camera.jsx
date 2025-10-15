@@ -7,10 +7,13 @@ const CameraRental = () => {
   return (
     <div className="w-full bg-gray-50 text-gray-800">
       {/* Hero Image */}
-      <div
-        className="w-full h-96 bg-cover bg-center rounded-b-2xl shadow-lg"
-        style={{ backgroundImage: "url('/can.png')" }}
-      ></div>
+      <div className="w-full rounded-b-2xl shadow-lg overflow-hidden">
+        <img
+          src="https://res.cloudinary.com/dpysgjsq3/image/upload/v1760515866/siemmlibbzp9vpuwqpki.jpg"
+          alt="Camera Rental Service in Nepal"
+          className="w-full h-auto object-contain md:object-cover"
+        />
+      </div>
 
       {/* Main Layout */}
       <div className="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-4 gap-8">
@@ -50,7 +53,6 @@ const CameraRental = () => {
                 rel="noreferrer"
                 className="flex items-center justify-center gap-2 mt-4 bg-purple-600 text-white py-2 px-4 rounded-xl hover:bg-purple-700"
               >
-                {/* Viber Icon SVG */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"
@@ -151,37 +153,30 @@ const CameraRental = () => {
                 <tbody>
                   <tr>
                     <td className="border px-4 py-2">DSLR</td>
-                    <td className="border px-4 py-2">Nikkon 7500 </td>
+                    <td className="border px-4 py-2">Nikon D7500</td>
                     <td className="border px-4 py-2">
                       Full-frame, 30MP, 4K Video, Low Light Performance
                     </td>
                   </tr>
                   <tr>
                     <td className="border px-4 py-2">DSLR</td>
-                    <td className="border px-4 py-2">Nikkon 7000</td>
-                    <td className="border px-4 py-2">
-                       Full-frame, 30MP, 4K Video, Low Light Performance
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border px-4 py-2">DSLR</td>
-                    <td className="border px-4 py-2">Canon 80D - </td>
+                    <td className="border px-4 py-2">Canon 80D</td>
                     <td className="border px-4 py-2">
                       Full-frame, 30MP, 4K Video, Low Light Performance
                     </td>
                   </tr>
                   <tr>
-                    <td className="border px-4 py-2">DSLR</td>
-                    <td className="border px-4 py-2">NX 100</td>
+                    <td className="border px-4 py-2">Mirrorless</td>
+                    <td className="border px-4 py-2">Sony A7 III</td>
                     <td className="border px-4 py-2">
-                       Full-frame, 30MP, 4K Video, Low Light Performance
+                      24MP, Dual SD Slot, 4K HDR Video
                     </td>
                   </tr>
                   <tr>
-                    <td className="border px-4 py-2">DSLR</td>
-                    <td className="border px-4 py-2">Sony 2500</td>
+                    <td className="border px-4 py-2">Cinema</td>
+                    <td className="border px-4 py-2">Blackmagic 6K</td>
                     <td className="border px-4 py-2">
-                       Full-frame, 30MP, 4K Video, Low Light Performance
+                      Super 35 Sensor, RAW & ProRes, 13 Stops DR
                     </td>
                   </tr>
                 </tbody>
@@ -194,13 +189,9 @@ const CameraRental = () => {
             <h2 className="text-2xl font-semibold mb-4">
               Camera Rental Packages
             </h2>
-            <ul className="list-disc pl-6 space-y-2 text-gray-700">
-              {/* <li>Per Day: NPR 1,500 – 5,000 (depending on model)</li>
-              <li>Per Week: NPR 8,000 – 25,000</li>
-              <li>Per Month: NPR 25,000 – 70,000</li>
-              <li>Custom packages available for long-term projects</li> */}
-              <p>Please contact us for Prices . Thank you.</p>
-            </ul>
+            <p className="text-gray-700">
+              Please contact us for customized pricing. Thank you!
+            </p>
           </section>
 
           {/* FAQ */}

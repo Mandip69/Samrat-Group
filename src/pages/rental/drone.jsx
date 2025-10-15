@@ -7,10 +7,16 @@ const DroneRental = () => {
   return (
     <div className="w-full bg-gray-50 text-gray-800">
       {/* Hero Image */}
-      <div
-        className="w-full h-96 bg-cover bg-center rounded-b-2xl shadow-lg"
-        style={{ backgroundImage: "url('/dron.png')" }}
-      ></div>
+      <div className="w-full bg-gray-50 text-gray-800">
+  {/* Hero Image Section */}
+  <div className="w-full rounded-b-2xl shadow-lg overflow-hidden">
+    <img
+      src="/dron.png" // or your Cloudinary link
+      alt="Hero Banner"
+      className="w-full h-auto object-contain md:object-cover"
+    />
+  </div>
+</div>
 
       {/* Main Layout */}
       <div className="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-4 gap-8">
