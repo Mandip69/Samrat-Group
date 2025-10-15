@@ -30,7 +30,7 @@ const VideoEditingClass = () => {
         {/* Left Image */}
         <div className="md:w-1/2 flex justify-center md:justify-start">
           <img
-            src={heroImage}
+            src="https://res.cloudinary.com/dpysgjsq3/image/upload/v1760529455/ojaib6gkradykssgtaow.jpg"
             alt="Video Editing Class"
             className="w-full md:w-[95%] rounded-2xl shadow-xl object-cover"
           />

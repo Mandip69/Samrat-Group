@@ -16,6 +16,7 @@ const GraphicDesignClass = () => {
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760513097/rieh6etgyzra9zinn0lu.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760513121/gc5ihvbrl7fzyfbgzpgw.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760513110/pvxdhpcspgypaqssrdsv.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760529272/evuc3plaiagqyfrsrubw.jpg",
     // "https://res.cloudinary.com/dpysgjsq3/image/upload/v1758612982/portfolio/graphic4.jpg",
     // "https://res.cloudinary.com/dpysgjsq3/image/upload/v1758612985/portfolio/graphic5.jpg",
   ];
@@ -69,7 +70,7 @@ const GraphicDesignClass = () => {
         {/* Right Hero Image */}
         <div className="md:w-1/2 flex justify-center relative">
           <img
-            src="https://res.cloudinary.com/dpysgjsq3/image/upload/v1758612975/portfolio/graphic-hero.jpg"
+            src="https://res.cloudinary.com/dpysgjsq3/image/upload/v1760529455/ojaib6gkradykssgtaow.jpg"
             alt="Graphic Design Class"
             className="rounded-2xl shadow-lg w-[90%] md:w-[85%] object-cover hover:scale-105 transition-transform duration-500"
           />

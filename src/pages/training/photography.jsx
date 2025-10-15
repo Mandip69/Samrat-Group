@@ -28,6 +28,7 @@ const PhotoVideoClass = () => {
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760528053/ht0i9bo4t81tpqbza9eh.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760528134/pibekxldrmfykfvkluro.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760528146/hqdlxmfhmpnmgqfjzr52.jpg",
+    
   ];
 
   return (
