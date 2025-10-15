@@ -64,7 +64,7 @@ const Navbar = () => {
         { name: "PASNI SHOOT ", href: "/services/pasni" },
         { name: "INDOOR AND OUTDOOR SHOOT ", href: "/services/indoor" },
          { name: "BRAND SHOOT ", href: "/services/Brand" },
-         { name: "PHOTO FRAMING AND LAMINATION ", href: "/services/framing" },
+         { name: "FRAMING AND LAMINATION ", href: "/services/framing" },
          
       ],
     },
