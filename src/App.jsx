@@ -26,6 +26,7 @@ import Website from './pages/service/web'
 import Websitedev from './pages/service/webdev'
 import Social from './pages/service/social'
 import GraphicDesign from './pages/service/graphic';
+import Framing from './pages/services/framing';
 import Footer from './components/footer';
 import StudioRental from './pages/rental/studio';
 import ScrollToTop from './components/ScrollToTop'; // ✅ Import added
@@ -44,6 +45,7 @@ function App() {
         <Route path='/services/barta' element={<Barta />}/>
         <Route path='/services/event' element={<Event />}/>
         <Route path='/services/indoor' element={<Indoor />}/>
+        <Route path='/services/framing' element={<Framing />}/>
         <Route path='/services/pasni' element={ <Pasni/>}/>
         <Route path='/services/brand' element={ <Brand/>}/>
           <Route path='/training/drone' element={ <Drones/>}/>

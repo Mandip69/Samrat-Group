@@ -22,7 +22,7 @@ const DroneTraining = () => {
   ];
 
   const heroImage =
-    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760514614/esovyfrpe0taxsvid0em.jpg";
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760524376/jq8hfgghmllnrlar3ew2.jpg";
 
   return (
     <section className="bg-white text-gray-900 min-h-screen py-20">

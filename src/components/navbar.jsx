@@ -64,6 +64,8 @@ const Navbar = () => {
         { name: "PASNI SHOOT ", href: "/services/pasni" },
         { name: "INDOOR AND OUTDOOR SHOOT ", href: "/services/indoor" },
          { name: "BRAND SHOOT ", href: "/services/Brand" },
+         { name: "PHOTO FRAMING AND LAMINATION ", href: "/services/framing" },
+         
       ],
     },
     {
@@ -84,7 +86,7 @@ const Navbar = () => {
         { name: "VIDEO EDITING", href: "/training/video" },
         { name: "PHOTOGRAPHY", href: "/training/photography" },
         { name: "DRONE OPERATION", href: "/training/drone" },
-        { name: "GIMBLE TRAINING", href: "/training/gimble" },
+        { name: "GIMBAL TRAINING", href: "/training/gimble" },
       ],
     },
     {

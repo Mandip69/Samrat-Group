@@ -14,11 +14,11 @@ const GimbalTraining = () => {
 
   // Portfolio images can be shared from previous gimbal shoots
   const portfolio = [
-    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760510816/yompmacm5gmlejbup4yh.jpg",
-    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760511100/u5xmtbfo9yekxnt1ckql.jpg",
-    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760511141/yyjroyezpsxkmcoa94fe.jpg",
-    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760510873/hqc0urckcmanrudhji6a.jpg",
-    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760510841/eaflijkncgxhhvmjttzw.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760523570/i5te4p6i3ghfpyczc1yh.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760523965/zfhqvsc1xd7ccptpysdn.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760524062/faihgr70kx7oootmewos.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760524135/qcto9gpjrbtjltvkbewn.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760524258/ywvif2rennqpnjtbbuck.jpg",
   ];
 
   return (
@@ -28,7 +28,7 @@ const GimbalTraining = () => {
         {/* Left Image */}
         <div className="md:w-1/2 flex justify-center md:justify-start">
           <img
-            src="https://res.cloudinary.com/dpysgjsq3/image/upload/v1760514683/iufyjx2swjvhiv5afchc.jpg" // Replace with your gimbal hero photo
+            src="https://res.cloudinary.com/dpysgjsq3/image/upload/v1760523676/vmsc0cicawo80rgnvji4.jpg" // Replace with your gimbal hero photo
             alt="Gimbal Training"
             className="w-full md:w-[90%] rounded-2xl shadow-xl object-cover"
           />
