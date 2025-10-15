@@ -40,7 +40,7 @@ export default function Pasni() {
               Inquire via Google Form
             </a>
             <a
-              href="https://wa.me/9779800000000"
+              href="https://wa.me/9779841419740"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 bg-green-500 text-white px-5 py-3 rounded-full hover:bg-green-600 transition-all"
@@ -48,7 +48,7 @@ export default function Pasni() {
               <MessageCircle size={18} /> WhatsApp
             </a>
             <a
-              href="viber://chat?number=9779800000000"
+              href="viber://chat?number=9779841419740"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 bg-purple-500 text-white px-5 py-3 rounded-full hover:bg-purple-600 transition-all"
