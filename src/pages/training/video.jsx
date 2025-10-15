@@ -48,7 +48,7 @@ const VideoEditingClass = () => {
           {/* Inquiry Buttons */}
           <div className="flex flex-wrap gap-4 mt-6 justify-center md:justify-start">
             <a
-              href="https://forms.gle/your-google-form-link"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSf1iy9bvqNubA8aSEoRDEbzE_8I91KXlnqnZf_TodUhmfUUmg/viewform?usp=sharing&ouid=100782127818539968867"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-500 text-white px-6 py-3 rounded-full shadow-md hover:bg-blue-600 transition font-medium"
