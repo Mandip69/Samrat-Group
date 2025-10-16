@@ -13,8 +13,8 @@ const VideoEditingClass = () => {
   ];
 
   const portfolio = [
-    "https://res.cloudinary.com/dpysgjsq3/image/upload/q_auto:100,f_auto/v1760514700/video1.jpg",
-    "https://res.cloudinary.com/dpysgjsq3/image/upload/q_auto:100,f_auto/v1760514705/video2.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760597749/rdfakes76zng9wnctgsx.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760599477/b9yyaxphdvmun02ioboa.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/q_auto:100,f_auto/v1760514710/video3.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/q_auto:100,f_auto/v1760514715/video4.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/q_auto:100,f_auto/v1760514720/video5.jpg",
