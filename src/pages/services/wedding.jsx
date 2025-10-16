@@ -29,6 +29,19 @@ const WeddingSection = () => {
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1758612978/portfolio/l9eurcuccypijkthweo4.jpg",
     "wed5.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760511621/fhpcana2rwbrmcawg1of.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760602068/bkvj8zpdbbrobuo24hpb.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760602064/we8fz6xtdvpjxxsazqrc.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760601999/tplxnavu3mzxehsbff8b.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760601995/ruzufqozqu1gbfpqdxix.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760601932/omhprj48qi4zhdphlaiq.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760601905/ooigbo9gmgrv6qt16xvk.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760601901/mup6hivuib52mclitcv1.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760601792/ncwasizucp2bdp42ep4z.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760601789/rkzbgs5tfqgesrdfageu.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760602271/mhrdpjwwxep6ou9rejav.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760602275/yakqxwqvdomualvrv6q8.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760602411/ysmqwbzsqglkimi5hi97.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760602531/xefineccseqryve2lp1t.jpg",
   ];
 
   return (
