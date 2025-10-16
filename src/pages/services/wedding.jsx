@@ -64,7 +64,7 @@ const WeddingSection = () => {
         "Wedding Highlights",
         "(All raw photos will be provided in pen drive)",
       ],
-      note: "If Drone + Drone Pilot = ₨10,000 for one day",
+      note: "If Drone + Drone Pilot = ₨15,000 for one day",
     },
   ];
 
