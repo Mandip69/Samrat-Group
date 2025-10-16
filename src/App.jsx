@@ -12,7 +12,7 @@ import Event from './pages/services/event';
 import Indoor from './pages/services/indoor';
 import Pasni from './pages/services/pasni';
 import Other from './pages/services/other';
-
+import Videography from './pages/training/videography';
 import Brand from './pages/services/brand';
 import Drones from './pages/training/drone';
 import Gimble from './pages/training/gimble';
@@ -55,6 +55,7 @@ function App() {
           <Route path='/training/graphic' element={ <Graphic/>}/>
           <Route path='/training/photography' element={ <Photography/>}/>
            <Route path='/training/video' element={ <Video/>}/>
+           <Route path='/training/videography' element={ <Videography/>}/>
 
         {/* <Route path='/services/studio' element={<Studio />} /> */}
         <Route path="/rental/camera" element={<Camera />} />

@@ -2,25 +2,12 @@ import React, { useState } from "react";
 import { FaWhatsapp, FaViber, FaCheckCircle } from "react-icons/fa";
 
 const WeddingSection = () => {
-  const [openForm, setOpenForm] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     message: "",
   });
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form Data Submitted:", formData);
-    alert("Thank you for booking! We will contact you soon.");
-    setOpenForm(false);
-    setFormData({ name: "", email: "", phone: "", message: "" });
-  };
 
   const galleryImages = [
     "bannerofmarriage.jpg",
@@ -85,15 +72,15 @@ const WeddingSection = () => {
     <section id="wedding" className="bg-white">
       {/* ✅ Hero Section */}
       <div
-        className="relative w-full h-[70vh] bg-cover bg-center flex items-center justify-center"
+        className="relative w-full h-[60vh] sm:h-[70vh] md:h-[80vh] bg-cover bg-center flex items-center justify-center"
         style={{
           backgroundImage:
             "url('https://res.cloudinary.com/dpysgjsq3/image/upload/v1760527031/oypns0qyc2ddebcbmc6d.jpg')",
         }}
       >
-        <div className="absolute inset-0 bg-black/40"></div>
-        <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="relative z-10 text-center text-white px-4 md:px-10">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 leading-snug">
             Capture your wedding memories with us.
           </h1>
           <button
@@ -103,7 +90,7 @@ const WeddingSection = () => {
                 "_blank"
               )
             }
-            className="mt-6 bg-sky-500 hover:bg-sky-400 text-white px-6 py-3 rounded-lg font-medium transition"
+            className="mt-6 bg-sky-500 hover:bg-sky-400 text-white px-5 py-3 rounded-lg font-medium transition text-sm sm:text-base"
           >
             Book Now
           </button>
@@ -111,11 +98,11 @@ const WeddingSection = () => {
       </div>
 
       {/* ✅ Description */}
-      <div className="max-w-5xl mx-auto px-6 py-16 text-center">
-        <h2 className="text-3xl font-bold text-gray-900 mb-4">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-16 text-center">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
           Wedding Services
         </h2>
-        <p className="text-lg text-gray-600 leading-relaxed mb-8">
+        <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-8">
           We specialize in capturing life’s most cherished moments with a
           cinematic touch. From pre-wedding shoots to the big day, our team
           provides professional photography and videography tailored to your
@@ -125,12 +112,12 @@ const WeddingSection = () => {
         </p>
 
         {/* ✅ Contact Buttons */}
-        <div className="flex justify-center gap-6 mt-6">
+        <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 mt-6">
           <a
             href="https://wa.me/9779841419740"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-medium shadow-md transition"
+            className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-medium shadow-md transition"
           >
             <FaWhatsapp size={20} /> WhatsApp
           </a>
@@ -138,7 +125,7 @@ const WeddingSection = () => {
             href="viber://chat?number=+9779841419740"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-purple-500 hover:bg-purple-600 text-white px-6 py-3 rounded-lg font-medium shadow-md transition"
+            className="flex items-center justify-center gap-2 bg-purple-500 hover:bg-purple-600 text-white px-6 py-3 rounded-lg font-medium shadow-md transition"
           >
             <FaViber size={20} /> Viber
           </a>
@@ -146,31 +133,32 @@ const WeddingSection = () => {
       </div>
 
       {/* ✅ Wedding Packages */}
-      <div className="bg-gray-50 py-20">
-        <div className="max-w-7xl mx-auto px-6">
-          <h3 className="text-3xl font-bold text-center text-gray-900 mb-12">
+      <div className="bg-gray-50 py-16 sm:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <h3 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-10 sm:mb-12">
             Our Wedding Packages
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10">
             {packages.map((pkg, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-8"
+                className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 sm:p-8"
               >
-                <h4 className="text-2xl font-semibold text-gray-800 mb-6 text-center">
+                <h4 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-6 text-center">
                   {pkg.title}
                 </h4>
+
                 {/* Prices */}
-                <div className="flex justify-center gap-6 mb-8">
+                <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mb-8">
                   {pkg.prices.map((p, i) => (
                     <div
                       key={i}
-                      className="bg-sky-50 border border-sky-200 px-6 py-4 rounded-xl text-center"
+                      className="bg-sky-50 border border-sky-200 px-5 py-3 sm:px-6 sm:py-4 rounded-xl text-center w-[45%] sm:w-auto"
                     >
-                      <h5 className="text-lg font-medium text-gray-800">
+                      <h5 className="text-base sm:text-lg font-medium text-gray-800">
                         {p.days}
                       </h5>
-                      <p className="text-sky-600 font-bold text-xl mt-1">
+                      <p className="text-sky-600 font-bold text-lg sm:text-xl mt-1">
                         {p.price}
                       </p>
                     </div>
@@ -178,13 +166,13 @@ const WeddingSection = () => {
                 </div>
 
                 {/* Includes */}
-                <ul className="space-y-3 mb-6">
+                <ul className="space-y-2 sm:space-y-3 mb-6">
                   {pkg.includes.map((item, j) => (
                     <li
                       key={j}
-                      className="flex items-center gap-3 text-gray-700 text-base"
+                      className="flex items-start gap-3 text-gray-700 text-sm sm:text-base"
                     >
-                      <FaCheckCircle className="text-green-500" />
+                      <FaCheckCircle className="text-green-500 mt-1" />
                       {item}
                     </li>
                   ))}
@@ -198,17 +186,17 @@ const WeddingSection = () => {
             ))}
           </div>
 
-          {/* ✅ Important Note (English + Nepali) */}
-          <div className="mt-16 bg-white rounded-2xl p-8 text-center shadow-md border border-gray-100">
-            <h4 className="text-xl font-semibold text-gray-900 mb-3">
+          {/* ✅ Booking Info */}
+          <div className="mt-14 sm:mt-16 bg-white rounded-2xl p-6 sm:p-8 text-center shadow-md border border-gray-100">
+            <h4 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3">
               📢 Important Booking Information
             </h4>
-            <p className="text-gray-700 text-base mb-2">
+            <p className="text-gray-700 text-sm sm:text-base mb-2">
               50% of the total amount must be paid during booking. The remaining
               50% should be cleared on the wedding day. In case of cancellation,
               50% of the advance amount will be refundable.
             </p>
-            <p className="text-gray-700 text-base italic">
+            <p className="text-gray-700 text-sm sm:text-base italic">
               बुकिङ गर्दा जम्मा रकमको ५०% तिर्नु पर्नेछ र विवाहको दिनमा सम्पूर्ण
               रकम बुझाउनुपर्नेछ । यदि विवाह रद्द भयो भने अग्रिम रकमको ५०% मात्र
               फिर्ता दिइनेछ ।
@@ -218,17 +206,17 @@ const WeddingSection = () => {
       </div>
 
       {/* ✅ Gallery */}
-      <div className="max-w-7xl mx-auto px-6 py-20">
-        <h3 className="text-2xl font-semibold text-gray-900 mb-8 text-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
+        <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-8 text-center">
           Our Wedding Moments
         </h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
           {galleryImages.map((img, idx) => (
             <img
               key={idx}
               src={img.startsWith("http") ? img : `/${img}`}
               alt="Wedding event"
-              className="rounded-xl shadow-lg object-cover h-72 w-full hover:scale-105 transition"
+              className="rounded-xl shadow-lg object-cover h-60 sm:h-72 md:h-80 w-full hover:scale-105 transition-transform duration-300"
             />
           ))}
         </div>
