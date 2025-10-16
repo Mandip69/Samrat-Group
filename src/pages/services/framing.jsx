@@ -28,23 +28,42 @@ const FrameSection = () => {
       img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760589481/uy2axqejndgvc3nctjwo.jpg",
     },
     {
-      title: "Double  Frame",
+      title: "Double Frame",
       img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760589029/ziwuv5cr1xbr7nmc1uts.jpg",
     },
   ];
 
   return (
-    <section id="frames" className="bg-white py-20">
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Header */}
+    <section id="frames" className="bg-white">
+      {/* 🌟 Banner Section */}
+      <div
+        className="relative h-[60vh] flex items-center justify-center bg-center bg-cover"
+        style={{
+          backgroundImage:
+            "url('https://res.cloudinary.com/dpysgjsq3/image/upload/v1760590414/lyzao0zbiyfputmy9it2.jpg')",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="relative z-10 text-center text-white px-4">
+          <h1 className="text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg">
+            Custom Frame Collection
+          </h1>
+          <p className="max-w-2xl mx-auto text-lg md:text-xl text-gray-200">
+            Handcrafted with precision — every frame made with love in our own warehouse 💫
+          </p>
+        </div>
+      </div>
+
+      {/* Content Section */}
+      <div className="max-w-7xl mx-auto px-6 py-20">
+        {/* Intro Section */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-3">
-            Custom Frame Collection
+            Designed with Art & Perfection
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Designed and crafted with passion in our own warehouse — from sleek
-            black and white frames to creative collage and lamination designs.
-            Every frame we make carries the touch of art and precision.
+            From sleek black and white frames to creative collage and lamination designs —
+            every piece we craft in our warehouse reflects care, creativity, and quality.
           </p>
         </div>
 

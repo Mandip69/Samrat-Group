@@ -11,6 +11,7 @@ import Barta from './pages/services/barta';
 import Event from './pages/services/event';
 import Indoor from './pages/services/indoor';
 import Pasni from './pages/services/pasni';
+import Other from './pages/services/other';
 
 import Brand from './pages/services/brand';
 import Drones from './pages/training/drone';
@@ -48,6 +49,7 @@ function App() {
         <Route path='/services/framing' element={<Framing />}/>
         <Route path='/services/pasni' element={ <Pasni/>}/>
         <Route path='/services/brand' element={ <Brand/>}/>
+         <Route path='/services/other' element={ <Other/>}/>
           <Route path='/training/drone' element={ <Drones/>}/>
           <Route path='/training/gimble' element={ <Gimble/>}/>
           <Route path='/training/graphic' element={ <Graphic/>}/>

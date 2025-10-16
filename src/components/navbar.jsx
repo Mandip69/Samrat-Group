@@ -66,6 +66,8 @@ const Navbar = () => {
          { name: "BRAND SHOOT ", href: "/services/Brand" },
          { name: "FRAMING AND LAMINATION ", href: "/services/framing" },
          
+         { name: "OTHER SERVICES ", href: "/services/other" },
+         
       ],
     },
     {
