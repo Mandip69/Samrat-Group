@@ -19,6 +19,8 @@ const GimbalTraining = () => {
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760524062/faihgr70kx7oootmewos.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760524135/qcto9gpjrbtjltvkbewn.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760524258/ywvif2rennqpnjtbbuck.jpg",
+    // "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760600213/c4xifghdp8ftp3iwv1xm.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760523676/vmsc0cicawo80rgnvji4.jpg",
   ];
 
   return (
@@ -28,7 +30,7 @@ const GimbalTraining = () => {
         {/* Left Image */}
         <div className="md:w-1/2 flex justify-center md:justify-start">
           <img
-            src="https://res.cloudinary.com/dpysgjsq3/image/upload/v1760523676/vmsc0cicawo80rgnvji4.jpg" // Replace with your gimbal hero photo
+            src="https://res.cloudinary.com/dpysgjsq3/image/upload/v1760600213/c4xifghdp8ftp3iwv1xm.jpg" // Replace with your gimbal hero photo
             alt="Gimbal Training"
             className="w-full md:w-[90%] rounded-2xl shadow-xl object-cover"
           />

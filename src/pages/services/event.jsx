@@ -101,6 +101,7 @@ export default function Event() {
             "/awarded/d3.jpg",
             "/awarded/d9.jpg",
             "/awarded/d5.jpg",
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760600367/bnsekpw5s3wcxvy2lsdt.jpg",
           ].map((src, i) => (
             <motion.img
               key={i}

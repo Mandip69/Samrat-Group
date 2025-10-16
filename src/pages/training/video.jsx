@@ -18,6 +18,7 @@ const VideoEditingClass = () => {
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760599623/lixejosdet3yz5szz85x.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760599675/blridkosuixvhkq3hjpa.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760599778/gkgjnsx6eds9jdaeopk1.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760600449/ic8czvjws1h8gzwsyufv.jpg",
   ];
 
   // const heroImage =
@@ -30,7 +31,7 @@ const VideoEditingClass = () => {
         {/* Left Image */}
         <div className="md:w-1/2 flex justify-center md:justify-start">
           <img
-            src="https://res.cloudinary.com/dpysgjsq3/image/upload/v1760529455/ojaib6gkradykssgtaow.jpg"
+            src="https://res.cloudinary.com/dpysgjsq3/image/upload/v1760601421/eu2hbzs8xc0ww6kewium.jpg"
             alt="Video Editing Class"
             className="w-full md:w-[95%] rounded-2xl shadow-xl object-cover"
           />

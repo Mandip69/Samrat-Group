@@ -17,6 +17,8 @@ const GraphicDesignClass = () => {
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760513121/gc5ihvbrl7fzyfbgzpgw.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760513110/pvxdhpcspgypaqssrdsv.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760529272/evuc3plaiagqyfrsrubw.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760600503/nk6txouqgpzy9ox5aahn.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760600603/phc2llhzfoun4n7tpfjw.jpg",
     // "https://res.cloudinary.com/dpysgjsq3/image/upload/v1758612982/portfolio/graphic4.jpg",
     // "https://res.cloudinary.com/dpysgjsq3/image/upload/v1758612985/portfolio/graphic5.jpg",
   ];

@@ -92,6 +92,7 @@ export default function IndoorOutdoor() {
                  "/images/out.png",
                   "/images/out1.png",
                    "/images/out2.png",
+                   "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760600922/qzuvjdj7sq6qhjylr9bq.jpg",
 
           ].map((img, i) => (
             <div
