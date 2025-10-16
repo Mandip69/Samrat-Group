@@ -155,21 +155,21 @@ const CameraRental = () => {
                     <td className="border px-4 py-2">DSLR</td>
                     <td className="border px-4 py-2">Nikkon 7500</td>
                     <td className="border px-4 py-2">
-                      Full-frame, 30MP, 4K Video, Low Light Performance
+                      HD, 30MP, 4K Video, Low Light Performance
                     </td>
                   </tr>
                   <tr>
                     <td className="border px-4 py-2">DSLR</td>
                     <td className="border px-4 py-2">Canon 80D</td>
                     <td className="border px-4 py-2">
-                      Full-frame, 30MP, 4K Video, Low Light Performance
+                    HD, 30MP, 4K Video, Low Light Performance
                     </td>
                   </tr>
                   <tr>
                     <td className="border px-4 py-2">DSLR</td>
                     <td className="border px-4 py-2">Sony 2500</td>
                     <td className="border px-4 py-2">
-                   Full-frame, 30MP, 4K Video, Low Light Performance
+                 HD, 30MP, 4K Video, Low Light Performance
                     </td>
                   </tr>
                   <tr>

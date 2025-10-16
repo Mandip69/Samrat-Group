@@ -70,6 +70,8 @@ export default function Pasni() {
             "/images/pas2.jpg",
             "/images/pas7.jpg",
             "/images/pas4.jpg",
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760613559/hxv3m95suqrucqgul7et.jpg",
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760613861/tjgxtdemqyobd1xc77fq.jpg",
             
           ].map((img, i) => (
             <div

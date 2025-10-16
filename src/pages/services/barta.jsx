@@ -102,6 +102,12 @@ export default function Bartabanda() {
             "/images/bar5.jpg",
             "/images/bar8.jpg",
             "/images/bar9.jpg",
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760613647/zyn0yrqlsugh4dahbqra.jpg",
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760613997/oafuigilcomui3luvb6r.jpg",
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760613793/vwa049ezkldpjyucluqb.jpg",
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760613918/xndkjyzfwbiromshqvfx.jpg",
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760614049/wms1qzfs3j3aluqyhbgx.jpg",
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760614096/msx7xrnqlr8viknnxiwt.jpg",
            
           ].map((src, i) => (
             <motion.img
