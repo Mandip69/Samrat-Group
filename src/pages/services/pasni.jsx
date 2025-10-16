@@ -72,6 +72,14 @@ export default function Pasni() {
             "/images/pas4.jpg",
             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760613559/hxv3m95suqrucqgul7et.jpg",
             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760613861/tjgxtdemqyobd1xc77fq.jpg",
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760614387/wtci12qd59r9sibda7ul.jpg",
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760614419/q98mmuzuoe5uj11zwstf.jpg",
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760614641/mnxtr29eklecacinf1qv.jpg",
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760615006/simr8pcul1lqjbawetqr.jpg",
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760615046/huzmnxqjfieofdojenoq.jpg",
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760615081/yo4beuvbnoky2ogn7dxn.jpg",
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760615108/ch1zqkbjospeoqqgrheu.jpg",
+            
             
           ].map((img, i) => (
             <div
