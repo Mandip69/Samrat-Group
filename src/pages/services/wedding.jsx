@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaWhatsapp, FaViber } from "react-icons/fa";
+import { FaWhatsapp, FaViber, FaCheckCircle } from "react-icons/fa";
 
 const WeddingSection = () => {
   const [openForm, setOpenForm] = useState(false);
@@ -38,15 +38,52 @@ const WeddingSection = () => {
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760601901/mup6hivuib52mclitcv1.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760601792/ncwasizucp2bdp42ep4z.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760601789/rkzbgs5tfqgesrdfageu.jpg",
-    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760602271/mhrdpjwwxep6ou9rejav.jpg",
-    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760602275/yakqxwqvdomualvrv6q8.jpg",
-    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760602411/ysmqwbzsqglkimi5hi97.jpg",
-    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760602531/xefineccseqryve2lp1t.jpg",
+  ];
+
+  const packages = [
+    {
+      title: "Inside Valley Packages",
+      prices: [
+        { days: "One Day", price: "₨35,000" },
+        { days: "Two Days", price: "₨55,000" },
+        { days: "Three Days", price: "₨75,000" },
+      ],
+      includes: [
+        "One Photographer",
+        "One Videographer",
+        "4*6 Photo (200 pics with velvet album)",
+        "12*18 Photo + Frame",
+        "A4 Mount laminated photo calendar",
+        "Full cinematic video",
+        "Wedding Highlights",
+        "(All raw photos will be provided in pen drive)",
+      ],
+      note: "If Drone + Drone Pilot = ₨10,000 for one day",
+    },
+    {
+      title: "Outside Valley Packages",
+      prices: [
+        { days: "One Day", price: "₨45,000" },
+        { days: "Two Days", price: "₨75,000" },
+        { days: "Three Days", price: "₨1,05,000" },
+      ],
+      includes: [
+        "One Photographer",
+        "One Videographer",
+        "4*6 Photo (200 pics with velvet album)",
+        "12*18 Photo + Frame",
+        "A4 Mount laminated photo calendar",
+        "Full cinematic video",
+        "Wedding Highlights",
+        "(All raw photos will be provided in pen drive)",
+      ],
+      note: "If Drone + Drone Pilot = ₨10,000 for one day",
+    },
   ];
 
   return (
     <section id="wedding" className="bg-white">
-      {/* ✅ Hero Image Section */}
+      {/* ✅ Hero Section */}
       <div
         className="relative w-full h-[70vh] bg-cover bg-center flex items-center justify-center"
         style={{
@@ -57,7 +94,7 @@ const WeddingSection = () => {
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 text-center text-white px-4">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Caputer your wedding memories with us.
+            Capture your wedding memories with us.
           </h1>
           <button
             onClick={() =>
@@ -87,7 +124,7 @@ const WeddingSection = () => {
           treasure forever.
         </p>
 
-        {/* ✅ WhatsApp & Viber Buttons */}
+        {/* ✅ Contact Buttons */}
         <div className="flex justify-center gap-6 mt-6">
           <a
             href="https://wa.me/9779841419740"
@@ -108,8 +145,80 @@ const WeddingSection = () => {
         </div>
       </div>
 
-      {/* ✅ Wedding Gallery */}
-      <div className="max-w-7xl mx-auto px-6 pb-16">
+      {/* ✅ Wedding Packages */}
+      <div className="bg-gray-50 py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <h3 className="text-3xl font-bold text-center text-gray-900 mb-12">
+            Our Wedding Packages
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            {packages.map((pkg, idx) => (
+              <div
+                key={idx}
+                className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-8"
+              >
+                <h4 className="text-2xl font-semibold text-gray-800 mb-6 text-center">
+                  {pkg.title}
+                </h4>
+                {/* Prices */}
+                <div className="flex justify-center gap-6 mb-8">
+                  {pkg.prices.map((p, i) => (
+                    <div
+                      key={i}
+                      className="bg-sky-50 border border-sky-200 px-6 py-4 rounded-xl text-center"
+                    >
+                      <h5 className="text-lg font-medium text-gray-800">
+                        {p.days}
+                      </h5>
+                      <p className="text-sky-600 font-bold text-xl mt-1">
+                        {p.price}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Includes */}
+                <ul className="space-y-3 mb-6">
+                  {pkg.includes.map((item, j) => (
+                    <li
+                      key={j}
+                      className="flex items-center gap-3 text-gray-700 text-base"
+                    >
+                      <FaCheckCircle className="text-green-500" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+
+                {/* Note */}
+                <p className="text-gray-500 italic text-sm text-center border-t pt-4">
+                  Note: {pkg.note}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* ✅ Important Note (English + Nepali) */}
+          <div className="mt-16 bg-white rounded-2xl p-8 text-center shadow-md border border-gray-100">
+            <h4 className="text-xl font-semibold text-gray-900 mb-3">
+              📢 Important Booking Information
+            </h4>
+            <p className="text-gray-700 text-base mb-2">
+              50% of the total amount must be paid during booking. The remaining
+              50% should be cleared on the wedding day. In case of cancellation,
+              50% of the advance amount will be refundable.
+            </p>
+            <p className="text-gray-700 text-base italic">
+              बुकिङ गर्दा जम्मा रकमको ५०% तिर्नु पर्नेछ र विवाहको दिनमा सम्पूर्ण
+              रकम बुझाउनुपर्नेछ । यदि विवाह रद्द भयो भने अग्रिम रकमको ५०% मात्र
+              फिर्ता दिइनेछ ।
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* ✅ Gallery */}
+      <div className="max-w-7xl mx-auto px-6 py-20">
         <h3 className="text-2xl font-semibold text-gray-900 mb-8 text-center">
           Our Wedding Moments
         </h3>
@@ -119,71 +228,11 @@ const WeddingSection = () => {
               key={idx}
               src={img.startsWith("http") ? img : `/${img}`}
               alt="Wedding event"
-              className="rounded-xl shadow-lg object-cover h-64 w-full hover:scale-105 transition"
+              className="rounded-xl shadow-lg object-cover h-72 w-full hover:scale-105 transition"
             />
           ))}
         </div>
       </div>
-
-      {/* ✅ Booking Form Modal */}
-      {openForm && (
-        <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50">
-          <div className="bg-white p-8 rounded-2xl shadow-lg w-full max-w-lg relative">
-            <button
-              onClick={() => setOpenForm(false)}
-              className="absolute top-3 right-3 text-gray-500 hover:text-gray-800"
-            >
-              ✕
-            </button>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4 text-center">
-              Book Your Wedding Shoot
-            </h2>
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <input
-                type="text"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                placeholder="Your Name"
-                required
-                className="w-full border rounded-lg p-3"
-              />
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                placeholder="Your Email"
-                required
-                className="w-full border rounded-lg p-3"
-              />
-              <input
-                type="tel"
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                placeholder="Your Phone"
-                required
-                className="w-full border rounded-lg p-3"
-              />
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                placeholder="Tell us about your wedding..."
-                rows="4"
-                className="w-full border rounded-lg p-3"
-              ></textarea>
-              <button
-                type="submit"
-                className="w-full bg-sky-500 hover:bg-sky-600 text-white py-3 rounded-lg font-semibold"
-              >
-                Submit Booking
-              </button>
-            </form>
-          </div>
-        </div>
-      )}
     </section>
   );
 };

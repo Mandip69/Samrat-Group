@@ -166,14 +166,14 @@ const CameraRental = () => {
                     </td>
                   </tr>
                   <tr>
-                    <td className="border px-4 py-2">Mirrorless</td>
-                    <td className="border px-4 py-2">Sony A7 III</td>
+                    <td className="border px-4 py-2">DSLR</td>
+                    <td className="border px-4 py-2">Sony 2500D</td>
                     <td className="border px-4 py-2">
-                      24MP, Dual SD Slot, 4K HDR Video
+                   Full-frame, 30MP, 4K Video, Low Light Performance
                     </td>
                   </tr>
                   <tr>
-                    <td className="border px-4 py-2">Cinema</td>
+                    <td className="border px-4 py-2">DSLR</td>
                     <td className="border px-4 py-2">Blackmagic 6K</td>
                     <td className="border px-4 py-2">
                       Super 35 Sensor, RAW & ProRes, 13 Stops DR
