@@ -13,7 +13,7 @@ const GraphicDesign = () => {
     <div className="w-full bg-gray-50 text-gray-800 font-sans">
       {/* Hero Section */}
       <div className="relative w-full h-96 flex items-center justify-center text-white">
-        <img src="/gra.jpeg" alt="Graphic Design" className="absolute inset-0 w-full h-full object-cover brightness-75 rounded-b-2xl" />
+        <img src="https://res.cloudinary.com/dpysgjsq3/image/upload/v1760599942/wsxs5sul0gd8awjtfge6.webp" alt="Graphic Design" className="absolute inset-0 w-full h-full object-cover brightness-75 rounded-b-2xl" />
         <div className="relative text-center px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-3">Creative Graphic Design</h1>
           <p className="text-lg md:text-xl">Logos, Banners, Posters, Social Media & More</p>
