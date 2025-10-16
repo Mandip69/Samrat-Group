@@ -1,11 +1,121 @@
-import React from 'react'
+import React from "react";
+import { ArrowRight } from "lucide-react";
 
-function framing() {
+const FrameSection = () => {
+  const frames = [
+    {
+      title: "Classic Black Frame",
+      img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1758781108/admin-dashboard/wedding/pbw240nhhln5f6jomzzx.jpg",
+    },
+    {
+      title: "Elegant White Frame",
+      img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760589222/toscbdxyrmobhiuwutmz.jpg",
+    },
+    {
+      title: "Collage Frame Set",
+      img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760589038/asilcdf2ctzjdoz5h5od.jpg",
+    },
+    {
+      title: "Mala Frame Design",
+      img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760589189/yhlx4ngv3dlznlicgdwx.jpg",
+    },
+    {
+      title: "Rose Box Frame",
+      img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760517859/of4bguiq7a6uagxojcmx.jpg",
+    },
+    {
+      title: "Lamination Frame",
+      img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760589481/uy2axqejndgvc3nctjwo.jpg",
+    },
+    {
+      title: "Double  Frame",
+      img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760589029/ziwuv5cr1xbr7nmc1uts.jpg",
+    },
+  ];
+
   return (
-    <div>
-       <h1 className="text-5xl font-bold text-black-600 mb-4 p-10 m-10 pl-20"> THis page in under construction! Thank you</h1>
-    </div>
-  )
-}
+    <section id="frames" className="bg-white py-20">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold text-gray-900 mb-3">
+            Custom Frame Collection
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Designed and crafted with passion in our own warehouse — from sleek
+            black and white frames to creative collage and lamination designs.
+            Every frame we make carries the touch of art and precision.
+          </p>
+        </div>
 
-export default framing
+        {/* Main Showcase */}
+        <div className="flex flex-col md:flex-row items-center gap-10 mb-16">
+          <div className="md:w-1/2">
+            <img
+              src="https://res.cloudinary.com/dpysgjsq3/image/upload/v1760588986/lvphvceywgvohlhafkzm.jpg"
+              alt="Custom Frame Work"
+              className="rounded-2xl shadow-2xl w-full h-[420px] object-cover hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+          <div className="md:w-1/2 text-center md:text-left">
+            <h3 className="text-3xl font-semibold text-gray-800 mb-4">
+              Handcrafted with Love ❤️
+            </h3>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              We proudly manufacture a wide variety of custom frames right here
+              in our warehouse — ensuring premium quality and personal touch.
+              Whether it’s a photo collage, a dress-set frame, or a traditional
+              mala frame, each design reflects your emotion beautifully.
+            </p>
+            <button
+              onClick={() =>
+                window.open("https://samrat-frame.vercel.app/", "_blank")
+              }
+              className="inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white px-6 py-3 rounded-lg shadow-md transition"
+            >
+              Visit Our Website <ArrowRight size={18} />
+            </button>
+          </div>
+        </div>
+
+        {/* Gallery */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+          {frames.map((frame, index) => (
+            <div
+              key={index}
+              className="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
+            >
+              <img
+                src={frame.img}
+                alt={frame.title}
+                className="w-full h-[380px] object-cover hover:scale-105 transition-transform duration-500"
+              />
+              <div className="p-4 text-center">
+                <h4 className="text-lg font-semibold text-gray-800">
+                  {frame.title}
+                </h4>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Final CTA */}
+        <div className="text-center mt-20">
+          <h4 className="text-lg text-gray-700 mb-4">
+            Want to explore more frame styles and offers?
+          </h4>
+          <button
+            onClick={() =>
+              window.open("https://samrat-frame.vercel.app/", "_blank")
+            }
+            className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 rounded-lg shadow-md transition font-medium"
+          >
+            View Full Collection
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default FrameSection;

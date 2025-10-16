@@ -20,8 +20,8 @@ const VideoEditingClass = () => {
     "https://res.cloudinary.com/dpysgjsq3/image/upload/q_auto:100,f_auto/v1760514720/video5.jpg",
   ];
 
-  const heroImage =
-    "https://res.cloudinary.com/dpysgjsq3/image/upload/q_auto:100,f_auto/v1760514725/video-editing-hero.jpg";
+  // const heroImage =
+  //   "https://res.cloudinary.com/dpysgjsq3/image/upload/q_auto:100,f_auto/v1760514725/video-editing-hero.jpg";
 
   return (
     <section className="bg-white text-gray-900 min-h-screen py-20">
