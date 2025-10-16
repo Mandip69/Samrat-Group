@@ -153,7 +153,7 @@ const CameraRental = () => {
                 <tbody>
                   <tr>
                     <td className="border px-4 py-2">DSLR</td>
-                    <td className="border px-4 py-2">Nikon D7500</td>
+                    <td className="border px-4 py-2">Nikkon 7500</td>
                     <td className="border px-4 py-2">
                       Full-frame, 30MP, 4K Video, Low Light Performance
                     </td>
@@ -167,14 +167,21 @@ const CameraRental = () => {
                   </tr>
                   <tr>
                     <td className="border px-4 py-2">DSLR</td>
-                    <td className="border px-4 py-2">Sony 2500D</td>
+                    <td className="border px-4 py-2">Sony 2500</td>
                     <td className="border px-4 py-2">
                    Full-frame, 30MP, 4K Video, Low Light Performance
                     </td>
                   </tr>
                   <tr>
                     <td className="border px-4 py-2">DSLR</td>
-                    <td className="border px-4 py-2">Nikkon D 7000</td>
+                    <td className="border px-4 py-2">Nikkon  7000</td>
+                    <td className="border px-4 py-2">
+                      Super 35 Sensor, RAW & ProRes, 13 Stops DR
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border px-4 py-2">DSLR</td>
+                    <td className="border px-4 py-2">Nx 100</td>
                     <td className="border px-4 py-2">
                       Super 35 Sensor, RAW & ProRes, 13 Stops DR
                     </td>
