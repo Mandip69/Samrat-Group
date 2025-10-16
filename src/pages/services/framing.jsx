@@ -31,13 +31,49 @@ const FrameSection = () => {
       title: "Double Frame",
       img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760589029/ziwuv5cr1xbr7nmc1uts.jpg",
     },
+    {
+      title: "Lord Ganesh Frame",
+      img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760612298/runq7ko6hqdcqblzuuaj.jpg",
+    },
+    {
+      title: "Golden Frame",
+      img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1758781828/admin-dashboard/wedding/rcunvcb6pt8v8a98tqyr.jpg",
+    },
+    {
+      title: "Pasni Mala Frame",
+      img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760612547/sc2mfhwbbqpeuvlng6ek.jpg",
+    },
+    {
+      title: "Mala Frame",
+      img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760612709/lvil5dqxyshd2c1z6soo.jpg",
+    },
+    {
+      title: "White Frame",
+      img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760612712/hyeigg9ejtflnr09jfz0.jpg",
+    },
+    {
+      title: "Mala Frame",
+      img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760612712/kkrp0tk6ibxkeg98jzis.jpg",
+    },
+    {
+      title: " Mala Frame",
+      img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760612718/aagch4gasuy5mfjnt9xm.jpg",
+    },
+    {
+      title: "Pasni Mala Frame",
+      img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760612724/ft60fcjbv3ly7yrtzse2.jpg",
+    },
+    {
+      title: "wooden Frame",
+      img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760612866/hdc8mbkv485nnbrvumze.jpg",
+    },
   ];
 
   return (
     <section id="frames" className="bg-white">
       {/* 🌟 Banner Section */}
       <div
-        className="relative h-[60vh] flex items-center justify-center bg-center bg-cover"
+        className="relative h-[100vh] flex items-center justify-center bg-center bg-cover"
         style={{
           backgroundImage:
             "url('https://res.cloudinary.com/dpysgjsq3/image/upload/v1760590414/lyzao0zbiyfputmy9it2.jpg')",
