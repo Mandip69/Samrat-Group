@@ -25,7 +25,7 @@ const FrameSection = () => {
     },
     {
       title: "Lamination Frame",
-      img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760589481/uy2axqejndgvc3nctjwo.jpg",
+      img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760613386/tt6sqztjemmgxkteq4w6.jpg",
     },
     {
       title: "Double Frame",
@@ -66,6 +66,14 @@ const FrameSection = () => {
     {
       title: "wooden Frame",
       img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760612866/hdc8mbkv485nnbrvumze.jpg",
+    },
+    {
+      title: "Lord Buddha Frame",
+      img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760613158/ntpantwcyh1mtompuaxg.jpg",
+    },
+    {
+      title: "Lamination  Frame",
+      img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760613226/dqu1uoe15v32bholmoh7.jpg",
     },
   ];
 
@@ -143,7 +151,7 @@ const FrameSection = () => {
               <img
                 src={frame.img}
                 alt={frame.title}
-                className="w-full h-[380px] object-cover hover:scale-105 transition-transform duration-500"
+                className="w-full h-[540px] object-cover hover:scale-105 transition-transform duration-500"
               />
               <div className="p-4 text-center">
                 <h4 className="text-lg font-semibold text-gray-800">
