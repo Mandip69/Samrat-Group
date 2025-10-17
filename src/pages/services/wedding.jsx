@@ -11,6 +11,7 @@ const WeddingSection = () => {
 
   const galleryImages = [
     "bannerofmarriage.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760675867/lrcgcxhlimnpvg8jte7b.jpg",
     "wed2.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1758612975/portfolio/nafymntzyzjtugdfyrli.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1758612978/portfolio/l9eurcuccypijkthweo4.jpg",
