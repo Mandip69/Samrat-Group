@@ -12,21 +12,26 @@ const VideographyTraining = () => {
   // ];
 
   const courseDetailsLeft = [
-    "📸 Hands-on training with DSLR & Mirrorless cameras",
-    "🎬 Learn camera movement & cinematic shooting styles",
-    "💡 Master lighting, framing & composition",
-    "🧠 Understand storytelling & shot planning",
-    "🎧 Sound recording, syncing & sound design",
-    "🪄 Practical indoor/outdoor shoot sessions",
+   "Introduction and Camera History",
+   "Rules And Regulation For Cameraman",
+   "Part of Movies Camera (Using Nerbs)",
+   "Focusing - Subject - Program",
+   "Picture Composing",
+   "Video Shooting",
+   "Electric View Finder - Warning Alarm Indication ",
+   "Camera Level | Shot Size | Shot Divison",
   ];
 
   const courseDetailsRight = [
-    "🖥️ Learn editing with Adobe Premiere Pro & DaVinci Resolve",
-    "🎨 Color grading & cinematic tone creation",
-    "🗂️ Project-based learning with mentor feedback",
-    "🎓 Certificate provided after completion",
-    "📸 Build your own professional portfolio",
-    "🚀 Freelance & studio career guidance",
+   "Manual-IRIS | GAIN | Shutterspeed",
+   "White Balance | Lenses | Lighting | Filter",
+   "Day Light Expossure",
+   "Editing SHooting | Multi Camera",
+   "External Lighting- Indoor and Outdoor",
+   "Basic Three-Point Studio Lighting",
+   "Tripod | Slider",
+   "Videography accessories uses",
+   "Project works and Indoor and Outdoors Shoots"
   ];
 
   const studentImages = [
