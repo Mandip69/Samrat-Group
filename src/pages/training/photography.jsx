@@ -144,30 +144,32 @@ const PhotoVideoClass = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-700 text-lg leading-relaxed">
           <ul className="space-y-4 list-disc list-inside">
-            <li>📸 Hands-on training with DSLR & Mirrorless cameras</li>
-            <li>🎥 Learn both Photography & Videography from basics to advanced</li>
-            <li>💡 Understanding of lighting setups and color theory</li>
-            <li>🧠 Concept development, storytelling & creative direction</li>
-            <li>🖼️ Practical sessions on outdoor and indoor shoots</li>
-            <li>🧍‍♀️ Portrait, event, product & landscape photography modules</li>
-            <li>🪄 Editing tutorials in Lightroom, Photoshop & Premiere Pro</li>
+            <li>Introduction And Camera History</li>
+            <li>Rules and Regulation for Cameraman</li>
+            <li>Parts of Camera</li>
+            <li>Picture Composing</li>
+            <li>Camera Angle and Position</li>
+            <li>Camera Levels and Position</li>
+            <li>Camera Level and Shot Size</li>
+            <li>Rules of Third | Portrait | Landscape</li>
           </ul>
 
           <ul className="space-y-4 list-disc list-inside">
-            <li>🎬 Learn framing, composition & cinematic camera movement</li>
-            <li>🎧 Audio recording, syncing & sound design for videos</li>
-            <li>🗂️ Project-based learning with guided mentorship</li>
-            <li>🎓 Certificate provided upon course completion</li>
-            <li>👨‍🏫 One-to-one feedback & personalized learning guidance</li>
-            <li>🪶 Build your professional portfolio during the course</li>
-            <li>🚀 Career preparation for freelance & studio professionals</li>
+            <li>Electronic View Finder</li>
+            <li>Warning Alarm Indication</li>
+            <li>Subject Focusing</li>
+            <li>Camera Manual (Aperture, Shutter Speed, ISO)</li>
+            <li>Lenses | Lighting | Filter | White Balance</li>
+            <li>External Lighting - Indor And Outdoor</li>
+            <li>Day Light  Exposure (Sunny 16)</li>
+            <li> (Photography accessories uses)</li>
+            <li>Project work and Indoor / Outdoor Shoots</li>
           </ul>
         </div>
 
         <div className="text-center mt-10">
           <p className="text-gray-600 italic">
-            “From beginner to professional — master your lens and create stories
-            that move hearts.”
+            PRACTICAL ASSIGNMENT AND WORKSHOP
           </p>
         </div>
       </div>
