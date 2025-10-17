@@ -102,7 +102,23 @@ export default function Event() {
             "/awarded/d9.jpg",
             "/awarded/d5.jpg",
             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760600367/bnsekpw5s3wcxvy2lsdt.jpg",
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760685222/m1zyvsd03ltu35snaos6.jpg",
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760685310/fli2aazn3gm8ku1iilrx.jpg",
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760685348/c5jeglyo7fkm8z66lqas.jpg",
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760685488/cbzazhtzx4tggfxo0plp.jpg",
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760685522/rlxnzjisjiolodiaif5o.jpg",
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760685570/gtromvciki6xr6jev5wr.jpg",
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760685602/pfxue5f6kzxfw6cu8tnn.jpg",
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760685632/adsaonfjeblsvwrpyskb.jpg",
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760685676/gmmv2wqg65nyccbochzy.jpg", 
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760685704/nlx4q95sjaavzzql8gxi.jpg",
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760685731/jqmlirybrvtyh1lxdcwz.jpg",
+             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760685763/orjxr07k67xrudh9dqab.jpg",
+             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760685763/orjxr07k67xrudh9dqab.jpg" ,
+             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760685952/d3nalvhtuocdscgt3zge.jpg",
+             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760685952/d3nalvhtuocdscgt3zge.jpg", 
           ].map((src, i) => (
+            
             <motion.img
               key={i}
               src={src}
