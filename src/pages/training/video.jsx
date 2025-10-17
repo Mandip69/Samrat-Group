@@ -13,21 +13,27 @@ const VideoEditingClass = () => {
   // ];
 
   const courseDetailsLeft = [
-    "🎬 Learn Adobe Premiere Pro & DaVinci Resolve",
-    "🎨 Master color correction and cinematic grading",
-    "🧠 Understand storytelling and pacing in editing",
-    "🎧 Sound synchronization and background scoring",
-    "🪄 Transitions, effects, and text animations",
-    "📂 Project management & organized editing workflow",
+   "Introduction / Installation / Work Pannels / Overview",
+   "Imports",
+   "New Sequences",
+   "Roughs Cuts",
+   "Sound Arrangements",
+    "Video Transitions and Effects",
+    "Chroma Key / Track Mate Keys"
+   
   ];
 
   const courseDetailsRight = [
-    "💡 Learn motion graphics and intro/outro creation",
-    "🎥 Hands-on practice with real-world projects",
-    "🧩 Use LUTs and presets for creative effects",
-    "🗂️ Learn exporting formats for YouTube, social media, and clients",
-    "🎓 Certificate upon successful completion",
-    "🚀 Build your personal portfolio for freelancing or jobs",
+    "Blending Options",
+    "Maskings",
+    "Basic Animation - Ease in and Out",
+    "Audio Transition and Effects",
+    "Voice Over",
+    "Color Corrections and Export",
+    "Project Works"
+    
+   
+
   ];
 
   const portfolio = [
