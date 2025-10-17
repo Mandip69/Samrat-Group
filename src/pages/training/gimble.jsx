@@ -13,12 +13,15 @@ const GimbalTraining = () => {
   // ];
 
   const courseDetails = [
-    "✅ Duration: 1 Month (Practical Based Training)",
-    "✅ Learn Hands-On Gimbal Operation Techniques",
-    "✅ Real-World Shooting Practice with Guidance",
-    "✅ Suitable for Videographers, Content Creators, and Filmmakers",
-    "✅ Includes Field Practice Sessions",
-    "✅ Certificate Upon Completion",
+    "✅ Introduction ",
+    "✅ Parts of Gimbal",
+    "✅ Rules & Regulations of Cameraman",
+    "✅ Set up And Balancing Gimbal",
+    "✅ Shooting",
+    "✅ GImbal <ovements (360 Record)",
+    "✅ Panning -TiltUp- TiltDown- Trekking and Parellel Treking - Crane - Stabilizer shots",
+    "✅ Project Works",
+    "✅ Indoor and Outshoot Shoots",
   ];
 
   const portfolio = [
