@@ -93,8 +93,26 @@ export default function IndoorOutdoor() {
                   "/images/out1.png",
                    "/images/out2.png",
                    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760600922/qzuvjdj7sq6qhjylr9bq.jpg",
-
-          ].map((img, i) => (
+                   "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760686646/odd4cbnlbeac5lrrgg6o.jpg",
+                   "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760686689/mbwbgbrcjtw8ojatbpum.jpg",
+                   "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760686752/lncib5qedthvujlisimi.jpg",
+                   "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760686784/gmoame0btp83kogthtnr.jpg",
+                   "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760686842/tbcmdq2y99atoga3vaco.jpg",
+                   "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760686871/r6juazky58wgs3xbyr6t.jpg",
+                   "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760686903/lo0t4iiip2sza41labnz.jpg",
+                   "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760686934/tjixezzf5jvr7ckho9nz.jpg",
+                   "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760686991/mk98odvnghm1rxwd16kf.jpg",
+                  "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760687047/jd9vu84fsklo1qnkksuo.jpg",
+                  "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760687076/u6akmnx1cy3ruw27yxzy.jpg",
+                  "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760687143/lrprcxnfeyzbcpwlzpru.jpg",
+                  "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760687170/irchgdwfhkeod3trwwg1.jpg",
+                  "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760687197/etwjfazf5knfjmdfpce3.jpg",
+                  "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760687248/eyothgbkvfv8pbmoykhy.jpg",
+                  "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760687276/kqtyubipwshgtibet4gx.jpg",
+                  "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760687310/i2ulailku7oex2juplrc.jpg",
+                  "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760687333/wcvk0fh247ga1otlbedc.jpg",
+                  "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760687361/u4dpegzxhrmtlodcerfz.jpg",
+                  ].map((img, i) => (
             <div
               key={i}
               className="overflow-hidden rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 hover:scale-105"
