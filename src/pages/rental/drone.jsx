@@ -11,7 +11,7 @@ const DroneRental = () => {
   {/* Hero Image Section */}
   <div className="w-full rounded-b-2xl shadow-lg overflow-hidden">
     <img
-      src="https://res.cloudinary.com/dpysgjsq3/image/upload/v1760601052/ssjr6c7jzefn6srekldy.jpg" // or your Cloudinary link
+      src="https://res.cloudinary.com/dpysgjsq3/image/upload/v1760693686/kpqvexiclwugywddfmgc.jpg" // or your Cloudinary link
       alt="Hero Banner"
       className="w-full h-auto object-contain md:object-cover"
     />
