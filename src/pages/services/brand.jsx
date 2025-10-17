@@ -92,6 +92,12 @@ export default function BrandShoot() {
             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760600870/x1dkpuoxwsr4dfclfrac.jpg",
             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760601133/ddjfpofrnzidun2ftrsp.jpg",
             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760601283/gumdshubcyaxmqyvufhh.jpg",
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760687452/vhe7qreqnrk6bnqimtwm.jpg",
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760687508/izvtgpqimzzixihio1dg.jpg",
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760687539/mfkgojhc4tpcdrcf9spo.jpg",
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760687576/jlkvmogaktlcsswacfry.jpg",
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760687604/lv5bwbkudcvud2y9bspe.jpg",
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760687682/iihi4ltns8nftpklwtiy.jpg",
           ].map((img, i) => (
             <div
               key={i}

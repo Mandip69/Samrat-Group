@@ -28,6 +28,12 @@ const PhotoVideoClass = () => {
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760528053/ht0i9bo4t81tpqbza9eh.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760528134/pibekxldrmfykfvkluro.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760528146/hqdlxmfhmpnmgqfjzr52.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760688814/vnekwgq4uwjhrlffvun6.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760688939/h4facykb1paovtvd44or.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760688978/dekpbbdarneqqd8zkn5f.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760689086/uwjrwd77rdeiqrgtbxdk.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760689123/cee0edstispdxrm9t72i.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760689167/fibvyw20p6rnn1nh1mc8.jpg",
     
   ];
 
@@ -47,7 +53,7 @@ const PhotoVideoClass = () => {
         {/* Right Text */}
         <div className="md:w-1/2 text-center md:text-left space-y-6">
           <h1 className="text-4xl md:text-5xl font-bold tracking-wide">
-            Photography & Videography Classes
+            Photography Classes
           </h1>
           <p className="text-gray-600 text-lg leading-relaxed">
             Master the art of capturing moments and telling stories through our Photography & Videography classes. Learn professional techniques, lighting, composition, and editing to create stunning photos and videos.
