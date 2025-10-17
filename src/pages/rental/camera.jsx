@@ -9,7 +9,7 @@ const CameraRental = () => {
       {/* Hero Image */}
       <div className="w-full rounded-b-2xl shadow-lg overflow-hidden">
         <img
-          src="https://res.cloudinary.com/dpysgjsq3/image/upload/v1760515866/siemmlibbzp9vpuwqpki.jpg"
+          src="https://res.cloudinary.com/dpysgjsq3/image/upload/v1760693516/bfhzreffehcqwhun4dak.jpg"
           alt="Camera Rental Service in Nepal"
           className="w-full h-auto object-contain md:object-cover"
         />

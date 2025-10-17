@@ -13,10 +13,10 @@ const GraphicDesignClass = () => {
   // ];
 
   const courseDetails = [
-    "✅ Duration: 1.5 to 2 Months (Flexible Schedule)",
-    "✅ Suitable for Beginners — No prior experience needed",
-    "✅ Learn with Real Projects and Practical Assignments",
-    "✅ Guidance from Professional Graphic Designers",
+    "✅ Introduction",
+    "✅ Workspaces / Pannel",
+    "✅ Tools",
+    "✅  Menu Bars",
     "✅ Lifetime Access to Course Materials",
     "✅ Certification after Course Completion",
   ];
