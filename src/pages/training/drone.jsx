@@ -13,14 +13,23 @@ const DroneTraining = () => {
   // ];
 
   const courseDetails = [
-    "📘 Introduction to drone mechanics & flight theory",
-    "🧭 Understanding airspace, weather & safety protocols",
-    "🎮 Hands-on flying sessions with different drone models",
-    "📸 Aerial photography, camera angles & cinematic framing",
-    "🎬 Cinematic movement, tracking & reveal shots",
-    "🖥️ Editing workflow for aerial footage (Premiere Pro & DaVinci)",
-    "💼 Legal guidelines & commercial licensing overview",
-    "🧠 Project-based drone shoot and portfolio creation",
+    "Intoduction to Drones ",
+    "Rules & Regulations of Drone Pilot",
+    "Types of Drones",
+    "Consumer Drone",
+    "Professional Drones (Cinematogrphy, Mapping)",
+    "Understanding Drone Operation Components",
+    "Frames and Motors",
+    "Battery and Power Supply",
+    "Flight Controllers",
+    "GPS and Sensors",
+    "Cameras and Gimbals",
+    "Safety and Regulations",
+    "Pre Flight Checklist and No Fly Zones",
+    "Emergency Landings Protocols",
+    "Altitute Limits",
+    "Drone Registrations"
+
   ];
 
   const portfolio = [
@@ -91,7 +100,7 @@ const DroneTraining = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-700 text-lg leading-relaxed">
           <ul className="space-y-4 list-disc list-inside">
-            {courseDetails.slice(0, 4).map((point, idx) => (
+            {courseDetails.slice(0, 11).map((point, idx) => (
               <li key={idx}>{point}</li>
             ))}
           </ul>
@@ -104,7 +113,7 @@ const DroneTraining = () => {
 
         <div className="text-center mt-10">
           <p className="text-gray-600 italic">
-            “Learn. Fly. Create — take your aerial storytelling to new heights.”
+            “PRATICAL ASSIGMENT AND WORKSHOP”
           </p>
         </div>
       </div>

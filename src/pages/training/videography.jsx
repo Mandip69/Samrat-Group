@@ -129,7 +129,7 @@ const VideographyTraining = () => {
 
         <div className="text-center mt-10">
           <p className="text-gray-600 italic">
-            “From beginner to professional — master your lens and create stories that move hearts.”
+            “PRACTICAL ASSIGMENT AND WORKSHOP.”
           </p>
         </div>
       </div>
