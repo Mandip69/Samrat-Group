@@ -27,7 +27,7 @@ const VideographyTraining = () => {
         className="relative w-full h-[90vh] bg-cover bg-center flex items-center justify-center"
         style={{
           backgroundImage:
-            "url('https://res.cloudinary.com/dpysgjsq3/image/upload/v1760606296/fcox3dc90bczmakljx1m.jpg')",
+            "url('https://res.cloudinary.com/dpysgjsq3/image/upload/v1760678933/qix8nlxrga7olqq1dr0k.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-black/40"></div>
