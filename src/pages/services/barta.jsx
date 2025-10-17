@@ -111,11 +111,12 @@ export default function Bartabanda() {
             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760614549/yudvo1std1i21uzhvhco.jpg",
             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760614585/yj37an1eog5ktkrriku9.jpg",
             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760614641/mnxtr29eklecacinf1qv.jpg",
-           
+           "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760614641/mnxtr29eklecacinf1qv.jpg",
             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760615247/z4mq6jbtxxkdoqof2yp3.jpg",
             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760615475/wogusbtrhjrf1enxx8bp.jpg",
             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760615310/uuhnyan4ps7hpgglpsep.jpg",
             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760615591/lxvouct3fvfu7yd0ypvw.jpg",
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760678650/fddizx754euaqmtw7bo1.jpg",
            
           ].map((src, i) => (
             <motion.img

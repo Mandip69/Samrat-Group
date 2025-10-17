@@ -26,6 +26,9 @@ const WeddingSection = () => {
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760601901/mup6hivuib52mclitcv1.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760601792/ncwasizucp2bdp42ep4z.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760601789/rkzbgs5tfqgesrdfageu.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760678702/ujtuhdz2tdyrdijvppim.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760678760/pfwsbki2syaqv3c1arm9.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760678795/sdzksvrb0vaoyggrpemn.jpg",
   ];
 
   const packages = [

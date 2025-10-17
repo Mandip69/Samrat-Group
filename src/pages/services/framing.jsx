@@ -33,7 +33,25 @@ const FrameSection = () => {
     },
     {
       title: "Lord Ganesh Frame",
-      img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760612298/runq7ko6hqdcqblzuuaj.jpg",
+      img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760676851/krgfwjgasvmpuxj1ah1n.jpg",
+    },
+    {
+      
+      title: "Lord Shiva Frame",
+      img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760676955/sro3xgudwlryenhn8f2z.jpg",
+    },
+    {
+      
+      title: "lordess  Laxmi Frame",
+      img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760677281/o5m4n5xukfqwspsaeq6a.jpg",
+    },
+    {
+      title: "Brown Wooden Frame",
+      img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760677070/lcivem5yle0tmy7fmznm.jpg",
+    },
+    {
+      title: "Golden A4  Frame",
+      img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760677175/mwh9np9865dbxhbsr4ed.jpg",
     },
     {
       title: "Golden Frame",
@@ -46,6 +64,26 @@ const FrameSection = () => {
     {
       title: "Mala Frame",
       img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760612709/lvil5dqxyshd2c1z6soo.jpg",
+    },
+    {
+      title: "Dress  Frame",
+      img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760677646/zxxu5xms9t8bqkwe5nq6.jpg",
+    },
+    {
+      title: "3 piece photo frame",
+      img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760677767/qobhnfrukpq1flj35qly.jpg",
+    },
+    {
+      title: "7 hourse photo frame",
+      img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760678110/oh0zp4obbof6hbz3shz8.jpg",
+    },
+    {
+      title: "Custom Frame",
+      img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760677428/t1le2jfxduskgizletyq.jpg",
+    },
+    {
+      title: "Graduation Photo  Frame",
+      img: "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760678240/foibdtxjieknxvbugeb9.jpg",
     },
     {
       title: "White Frame",
@@ -142,7 +180,7 @@ const FrameSection = () => {
         </div>
 
         {/* Gallery */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+        <div className=" w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
           {frames.map((frame, index) => (
             <div
               key={index}

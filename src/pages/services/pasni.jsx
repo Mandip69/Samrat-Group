@@ -64,7 +64,7 @@ export default function Pasni() {
         <h2 className="text-3xl font-bold text-center text-rose-600 mb-10">
           Recent Pasni Moments
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="grid h-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {[
             "/images/pas1.jpg",
             "/images/pas2.jpg",
@@ -74,14 +74,13 @@ export default function Pasni() {
             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760613861/tjgxtdemqyobd1xc77fq.jpg",
             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760614387/wtci12qd59r9sibda7ul.jpg",
             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760614419/q98mmuzuoe5uj11zwstf.jpg",
-            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760614641/mnxtr29eklecacinf1qv.jpg",
+            
             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760615006/simr8pcul1lqjbawetqr.jpg",
             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760615046/huzmnxqjfieofdojenoq.jpg",
             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760615081/yo4beuvbnoky2ogn7dxn.jpg",
             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760615108/ch1zqkbjospeoqqgrheu.jpg",
              "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760615155/y5cfprgempkihxial8lx.jpg",
-            
-            
+            "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760678402/kn6xuserqlbrz7petrq4.jpg",
           ].map((img, i) => (
             <div
               key={i}
