@@ -17,8 +17,13 @@ const GraphicDesignClass = () => {
     "✅ Workspaces / Pannel",
     "✅ Tools",
     "✅  Menu Bars",
-    "✅ Lifetime Access to Course Materials",
-    "✅ Certification after Course Completion",
+    "✅ Layer Pannels",
+    "✅ Maskings",
+    "✅ Distructive and Non Distructive editing",
+    "✅ Color Grading",
+    "✅ Skin Retouching ",
+    "✅ Basic Designing",
+    "✅Project works"
   ];
 
   const galleryImages = [
