@@ -79,6 +79,7 @@ export default function Pasni() {
             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760615046/huzmnxqjfieofdojenoq.jpg",
             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760615081/yo4beuvbnoky2ogn7dxn.jpg",
             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760615108/ch1zqkbjospeoqqgrheu.jpg",
+             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760615155/y5cfprgempkihxial8lx.jpg",
             
             
           ].map((img, i) => (

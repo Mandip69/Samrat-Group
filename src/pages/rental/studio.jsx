@@ -8,8 +8,8 @@ const StudioRental = () => {
     <div className="w-full bg-gray-50 text-gray-800">
       {/* Hero Image */}
       <div
-        className="w-full h-200 bg-cover bg-center rounded-b-2xl shadow-lg"
-        style={{ backgroundImage: "url('/sto3.jpg')" }}
+        className="w-full h-230 bg-cover bg-center rounded-b-2xl shadow-lg"
+        style={{ backgroundImage: "url('https://res.cloudinary.com/dpysgjsq3/image/upload/v1760516008/hwekchsmwvznwfrmnou5.jpg')" }}
       ></div>
 
       {/* Main Layout */}
