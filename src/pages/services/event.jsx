@@ -114,9 +114,15 @@ export default function Event() {
             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760685704/nlx4q95sjaavzzql8gxi.jpg",
             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760685731/jqmlirybrvtyh1lxdcwz.jpg",
              "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760685763/orjxr07k67xrudh9dqab.jpg",
-             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760685763/orjxr07k67xrudh9dqab.jpg" ,
+             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760685913/xgeyhg7ggp2szsv4qtru.jpg" ,
              "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760685952/d3nalvhtuocdscgt3zge.jpg",
-             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760685952/d3nalvhtuocdscgt3zge.jpg", 
+             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760686017/awb08wo1isniblinblyv.jpg", 
+             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760686152/pnunh3xreu8ykybnckmq.jpg",
+             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760686195/giygvaiisx3zjbb2tepg.jpg",
+             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760686226/anuetxck8aawojarxox6.jpg",
+             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760686307/libeycagvc7d7jzwrtpa.jpg",
+             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760686406/hxtbrly4rhp55gsvw3oa.jpg",
+             "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760686456/ajjndbmuiix7mhg7moz4.jpg",
           ].map((src, i) => (
             
             <motion.img
