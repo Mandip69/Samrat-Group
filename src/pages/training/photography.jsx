@@ -2,25 +2,24 @@ import React from "react";
 import { FaWhatsapp, FaViber } from "react-icons/fa";
 
 const PhotoVideoClass = () => {
-  const photographyTopics = [
-    "Camera Basics & Settings",
-    "Composition & Framing",
-    "Lighting Techniques",
-    "Portrait & Landscape Photography",
-    "Editing with Lightroom & Photoshop",
-    "Portfolio Projects",
-  ];
+  // const photographyTopics = [
+  //   "Camera Basics & Settings",
+  //   "Composition & Framing",
+  //   "Lighting Techniques",
+  //   "Portrait & Landscape Photography",
+  //   "Editing with Lightroom & Photoshop",
+  //   "Portfolio Projects",
+  // ];
 
-  const videographyTopics = [
-    "Camera Movements & Angles",
-    "Storyboarding & Planning",
-    "Lighting for Video",
-    "Audio Recording Techniques",
-    "Editing with Premiere Pro",
-    "Short Film & Music Video Projects",
-  ];
+  // const videographyTopics = [
+  //   "Camera Movements & Angles",
+  //   "Storyboarding & Planning",
+  //   "Lighting for Video",
+  //   "Audio Recording Techniques",
+  //   "Editing with Premiere Pro",
+  //   "Short Film & Music Video Projects",
+  // ];
 
-  // Shared portfolio for both classes
   const sharedGallery = [
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760527940/yoo1krrdshierldw5ykt.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760527896/u3s31vv6vdl69agiyoap.jpg",
@@ -34,7 +33,6 @@ const PhotoVideoClass = () => {
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760689086/uwjrwd77rdeiqrgtbxdk.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760689123/cee0edstispdxrm9t72i.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760689167/fibvyw20p6rnn1nh1mc8.jpg",
-    
   ];
 
   return (
@@ -44,7 +42,7 @@ const PhotoVideoClass = () => {
         {/* Left Photo */}
         <div className="md:w-1/2 flex justify-center md:justify-start">
           <img
-            src="https://res.cloudinary.com/dpysgjsq3/image/upload/v1760513591/ez4f9bk4o78ln7apbxej.jpg" // Replace with your hero photo
+            src="https://res.cloudinary.com/dpysgjsq3/image/upload/v1760513591/ez4f9bk4o78ln7apbxej.jpg"
             alt="Photography & Videography"
             className="w-full md:w-[90%] rounded-2xl shadow-xl object-cover"
           />
@@ -56,7 +54,10 @@ const PhotoVideoClass = () => {
             Photography Classes
           </h1>
           <p className="text-gray-600 text-lg leading-relaxed">
-            Master the art of capturing moments and telling stories through our Photography & Videography classes. Learn professional techniques, lighting, composition, and editing to create stunning photos and videos.
+            Master the art of capturing moments and telling stories through our
+            Photography & Videography classes. Learn professional techniques,
+            lighting, composition, and editing to create stunning photos and
+            videos.
           </p>
 
           {/* Inquiry Buttons */}
@@ -89,19 +90,23 @@ const PhotoVideoClass = () => {
         </div>
       </div>
 
-      {/* Photography Section */}
+      {/* Photography Section
       <div className="max-w-7xl mx-auto px-6 py-16">
         <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
           Photography Class
         </h2>
         <p className="text-gray-600 text-center max-w-3xl mx-auto mb-8">
-          Learn to take stunning photographs using professional techniques in composition, lighting, and editing. Perfect for beginners or aspiring photographers.
+          Learn to take stunning photographs using professional techniques in
+          composition, lighting, and editing. Perfect for beginners or aspiring
+          photographers.
         </p>
 
-        {/* Course Topics */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-10">
           {photographyTopics.map((topic, idx) => (
-            <div key={idx} className="bg-gray-100 rounded-xl p-6 hover:bg-blue-50 transition-shadow shadow-sm text-center">
+            <div
+              key={idx}
+              className="bg-gray-100 rounded-xl p-6 hover:bg-blue-50 transition-shadow shadow-sm text-center"
+            >
               <h3 className="text-lg font-semibold text-gray-800">{topic}</h3>
             </div>
           ))}
@@ -109,21 +114,61 @@ const PhotoVideoClass = () => {
       </div>
 
       {/* Videography Section */}
-      <div className="max-w-7xl mx-auto px-6 py-16 bg-gray-50 rounded-t-3xl">
+      {/* <div className="max-w-7xl mx-auto px-6 py-16 bg-gray-50 rounded-t-3xl">
         <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
           Videography Class
         </h2>
         <p className="text-gray-600 text-center max-w-3xl mx-auto mb-8">
-          Learn professional video production including camera techniques, storyboarding, lighting, and editing. Perfect for aspiring videographers or content creators.
+          Learn professional video production including camera techniques,
+          storyboarding, lighting, and editing. Perfect for aspiring
+          videographers or content creators.
         </p>
 
-        {/* Course Topics */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-10">
           {videographyTopics.map((topic, idx) => (
-            <div key={idx} className="bg-white rounded-xl p-6 hover:bg-blue-50 transition-shadow shadow-sm text-center border border-gray-200">
+            <div
+              key={idx}
+              className="bg-white rounded-xl p-6 hover:bg-blue-50 transition-shadow shadow-sm text-center border border-gray-200"
+            >
               <h3 className="text-lg font-semibold text-gray-800">{topic}</h3>
             </div>
           ))}
+        </div>
+      </div>  */}
+
+      {/* ✨ Course Details Section ✨ */}
+      <div className="max-w-7xl mx-auto px-6 py-20 bg-gradient-to-br from-blue-50 via-white to-purple-50 rounded-3xl shadow-md">
+        <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">
+          Course Details
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-700 text-lg leading-relaxed">
+          <ul className="space-y-4 list-disc list-inside">
+            <li>📸 Hands-on training with DSLR & Mirrorless cameras</li>
+            <li>🎥 Learn both Photography & Videography from basics to advanced</li>
+            <li>💡 Understanding of lighting setups and color theory</li>
+            <li>🧠 Concept development, storytelling & creative direction</li>
+            <li>🖼️ Practical sessions on outdoor and indoor shoots</li>
+            <li>🧍‍♀️ Portrait, event, product & landscape photography modules</li>
+            <li>🪄 Editing tutorials in Lightroom, Photoshop & Premiere Pro</li>
+          </ul>
+
+          <ul className="space-y-4 list-disc list-inside">
+            <li>🎬 Learn framing, composition & cinematic camera movement</li>
+            <li>🎧 Audio recording, syncing & sound design for videos</li>
+            <li>🗂️ Project-based learning with guided mentorship</li>
+            <li>🎓 Certificate provided upon course completion</li>
+            <li>👨‍🏫 One-to-one feedback & personalized learning guidance</li>
+            <li>🪶 Build your professional portfolio during the course</li>
+            <li>🚀 Career preparation for freelance & studio professionals</li>
+          </ul>
+        </div>
+
+        <div className="text-center mt-10">
+          <p className="text-gray-600 italic">
+            “From beginner to professional — master your lens and create stories
+            that move hearts.”
+          </p>
         </div>
       </div>
 
@@ -134,7 +179,10 @@ const PhotoVideoClass = () => {
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {sharedGallery.map((img, idx) => (
-            <div key={idx} className="relative group rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all">
+            <div
+              key={idx}
+              className="relative group rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all"
+            >
               <img
                 src={img}
                 alt={`Portfolio ${idx + 1}`}

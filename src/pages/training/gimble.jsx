@@ -2,24 +2,31 @@ import React from "react";
 import { FaWhatsapp, FaViber } from "react-icons/fa";
 
 const GimbalTraining = () => {
-  const gimbalTopics = [
-    "Introduction to Gimbals & Types",
-    "Balancing Techniques",
-    "Smooth Panning & Tilting",
-    "Tracking Shots & Movements",
-    "Shooting for Film & Video",
-    "Combining Gimbal with Lighting",
-    "Editing Stabilized Footage",
+  // const gimbalTopics = [
+  //   "Introduction to Gimbals & Types",
+  //   "Balancing Techniques",
+  //   "Smooth Panning & Tilting",
+  //   "Tracking Shots & Movements",
+  //   "Shooting for Film & Video",
+  //   "Combining Gimbal with Lighting",
+  //   "Editing Stabilized Footage",
+  // ];
+
+  const courseDetails = [
+    "✅ Duration: 1 Month (Practical Based Training)",
+    "✅ Learn Hands-On Gimbal Operation Techniques",
+    "✅ Real-World Shooting Practice with Guidance",
+    "✅ Suitable for Videographers, Content Creators, and Filmmakers",
+    "✅ Includes Field Practice Sessions",
+    "✅ Certificate Upon Completion",
   ];
 
-  // Portfolio images can be shared from previous gimbal shoots
   const portfolio = [
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760523570/i5te4p6i3ghfpyczc1yh.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760523965/zfhqvsc1xd7ccptpysdn.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760524062/faihgr70kx7oootmewos.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760524135/qcto9gpjrbtjltvkbewn.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760524258/ywvif2rennqpnjtbbuck.jpg",
-    // "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760600213/c4xifghdp8ftp3iwv1xm.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760523676/vmsc0cicawo80rgnvji4.jpg",
   ];
 
@@ -30,7 +37,7 @@ const GimbalTraining = () => {
         {/* Left Image */}
         <div className="md:w-1/2 flex justify-center md:justify-start">
           <img
-            src="https://res.cloudinary.com/dpysgjsq3/image/upload/v1760600213/c4xifghdp8ftp3iwv1xm.jpg" // Replace with your gimbal hero photo
+            src="https://res.cloudinary.com/dpysgjsq3/image/upload/v1760600213/c4xifghdp8ftp3iwv1xm.jpg"
             alt="Gimbal Training"
             className="w-full md:w-[90%] rounded-2xl shadow-xl object-cover"
           />
@@ -42,7 +49,9 @@ const GimbalTraining = () => {
             Gimbal Practices Training
           </h1>
           <p className="text-gray-600 text-lg leading-relaxed">
-            Master the art of smooth and cinematic shots using professional gimbals. Learn balancing, tracking, and creative camera movements to elevate your video production skills.
+            Master the art of smooth and cinematic shots using professional
+            gimbals. Learn balancing, tracking, and creative camera movements to
+            elevate your video production skills.
           </p>
 
           {/* Inquiry Buttons */}
@@ -76,12 +85,13 @@ const GimbalTraining = () => {
       </div>
 
       {/* Training Topics */}
-      <div className="max-w-7xl mx-auto px-6 py-16">
+      {/* <div className="max-w-7xl mx-auto px-6 py-16">
         <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
           What You'll Learn
         </h2>
         <p className="text-gray-600 text-center max-w-3xl mx-auto mb-8">
-          From beginner to advanced gimbal techniques, this course ensures you can achieve professional, cinematic, and smooth shots every time.
+          From beginner to advanced gimbal techniques, this course ensures you
+          can achieve professional, cinematic, and smooth shots every time.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-10">
@@ -93,8 +103,22 @@ const GimbalTraining = () => {
               <h3 className="text-lg font-semibold text-gray-800">{topic}</h3>
             </div>
           ))}
+        </div> */}
+
+        {/* Course Details Section */}
+        <div className="bg-gray-50 rounded-2xl p-8 shadow-sm max-w-3xl mx-auto">
+          <h3 className="text-2xl font-semibold mb-4 text-blue-600 text-center">
+            Course Details
+          </h3>
+          <ul className="text-gray-700 text-left list-disc list-inside space-y-2">
+            {courseDetails.map((detail, index) => (
+              <li key={index} className="text-lg leading-relaxed">
+                {detail}
+              </li>
+            ))}
+          </ul>
         </div>
-      </div>
+      
 
       {/* Portfolio */}
       <div className="max-w-7xl mx-auto px-6 py-16">
@@ -122,7 +146,8 @@ const GimbalTraining = () => {
 
       {/* Footer CTA */}
       <div className="text-center py-16 text-gray-500 italic text-lg">
-        “Smooth shots make stories come alive — master your gimbal skills today.”
+        “Smooth shots make stories come alive — master your gimbal skills
+        today.”
       </div>
     </section>
   );

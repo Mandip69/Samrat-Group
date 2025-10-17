@@ -2,17 +2,27 @@ import React from "react";
 import { FaWhatsapp, FaViber } from "react-icons/fa";
 
 const DroneTraining = () => {
-  const droneTopics = [
-    "Introduction to Drones & Types",
-    "Drone Safety & Regulations",
-    "Flight Controls & Maneuvers",
-    "Aerial Photography Techniques",
-    "Cinematography with Drones",
-    "Editing Aerial Footage",
-    "Commercial Drone Applications",
+  // const droneTopics = [
+  //   "Introduction to Drones & Types",
+  //   "Drone Safety & Regulations",
+  //   "Flight Controls & Maneuvers",
+  //   "Aerial Photography Techniques",
+  //   "Cinematography with Drones",
+  //   "Editing Aerial Footage",
+  //   "Commercial Drone Applications",
+  // ];
+
+  const courseDetails = [
+    "📘 Introduction to drone mechanics & flight theory",
+    "🧭 Understanding airspace, weather & safety protocols",
+    "🎮 Hands-on flying sessions with different drone models",
+    "📸 Aerial photography, camera angles & cinematic framing",
+    "🎬 Cinematic movement, tracking & reveal shots",
+    "🖥️ Editing workflow for aerial footage (Premiere Pro & DaVinci)",
+    "💼 Legal guidelines & commercial licensing overview",
+    "🧠 Project-based drone shoot and portfolio creation",
   ];
 
-  // High-quality portfolio images
   const portfolio = [
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760528258/codl0tt4kneu9jmpu5kn.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760528365/wtx2efc5irck5uzt8elu.jpg",
@@ -28,7 +38,6 @@ const DroneTraining = () => {
     <section className="bg-white text-gray-900 min-h-screen py-20">
       {/* Hero Section */}
       <div className="max-w-7xl mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center gap-10">
-        {/* Left Image */}
         <div className="md:w-1/2 flex justify-center md:justify-start">
           <img
             src={heroImage}
@@ -37,7 +46,6 @@ const DroneTraining = () => {
           />
         </div>
 
-        {/* Right Text */}
         <div className="md:w-1/2 text-center md:text-left space-y-6">
           <h1 className="text-4xl md:text-5xl font-bold tracking-wide">
             Drone Operation Training
@@ -46,7 +54,6 @@ const DroneTraining = () => {
             Learn to fly drones safely and professionally while capturing stunning aerial footage. Our comprehensive Drone Operation Training covers flight control, aerial photography, cinematography, and commercial applications.
           </p>
 
-          {/* Inquiry Buttons */}
           <div className="flex flex-wrap gap-4 mt-6 justify-center md:justify-start">
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSf1iy9bvqNubA8aSEoRDEbzE_8I91KXlnqnZf_TodUhmfUUmg/viewform?usp=sharing&ouid=100782127818539968867"
@@ -76,8 +83,34 @@ const DroneTraining = () => {
         </div>
       </div>
 
+      {/* Course Details Section */}
+      <div className="max-w-7xl mx-auto px-6 py-20 bg-gradient-to-br from-blue-50 via-white to-purple-50 rounded-3xl shadow-md mt-16">
+        <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">
+          Course Details
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-700 text-lg leading-relaxed">
+          <ul className="space-y-4 list-disc list-inside">
+            {courseDetails.slice(0, 4).map((point, idx) => (
+              <li key={idx}>{point}</li>
+            ))}
+          </ul>
+          <ul className="space-y-4 list-disc list-inside">
+            {courseDetails.slice(4).map((point, idx) => (
+              <li key={idx}>{point}</li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="text-center mt-10">
+          <p className="text-gray-600 italic">
+            “Learn. Fly. Create — take your aerial storytelling to new heights.”
+          </p>
+        </div>
+      </div>
+
       {/* Training Topics */}
-      <div className="max-w-7xl mx-auto px-6 py-16">
+      {/* <div className="max-w-7xl mx-auto px-6 py-16">
         <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
           What You'll Learn
         </h2>
@@ -95,7 +128,7 @@ const DroneTraining = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* Portfolio */}
       <div className="max-w-7xl mx-auto px-6 py-16">

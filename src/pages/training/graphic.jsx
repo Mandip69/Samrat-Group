@@ -3,13 +3,22 @@ import { FaWhatsapp, FaViber } from "react-icons/fa";
 import { Pencil } from "lucide-react";
 
 const GraphicDesignClass = () => {
-  const courseTopics = [
-    "Adobe Photoshop Basics",
-    "Illustrator Vector Design",
-    "Typography & Layouts",
-    "Logo & Branding Design",
-    "Social Media Graphics",
-    "Portfolio Projects",
+  // const courseTopics = [
+  //   "Adobe Photoshop Basics",
+  //   "Illustrator Vector Design",
+  //   "Typography & Layouts",
+  //   "Logo & Branding Design",
+  //   "Social Media Graphics",
+  //   "Portfolio Projects",
+  // ];
+
+  const courseDetails = [
+    "✅ Duration: 1.5 to 2 Months (Flexible Schedule)",
+    "✅ Suitable for Beginners — No prior experience needed",
+    "✅ Learn with Real Projects and Practical Assignments",
+    "✅ Guidance from Professional Graphic Designers",
+    "✅ Lifetime Access to Course Materials",
+    "✅ Certification after Course Completion",
   ];
 
   const galleryImages = [
@@ -19,8 +28,6 @@ const GraphicDesignClass = () => {
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760529272/evuc3plaiagqyfrsrubw.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760600503/nk6txouqgpzy9ox5aahn.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760600603/phc2llhzfoun4n7tpfjw.jpg",
-    // "https://res.cloudinary.com/dpysgjsq3/image/upload/v1758612982/portfolio/graphic4.jpg",
-    // "https://res.cloudinary.com/dpysgjsq3/image/upload/v1758612985/portfolio/graphic5.jpg",
   ];
 
   return (
@@ -36,8 +43,13 @@ const GraphicDesignClass = () => {
             </h1>
           </div>
           <p className="text-gray-600 text-lg leading-relaxed">
-            Learn the art of visual communication! Our <span className="font-semibold text-blue-500">Graphic Design Class</span> teaches you creative workflows, essential tools, and professional techniques.
-            Perfect for beginners and aspiring designers who want to create stunning visuals.
+            Learn the art of visual communication! Our{" "}
+            <span className="font-semibold text-blue-500">
+              Graphic Design Class
+            </span>{" "}
+            teaches you creative workflows, essential tools, and professional
+            techniques. Perfect for beginners and aspiring designers who want to
+            create stunning visuals.
           </p>
 
           {/* Inquiry Buttons */}
@@ -79,17 +91,36 @@ const GraphicDesignClass = () => {
         </div>
       </div>
 
-      {/* Course Highlights */}
-      <div className="max-w-6xl mx-auto px-6 py-16 text-center">
-        <h2 className="text-3xl font-bold text-gray-900 mb-8">Course Highlights</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+   
+      {/* <div className="max-w-6xl mx-auto px-6 py-16 text-center">
+        <h2 className="text-3xl font-bold text-gray-900 mb-8">
+          Course Highlights
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-10">
           {courseTopics.map((topic, idx) => (
-            <div key={idx} className="bg-gray-100 rounded-xl p-6 hover:bg-blue-50 transition-shadow shadow-sm">
+            <div
+              key={idx}
+              className="bg-gray-100 rounded-xl p-6 hover:bg-blue-50 transition-shadow shadow-sm"
+            >
               <h3 className="text-lg font-semibold text-gray-800">{topic}</h3>
             </div>
           ))}
+        </div> */}
+
+        {/* Course Details Section */}
+        <div className="bg-gray-50 rounded-2xl p-8 shadow-sm max-w-3xl mx-auto">
+          <h3 className="text-2xl font-semibold mb-4 text-blue-600">
+            Course Details
+          </h3>
+          <ul className="text-gray-700 text-left list-disc list-inside space-y-2">
+            {courseDetails.map((detail, index) => (
+              <li key={index} className="text-lg leading-relaxed">
+                {detail}
+              </li>
+            ))}
+          </ul>
         </div>
-      </div>
+      
 
       {/* Gallery Section */}
       <div className="max-w-7xl mx-auto px-6 pb-16">
@@ -98,14 +129,19 @@ const GraphicDesignClass = () => {
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {galleryImages.map((img, idx) => (
-            <div key={idx} className="relative group rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all">
+            <div
+              key={idx}
+              className="relative group rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all"
+            >
               <img
                 src={img}
                 alt={`Graphic Design ${idx + 1}`}
                 className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-white/30 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-                <p className="text-gray-900 text-lg font-semibold">View Project</p>
+                <p className="text-gray-900 text-lg font-semibold">
+                  View Project
+                </p>
               </div>
             </div>
           ))}

@@ -1,15 +1,33 @@
 import React from "react";
-import { FaWhatsapp, FaViber } from "react-icons/fa";
+import { FaWhatsapp, FaViber, FaCheckCircle } from "react-icons/fa";
 
 const VideoEditingClass = () => {
-  const topics = [
-    "Introduction to Editing Software",
-    "Timeline & Workspace Setup",
-    "Cutting, Trimming & Transitions",
-    "Color Correction & Grading",
-    "Audio Editing & Mixing",
-    "Motion Graphics & Effects",
-    "Exporting & Project Delivery",
+  // const topics = [
+  //   "Introduction to Editing Software",
+  //   "Timeline & Workspace Setup",
+  //   "Cutting, Trimming & Transitions",
+  //   "Color Correction & Grading",
+  //   "Audio Editing & Mixing",
+  //   "Motion Graphics & Effects",
+  //   "Exporting & Project Delivery",
+  // ];
+
+  const courseDetailsLeft = [
+    "🎬 Learn Adobe Premiere Pro & DaVinci Resolve",
+    "🎨 Master color correction and cinematic grading",
+    "🧠 Understand storytelling and pacing in editing",
+    "🎧 Sound synchronization and background scoring",
+    "🪄 Transitions, effects, and text animations",
+    "📂 Project management & organized editing workflow",
+  ];
+
+  const courseDetailsRight = [
+    "💡 Learn motion graphics and intro/outro creation",
+    "🎥 Hands-on practice with real-world projects",
+    "🧩 Use LUTs and presets for creative effects",
+    "🗂️ Learn exporting formats for YouTube, social media, and clients",
+    "🎓 Certificate upon successful completion",
+    "🚀 Build your personal portfolio for freelancing or jobs",
   ];
 
   const portfolio = [
@@ -20,9 +38,6 @@ const VideoEditingClass = () => {
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760599778/gkgjnsx6eds9jdaeopk1.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760600449/ic8czvjws1h8gzwsyufv.jpg",
   ];
-
-  // const heroImage =
-  //   "https://res.cloudinary.com/dpysgjsq3/image/upload/q_auto:100,f_auto/v1760514725/video-editing-hero.jpg";
 
   return (
     <section className="bg-white text-gray-900 min-h-screen py-20">
@@ -43,7 +58,9 @@ const VideoEditingClass = () => {
             Video Editing Class
           </h1>
           <p className="text-gray-600 text-lg leading-relaxed">
-            Learn professional video editing techniques to create stunning visuals. From cutting and trimming to color grading, motion graphics, and audio mixing, our Video Editing Class will turn your raw footage into cinematic masterpieces.
+            Learn professional video editing techniques to create stunning visuals. 
+            From cutting and trimming to color grading, motion graphics, and audio mixing, 
+            our Video Editing Class will turn your raw footage into cinematic masterpieces.
           </p>
 
           {/* Inquiry Buttons */}
@@ -76,8 +93,8 @@ const VideoEditingClass = () => {
         </div>
       </div>
 
-      {/* Course Topics */}
-      <div className="max-w-7xl mx-auto px-6 py-16">
+      {/* What You'll Learn */}
+      {/* <div className="max-w-7xl mx-auto px-6 py-16">
         <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
           What You'll Learn
         </h2>
@@ -94,6 +111,39 @@ const VideoEditingClass = () => {
               <h3 className="text-lg font-semibold text-gray-800">{topic}</h3>
             </div>
           ))}
+        </div>
+      </div> */}
+
+      {/* 🧾 Course Details Section */}
+      <div className="max-w-7xl mx-auto px-6 py-20 bg-gradient-to-br from-blue-50 via-white to-purple-50 rounded-3xl shadow-md">
+        <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">
+          Course Details
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-700 text-lg leading-relaxed">
+          <ul className="space-y-4 list-disc list-inside">
+            {courseDetailsLeft.map((item, idx) => (
+              <li key={idx} className="flex items-start gap-3">
+                <FaCheckCircle className="text-blue-500 mt-1" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+
+          <ul className="space-y-4 list-disc list-inside">
+            {courseDetailsRight.map((item, idx) => (
+              <li key={idx} className="flex items-start gap-3">
+                <FaCheckCircle className="text-blue-500 mt-1" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="text-center mt-10">
+          <p className="text-gray-600 italic">
+            “Edit like a pro — transform your imagination into stunning visual stories.”
+          </p>
         </div>
       </div>
 

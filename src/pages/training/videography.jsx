@@ -1,14 +1,32 @@
 import React from "react";
-import { FaVideo } from "react-icons/fa";
+import { FaVideo, FaCheckCircle } from "react-icons/fa";
 
 const VideographyTraining = () => {
-  const trainingHighlights = [
-    "Professional Camera Handling",
-    "Creative Composition & Angles",
-    "Lighting Techniques",
-    "Sound Recording Tips",
-    "Editing & Color Grading",
-    "Portfolio Project Guidance",
+  // const trainingHighlights = [
+  //   "Professional Camera Handling",
+  //   "Creative Composition & Angles",
+  //   "Lighting Techniques",
+  //   "Sound Recording Tips",
+  //   "Editing & Color Grading",
+  //   "Portfolio Project Guidance",
+  // ];
+
+  const courseDetailsLeft = [
+    "📸 Hands-on training with DSLR & Mirrorless cameras",
+    "🎬 Learn camera movement & cinematic shooting styles",
+    "💡 Master lighting, framing & composition",
+    "🧠 Understand storytelling & shot planning",
+    "🎧 Sound recording, syncing & sound design",
+    "🪄 Practical indoor/outdoor shoot sessions",
+  ];
+
+  const courseDetailsRight = [
+    "🖥️ Learn editing with Adobe Premiere Pro & DaVinci Resolve",
+    "🎨 Color grading & cinematic tone creation",
+    "🗂️ Project-based learning with mentor feedback",
+    "🎓 Certificate provided after completion",
+    "📸 Build your own professional portfolio",
+    "🚀 Freelance & studio career guidance",
   ];
 
   const studentImages = [
@@ -31,7 +49,7 @@ const VideographyTraining = () => {
 
   return (
     <section id="videography-training" className="bg-gray-50">
-      {/* Hero */}
+      {/* Hero Section */}
       <div
         className="relative w-full h-[90vh] bg-cover bg-center flex items-center justify-center"
         style={{
@@ -59,7 +77,7 @@ const VideographyTraining = () => {
       </div>
 
       {/* Training Highlights */}
-      <div className="max-w-5xl mx-auto px-6 py-12">
+      {/* <div className="max-w-5xl mx-auto px-6 py-16">
         <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">
           What You Will Learn
         </h2>
@@ -76,10 +94,43 @@ const VideographyTraining = () => {
             </div>
           ))}
         </div>
+      </div> */}
+
+      {/* 🧾 Course Details Section */}
+      <div className="max-w-7xl mx-auto px-6 py-20 bg-gradient-to-br from-blue-50 via-white to-purple-50 rounded-3xl shadow-md">
+        <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">
+          Course Details
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-700 text-lg leading-relaxed">
+          <ul className="space-y-4 list-disc list-inside">
+            {courseDetailsLeft.map((item, idx) => (
+              <li key={idx} className="flex items-start gap-3">
+                <FaCheckCircle className="text-sky-500 mt-1" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+
+          <ul className="space-y-4 list-disc list-inside">
+            {courseDetailsRight.map((item, idx) => (
+              <li key={idx} className="flex items-start gap-3">
+                <FaCheckCircle className="text-sky-500 mt-1" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="text-center mt-10">
+          <p className="text-gray-600 italic">
+            “From beginner to professional — master your lens and create stories that move hearts.”
+          </p>
+        </div>
       </div>
 
       {/* Our Students Gallery */}
-      <div className="max-w-7xl mx-auto px-6 py-12">
+      <div className="max-w-7xl mx-auto px-6 py-16">
         <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">
           Our Students
         </h2>
