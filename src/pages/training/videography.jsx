@@ -18,6 +18,15 @@ const VideographyTraining = () => {
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760605791/tsk30dsuepzjvdvny3vx.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760605755/dtobgck7jlv0kpzviemu.jpg",
     "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760605679/ou4wh8eslk0wtqgewtdi.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760683315/se1d6e4csctj92m2lcmz.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760683377/gdxmesdioqfqphs7lqv5.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760683584/exxomzk0evtymbr4kae7.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760683721/qhtnmqgp9vqsjuqmzfsq.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760684106/ou9zknphuu3famhqqvu9.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760684203/u9ow5lmnhlgt7hr5bjfk.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760684408/zxognlbgjkwfmogm7ly3.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760684632/ysvrdk2zbpjnf4qqo5ao.jpg",
+    "https://res.cloudinary.com/dpysgjsq3/image/upload/v1760684764/q72xbbwsbtd3avfuklcv.jpg",
   ];
 
   return (
